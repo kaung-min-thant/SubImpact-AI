@@ -6,7 +6,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 
+
 # --- 1. Page Config & State Management ---
+
 st.set_page_config(page_title="SubImpact AI", layout="wide")
 st.title("⚽ SubImpact AI: Football Substitution Assistant")
 
@@ -15,7 +17,9 @@ if 'prediction_run' not in st.session_state:
     st.session_state.prediction_result = None
     st.session_state.active_position = "Forward"
 
+
 # --- 2. Load the Model, Features, & Scenarios ---
+
 @st.cache_resource
 def load_model_data():
     return joblib.load('phase2_best_gradient_boosting_model.pkl')
@@ -40,7 +44,9 @@ except Exception as e:
     model_loaded = False
     st.error(f"⚠️ Error loading files: {e}")
 
+
 # --- 3. Sidebar UI (THE FROZEN FORM) ---
+
 st.sidebar.header("Tactical Controls")
 
 # Wrapping everything in a form forces Streamlit to DO NOTHING until submitted.
@@ -48,7 +54,7 @@ with st.sidebar.form(key="tactical_form"):
     
     st.subheader("1️⃣ Match Context")
     time_remaining = st.slider("Time Remaining (mins)", 1, 45, 20)
-    score_diff = st.slider("Score Difference (us vs them)", -3, 3, -1)
+    score_diff = st.slider("Score Difference ( vs them)", -10, 10, 0)
 
     st.markdown("---")
     st.subheader("2️⃣ Substitution Details")
@@ -63,21 +69,21 @@ with st.sidebar.form(key="tactical_form"):
     with st.expander("⚙️ Advanced Tactical Tuners (Optional)"):
         st.caption("Because the form is frozen, these sliders won't auto-update. Check the box below to override the JSON medians with custom math.")
         force_custom = st.checkbox("Enable Custom Tuners", value=False)
-        team_xg = st.slider("Team xG", 0.0, 2.0, 1.0)
-        opp_xg = st.slider("Opponent xG", 0.0, 2.0, 1.0)
+        team_xg = st.slider("Team's xG", 0.0, 2.0, 1.0)
+        opp_xg = st.slider("Opponent's xG", 0.0, 2.0, 1.0)
         passes = st.slider("Passes", 0, 200, 50)
         shots = st.slider("Shots", 0, 15, 5)
 
     # THE BUTTON MUST BE INSIDE THE FORM!
-    submit_button = st.form_submit_button("Calculate SubImpact Score", use_container_width=True, type="primary")
+    submit_button = st.form_submit_button("**Calculate SubImpact**", use_container_width=True, type="primary")
 
 
 # --- 4. Main Layout ---
-# FIX: The 1.2 to 1.0 ratio makes the Prediction UI wider!
-col1, col2 = st.columns([1.2, 1.0]) 
+
+col1, col2 = st.columns([1, 1]) 
 
 with col1:
-    st.subheader("🤖 AI Prediction Engine")
+    st.subheader("🤖  SubImpact Engine")
     
     if submit_button:
         if model_loaded:
@@ -122,23 +128,23 @@ with col1:
     if st.session_state.prediction_run:
         prediction = st.session_state.prediction_result
         
-        st.markdown(f"**Scenario:** You are making a substitution with **{time_remaining} minutes** left.")
+        st.markdown(f"**Scenario:** You are substituting in a **{st.session_state.active_position}** with **{time_remaining} minutes** left.")
         if score_diff < 0 and st.session_state.active_position == "Forward":
-            st.info("🧠 Tactical Intuition: Chasing the game. Attempting to increase Team xG.")
+            st.info("🧠 Tactical Intuition: Attacking the opponent. Attempting to increase Team's xG.")
         elif score_diff > 0 and st.session_state.active_position == "Defender":
-            st.info("🧠 Tactical Intuition: Defending the lead. Attempting to decrease Opponent xG.")
+            st.info("🧠 Tactical Intuition: Defending the lead. Attempting to decrease Opponent's xG.")
         
         st.markdown("---")
         
         if prediction == 2:
-            st.success(f"🟢 **POSITIVE IMPACT**\n\nBringing on a {st.session_state.active_position} here is highly recommended by the AI.")
+            st.success(f"🟢 **POSITIVE IMPACT**\n\nBringing on a {st.session_state.active_position} here is highly recommended.")
         elif prediction == 0:
-            st.error(f"🔴 **NEGATIVE IMPACT**\n\nWarning. Bringing on a {st.session_state.active_position} may backfire in this exact game state.")
+            st.error(f"🔴 **NEGATIVE IMPACT**\n\nWarning! Bringing on a {st.session_state.active_position} may backfire in this game state.")
         else:
             st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {st.session_state.active_position} sub here is unlikely to change the momentum.")
 
 with col2:
-    st.subheader("📍 Predicted Impact Zone")
+    st.subheader("📍 Impact Zone")
     
     @st.cache_resource
     def draw_pitch_map(position):
