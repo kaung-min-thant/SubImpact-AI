@@ -64,8 +64,18 @@ with st.sidebar.expander("⚙️ Advanced Tactical Tuners (Optional)", expanded=
     passes = st.slider("Passes (Last 15m)", 0, 200, int(baseline['passes_prev15']))
     shots = st.slider("Shots (Last 15m)", 0, 15, int(baseline['shots_prev15']))
 
+# --- STATE TRACKING ---
+current_inputs = f"{time_remaining}_{score_diff}_{sub_position}_{pass_drop}_{action_drop}_{momentum}_{team_xg}_{opp_xg}_{passes}_{shots}"
+
+if 'last_inputs' not in st.session_state:
+    st.session_state.last_inputs = current_inputs
+
+if st.session_state.last_inputs != current_inputs:
+    st.session_state.prediction_run = False
+    st.session_state.last_inputs = current_inputs
+
 # --- 4. Main Layout ---
-col1, col2 = st.columns([1, 2])
+col1, col2 = st.columns([1.2, 1])
 
 with col1:
     st.subheader("🤖 AI Prediction Engine")
@@ -126,14 +136,15 @@ with col1:
             st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {sub_position} sub here is unlikely to change the momentum.")
 
 with col2:
-    st.subheader("📍 Tactical Pitch Map")
+    st.subheader("📍 Predicted Impact Zone")
     
     fig, ax = plt.subplots(figsize=(8, 5))
     fig.patch.set_facecolor('#0e1117')
     
-    pitch = Pitch(pitch_type='statsbomb', pitch_color='#1e1e1e', line_color='#c7d5cc')
+    pitch = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white', stripe=True)
     pitch.draw(ax=ax)
-    
+    np.random.seed(42)
+
     if sub_position == "Forward":
         x = np.random.normal(100, 10, 100) 
         y = np.random.normal(40, 15, 100)
@@ -151,8 +162,6 @@ with col2:
         label_x = 60
         
     pitch.kdeplot(x, y, ax=ax, fill=True, levels=100, thresh=0.1, cmap=color_map, alpha=0.6)
-    pitch.scatter(label_x, 40, ax=ax, color='white', edgecolors='black', s=300, marker='*', zorder=3)
-    ax.text(label_x, 20, f"Predicted {sub_position} Impact Zone", color='white', ha='center', fontsize=12, fontweight='bold')
     
     st.pyplot(fig)
     plt.close(fig)
