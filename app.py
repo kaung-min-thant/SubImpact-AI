@@ -6,9 +6,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 
-# --- 1. Page Config ---
+# --- 1. Page Config & State Management ---
 st.set_page_config(page_title="SubImpact Tactical Board", layout="wide")
 st.title("⚽ SubImpact: AI Substitution Assistant")
+
+# NEW: Initialize Streamlit's "Memory Bank" so the app never forgets the prediction!
+if 'prediction_run' not in st.session_state:
+    st.session_state.prediction_run = False
+    st.session_state.prediction_result = None
 
 # --- 2. Load the Model, Features, & Scenarios ---
 @st.cache_resource
@@ -48,13 +53,10 @@ action_drop = st.sidebar.slider("Outgoing Player Action Drop (%)", 0.0, 1.0, 0.2
 
 st.sidebar.markdown("---")
 st.sidebar.header("3️⃣ Match Momentum")
-# TIER 3 (Trigger): This dropdown decides the background 46 features
 momentum = st.sidebar.selectbox("How has the last 15 mins looked?", list(scenario_dict.keys()))
 
-# Grab the exact JSON baselines for the chosen momentum
 baseline = scenario_dict[momentum]
 
-# TIER 2: The Momentum Tuners (Smart Defaults, but adjustable)
 with st.sidebar.expander("⚙️ Advanced Tactical Tuners (Optional)", expanded=False):
     st.write("These auto-update based on Momentum, but you can override them.")
     team_xg = st.slider("Team xG (Last 15m)", 0.0, 2.0, float(round(baseline['team_xg_prev15'], 2)))
@@ -71,18 +73,18 @@ with col1:
     position_mapping = {"Defender": 0, "Forward": 1, "Midfielder": 2}
     ai_position_code = position_mapping[sub_position]
     
+    # THE BUTTON IS BACK!
     if st.button("Calculate SubImpact Score", type="primary", use_container_width=True):
         if model_loaded:
-            
-            # --- THE DATA PIPELINE ---
-            input_dict = baseline.copy() # Tier 3
-            input_dict['team_xg_prev15'] = team_xg # Tier 2
+            # Prepare the data
+            input_dict = baseline.copy() 
+            input_dict['team_xg_prev15'] = team_xg 
             input_dict['opp_xg_prev15'] = opp_xg
             input_dict['xg_diff_prev15'] = team_xg - opp_xg 
             input_dict['passes_prev15'] = passes
             input_dict['shots_prev15'] = shots
             
-            input_dict['time_remaining'] = time_remaining # Tier 1
+            input_dict['time_remaining'] = time_remaining 
             input_dict['score_diff'] = score_diff
             input_dict['pass_success_rate_drop'] = pass_drop
             input_dict['action_rate_drop'] = action_drop
@@ -92,72 +94,65 @@ with col1:
             input_dict['is_leading'] = 1 if score_diff > 0 else 0
             input_dict['is_trailing'] = 1 if score_diff < 0 else 0
 
-            # Convert to DataFrame
             for col in feature_cols:
                 if col not in input_dict:
                     input_dict[col] = 0
             input_data = pd.DataFrame([input_dict])[feature_cols]
             
-            # --- PREDICTION ---
-            prediction = model.predict(input_data)[0]
+            # Predict and SAVE to memory!
+            st.session_state.prediction_result = model.predict(input_data)[0]
+            st.session_state.prediction_run = True
             
-            st.markdown(f"**Scenario:** You are making a substitution with **{time_remaining} minutes** left.")
-            if score_diff < 0 and sub_position == "Forward":
-                st.info("🧠 Tactical Intuition: Chasing the game. Attempting to increase Team xG.")
-            elif score_diff > 0 and sub_position == "Defender":
-                st.info("🧠 Tactical Intuition: Defending the lead. Attempting to decrease Opponent xG.")
-            
-            st.markdown("---")
-            
-            if prediction == 2:
-                st.success(f"🟢 **POSITIVE IMPACT**\n\nBringing on a {sub_position} here is highly recommended by the AI.")
-            elif prediction == 0:
-                st.error(f"🔴 **NEGATIVE IMPACT**\n\nWarning. Bringing on a {sub_position} may backfire in this exact game state.")
-            else:
-                st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {sub_position} sub here is unlikely to change the momentum.")
-                
-            # Expandable XAI Section
-            with st.expander("📊 View Explainable AI (SHAP) Evidence"):
-                st.markdown("### Feature Importance")
-                st.write("This chart illustrates which match-state factors the AI relied on most.")
-                st.image("phase2_feature_importance.png", use_container_width=True)
-
         else:
             st.error("Cannot predict. Model is missing.")
+
+    # Only show the results if the button has been pressed at least once
+    if st.session_state.prediction_run:
+        prediction = st.session_state.prediction_result
+        
+        st.markdown(f"**Scenario:** You are making a substitution with **{time_remaining} minutes** left.")
+        if score_diff < 0 and sub_position == "Forward":
+            st.info("🧠 Tactical Intuition: Chasing the game. Attempting to increase Team xG.")
+        elif score_diff > 0 and sub_position == "Defender":
+            st.info("🧠 Tactical Intuition: Defending the lead. Attempting to decrease Opponent xG.")
+        
+        st.markdown("---")
+        
+        if prediction == 2:
+            st.success(f"🟢 **POSITIVE IMPACT**\n\nBringing on a {sub_position} here is highly recommended by the AI.")
+        elif prediction == 0:
+            st.error(f"🔴 **NEGATIVE IMPACT**\n\nWarning. Bringing on a {sub_position} may backfire in this exact game state.")
+        else:
+            st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {sub_position} sub here is unlikely to change the momentum.")
 
 with col2:
     st.subheader("📍 Tactical Pitch Map")
     
-    # Create dark mode figure
     fig, ax = plt.subplots(figsize=(8, 5))
     fig.patch.set_facecolor('#0e1117')
     
-    # Draw statsbomb pitch
     pitch = Pitch(pitch_type='statsbomb', pitch_color='#1e1e1e', line_color='#c7d5cc')
     pitch.draw(ax=ax)
     
-    # --- DYNAMIC HEATMAP LOGIC ---
     if sub_position == "Forward":
-        x = np.random.normal(100, 10, 100) # Attacking Box
+        x = np.random.normal(100, 10, 100) 
         y = np.random.normal(40, 15, 100)
-        color_map = 'inferno' # Warm colors
+        color_map = 'inferno' 
         label_x = 100
     elif sub_position == "Defender":
-        x = np.random.normal(20, 10, 100) # Defensive Box
+        x = np.random.normal(20, 10, 100) 
         y = np.random.normal(40, 15, 100)
-        color_map = 'mako' # Cool colors
+        color_map = 'mako' 
         label_x = 20
-    else: # Midfielder
-        x = np.random.normal(60, 10, 100) # Center Circle
+    else: 
+        x = np.random.normal(60, 10, 100) 
         y = np.random.normal(40, 15, 100)
-        color_map = 'viridis' # Greenish colors
+        color_map = 'viridis' 
         label_x = 60
         
-    # Draw the glowing heatmap
     pitch.kdeplot(x, y, ax=ax, fill=True, levels=100, thresh=0.1, cmap=color_map, alpha=0.6)
-    
-    # Add a marker and text
     pitch.scatter(label_x, 40, ax=ax, color='white', edgecolors='black', s=300, marker='*', zorder=3)
     ax.text(label_x, 20, f"Predicted {sub_position} Impact Zone", color='white', ha='center', fontsize=12, fontweight='bold')
     
     st.pyplot(fig)
+    plt.close(fig)
