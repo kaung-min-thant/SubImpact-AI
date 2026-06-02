@@ -1,0 +1,26 @@
+{
+  "best_model_name": "LightGBM Phase 2",
+  "label_classes": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "metrics": {
+    "model": "LightGBM Phase 2",
+    "accuracy": 0.6458733205374281,
+    "macro_f1": 0.5935853630519589,
+    "macro_auc": 0.8054487251802297
+  },
+  "cv_best_macro_f1": 0.6052235770473652,
+  "best_params": {
+    "subsample": 0.9,
+    "reg_lambda": 1.0,
+    "num_leaves": 63,
+    "n_estimators": 500,
+    "min_child_samples": 10,
+    "max_depth": -1,
+    "learning_rate": 0.08,
+    "colsample_bytree": 0.75
+  },
+  "feature_count": 46
+}
