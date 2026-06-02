@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 
@@ -11,9 +11,7 @@ st.title("⚽ SubImpact: AI Substitution Assistant")
 # --- 2. Load the Model & Features ---
 @st.cache_resource
 def load_model():
-    # Loading the pickle file you uploaded
-    with open('phase2_best_gradient_boosting_model.pkl', 'rb') as f:
-        return pickle.load(f)
+    return joblib.load('phase2_best_gradient_boosting_model.pkl')
 
 @st.cache_data
 def load_feature_names():
