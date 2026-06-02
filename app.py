@@ -81,21 +81,17 @@ momentum = st.sidebar.selectbox(
     on_change=update_tuners 
 )
 
-st.sidebar.markdown("---")
-
 with st.sidebar.form(key="tactical_form"):
     
     st.subheader("Match Context")
     time_remaining = st.slider("Time Remaining (mins)", 1, 45, 20)
     score_diff = st.slider("Score Difference", -10, 10, 0)
 
-    st.markdown("---")
     st.subheader("Substitution Details")
     sub_position = st.radio("Player Position to Sub In", ["Forward", "Midfielder", "Defender"])
     pass_drop = st.slider("Outgoing Player Pass Drop (%)", 0.0, 1.0, 0.15)
     action_drop = st.slider("Outgoing Player Action Drop (%)", 0.0, 1.0, 0.20)
 
-    st.markdown("---")
     # These sliders read directly from the injected memory bank (st.session_state.tuner_...)
     with st.expander("⚙️ Advanced Tactical Tuners (Optional)"):
         st.caption("These settings auto-update based on Momentum, but you can override them manually.")
