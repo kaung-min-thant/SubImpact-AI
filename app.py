@@ -73,28 +73,29 @@ def update_tuners():
 
 st.sidebar.header("Tactical Controls")
 
-# The Dropdown stays OUTSIDE the form so it can trigger the callback instantly!
 st.sidebar.subheader("Match Momentum")
 momentum = st.sidebar.selectbox(
     "How has the last 15 mins looked?", 
     list(scenario_dict.keys()), 
     key="momentum_dropdown", 
-    on_change=update_tuners # Triggers the injection!
+    on_change=update_tuners 
 )
 
-# The Form FREEZES everything else so dragging sliders causes absolutely zero fading/flickering.
+st.sidebar.markdown("---")
+
 with st.sidebar.form(key="tactical_form"):
     
     st.subheader("Match Context")
     time_remaining = st.slider("Time Remaining (mins)", 1, 45, 20)
     score_diff = st.slider("Score Difference", -10, 10, 0)
-    sub_position = st.radio("Player Position to Sub In", ["Forward", "Midfielder", "Defender"])
 
     st.markdown("---")
     st.subheader("Substitution Details")
+    sub_position = st.radio("Player Position to Sub In", ["Forward", "Midfielder", "Defender"])
     pass_drop = st.slider("Outgoing Player Pass Drop (%)", 0.0, 1.0, 0.15)
     action_drop = st.slider("Outgoing Player Action Drop (%)", 0.0, 1.0, 0.20)
 
+    st.markdown("---")
     # These sliders read directly from the injected memory bank (st.session_state.tuner_...)
     with st.expander("⚙️ Advanced Tactical Tuners (Optional)"):
         st.caption("These settings auto-update based on Momentum, but you can override them manually.")
@@ -104,7 +105,6 @@ with st.sidebar.form(key="tactical_form"):
         shots = st.slider("Shots", 0, 15, key="tuner_shots")
 
     submit_button = st.form_submit_button("**Calculate SubImpact**", use_container_width=True, type="primary")
-
 
 # --- 6. Main Layout ---
 
