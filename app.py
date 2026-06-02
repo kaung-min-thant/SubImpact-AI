@@ -1,116 +1,163 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import json
+import numpy as np
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 
-# --- 1. Page Configuration ---
+# --- 1. Page Config ---
 st.set_page_config(page_title="SubImpact Tactical Board", layout="wide")
 st.title("⚽ SubImpact: AI Substitution Assistant")
 
-# --- 2. Load the Model & Features ---
+# --- 2. Load the Model, Features, & Scenarios ---
 @st.cache_resource
 def load_model_data():
-    import joblib
-    # Load the dictionary that Minn and Tun created
     return joblib.load('phase2_best_gradient_boosting_model.pkl')
 
 @st.cache_data
 def load_feature_names():
     df = pd.read_csv('phase2_feature_columns.csv')
-    if 'feature' in df.columns:
-        return df['feature'].tolist()
-    else:
-        return df.iloc[:, 0].tolist()
+    return df['feature'].tolist() if 'feature' in df.columns else df.iloc[:, 0].tolist()
+
+@st.cache_data
+def load_scenarios():
+    with open('scenario_baselines.json', 'r') as f:
+        return json.load(f)
 
 try:
-    # 1. Load the dictionary from the .pkl file
     model_dict = load_model_data()
-    
-    # 2. Extract ONLY the AI model using the exact key we found
     model = model_dict['model']
-    
-    # 3. Load the feature columns
     feature_cols = load_feature_names()
-    
+    scenario_dict = load_scenarios()
     model_loaded = True
-
 except Exception as e:
     model_loaded = False
-    st.error(f"⚠️ Error loading model files. Error: {e}")
+    st.error(f"⚠️ Error loading files: {e}")
 
-# --- 3. Sidebar UI (Clean & Simple) ---
-st.sidebar.header("Tactical Situation")
-time_remaining = st.sidebar.slider("Time Remaining (mins)", 1, 45, 15)
+# --- 3. Sidebar UI (The 3-Tier Architecture) ---
+st.sidebar.header("1️⃣ Match Context")
+time_remaining = st.sidebar.slider("Time Remaining (mins)", 1, 45, 20)
 score_diff = st.sidebar.slider("Score Difference (us vs them)", -3, 3, -1)
+sub_position = st.sidebar.radio("Player Position to Sub In", ["Forward", "Midfielder", "Defender"])
 
 st.sidebar.markdown("---")
-st.sidebar.header("Outgoing Player Fatigue")
-pass_drop = st.sidebar.slider("Pass Success Drop (%)", 0.0, 1.0, 0.15)
-action_drop = st.sidebar.slider("Action Rate Drop (%)", 0.0, 1.0, 0.20)
+st.sidebar.header("2️⃣ Substitution Details")
+pass_drop = st.sidebar.slider("Outgoing Player Pass Drop (%)", 0.0, 1.0, 0.15)
+action_drop = st.sidebar.slider("Outgoing Player Action Drop (%)", 0.0, 1.0, 0.20)
+
+st.sidebar.markdown("---")
+st.sidebar.header("3️⃣ Match Momentum")
+# TIER 3 (Trigger): This dropdown decides the background 46 features
+momentum = st.sidebar.selectbox("How has the last 15 mins looked?", list(scenario_dict.keys()))
+
+# Grab the exact JSON baselines for the chosen momentum
+baseline = scenario_dict[momentum]
+
+# TIER 2: The Momentum Tuners (Smart Defaults, but adjustable)
+with st.sidebar.expander("⚙️ Advanced Tactical Tuners (Optional)", expanded=False):
+    st.write("These auto-update based on Momentum, but you can override them.")
+    team_xg = st.slider("Team xG (Last 15m)", 0.0, 2.0, float(round(baseline['team_xg_prev15'], 2)))
+    opp_xg = st.slider("Opponent xG (Last 15m)", 0.0, 2.0, float(round(baseline['opp_xg_prev15'], 2)))
+    passes = st.slider("Passes (Last 15m)", 0, 200, int(baseline['passes_prev15']))
+    shots = st.slider("Shots (Last 15m)", 0, 15, int(baseline['shots_prev15']))
 
 # --- 4. Main Layout ---
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.subheader("AI Prediction Engine")
+    st.subheader("🤖 AI Prediction Engine")
     
-    if st.button("Calculate SubImpact Score", type="primary"):
+    position_mapping = {"Defender": 0, "Forward": 1, "Midfielder": 2}
+    ai_position_code = position_mapping[sub_position]
+    
+    if st.button("Calculate SubImpact Score", type="primary", use_container_width=True):
         if model_loaded:
-            # THE FIX: Replace the 0s with realistic League Averages
-            # These values simulate a 0-0 game with average possession and pressure
-            input_dict = {
-                'score_diff': 0, 'is_home': 1, 'time_remaining': 20, 'sub_sequence': 1, 
-                'game_phase_enc': 3, 'position_group_enc': 2, 'team_xg_prev15': 0.25, 
-                'opp_xg_prev15': 0.25, 'xg_diff_prev15': 0.0, 'shots_prev15': 3, 
-                'passes_prev15': 60, 'pressures_prev15': 25, 'competition_enc': 1, 
-                'abs_score_diff': 0, 'is_trailing': 0, 'is_leading': 0, 'late_sub': 1, 
-                'very_late_sub': 0, 'xg_per_shot_prev15': 0.08, 'pressure_per_pass_prev15': 0.4, 
-                'passes_per_min_prev15': 4.0, 'pressures_per_min_prev15': 1.6, 'shots_per_min_prev15': 0.2, 
-                'player_passes_prev15': 10, 'pass_success_rate_drop': 0.05, 'player_pressures_prev15': 5, 
-                'pressure_activity_drop': 0.1, 'player_actions_prev15': 15, 'action_rate_drop': 0.1, 
-                'player_involvement_share_prev15': 0.08, 'FW_passes_prev15': 15, 'FW_pressures_prev15': 8, 
-                'FW_shots_prev15': 2, 'FW_xg_prev15': 0.2, 'MF_passes_prev15': 25, 'MF_pressures_prev15': 10, 
-                'MF_shots_prev15': 1, 'MF_xg_prev15': 0.05, 'DF_passes_prev15': 20, 'DF_pressures_prev15': 7, 
-                'DF_shots_prev15': 0, 'DF_xg_prev15': 0.0, 'GK_passes_prev15': 5, 'GK_pressures_prev15': 0, 
-                'GK_shots_prev15': 0, 'GK_xg_prev15': 0.0
-            }
             
-            # Make sure any missing columns are set to 0 just to be safe
-            for col in feature_cols:
-                if col not in input_dict:
-                    input_dict[col] = 0
-
-            # Overwrite the defaults with OUR slider values
-            input_dict['time_remaining'] = time_remaining
+            # --- THE DATA PIPELINE ---
+            input_dict = baseline.copy() # Tier 3
+            input_dict['team_xg_prev15'] = team_xg # Tier 2
+            input_dict['opp_xg_prev15'] = opp_xg
+            input_dict['xg_diff_prev15'] = team_xg - opp_xg 
+            input_dict['passes_prev15'] = passes
+            input_dict['shots_prev15'] = shots
+            
+            input_dict['time_remaining'] = time_remaining # Tier 1
             input_dict['score_diff'] = score_diff
             input_dict['pass_success_rate_drop'] = pass_drop
             input_dict['action_rate_drop'] = action_drop
+            input_dict['position_group_enc'] = ai_position_code
             
-            # Recalculate contextual stats based on the slider
             input_dict['abs_score_diff'] = abs(score_diff)
             input_dict['is_leading'] = 1 if score_diff > 0 else 0
             input_dict['is_trailing'] = 1 if score_diff < 0 else 0
 
             # Convert to DataFrame
-            input_data = pd.DataFrame([input_dict])
+            for col in feature_cols:
+                if col not in input_dict:
+                    input_dict[col] = 0
+            input_data = pd.DataFrame([input_dict])[feature_cols]
             
-            # Reorder columns to exactly match what the model expects
-            input_data = input_data[feature_cols]
-            
-            # Ask the AI to predict!
+            # --- PREDICTION ---
             prediction = model.predict(input_data)[0]
             
-            # UI LOGIC: Translate the prediction number (0, 1, 2) into text
+            st.markdown(f"**Scenario:** You are making a substitution with **{time_remaining} minutes** left.")
+            if score_diff < 0 and sub_position == "Forward":
+                st.info("🧠 Tactical Intuition: Chasing the game. Attempting to increase Team xG.")
+            elif score_diff > 0 and sub_position == "Defender":
+                st.info("🧠 Tactical Intuition: Defending the lead. Attempting to decrease Opponent xG.")
+            
+            st.markdown("---")
+            
             if prediction == 2:
-                st.success("🟢 AI Prediction: POSITIVE IMPACT")
-                st.write("This substitution is highly likely to improve team momentum.")
+                st.success(f"🟢 **POSITIVE IMPACT**\n\nBringing on a {sub_position} here is highly recommended by the AI.")
             elif prediction == 0:
-                st.error("🔴 AI Prediction: NEGATIVE IMPACT")
-                st.write("Warning: This substitution may disrupt team structure.")
+                st.error(f"🔴 **NEGATIVE IMPACT**\n\nWarning. Bringing on a {sub_position} may backfire in this exact game state.")
             else:
-                st.warning("🟡 AI Prediction: NEUTRAL IMPACT")
-                st.write("This substitution is not expected to significantly alter the game flow.")
+                st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {sub_position} sub here is unlikely to change the momentum.")
+                
+            # Expandable XAI Section
+            with st.expander("📊 View Explainable AI (SHAP) Evidence"):
+                st.markdown("### Feature Importance")
+                st.write("This chart illustrates which match-state factors the AI relied on most.")
+                st.image("phase2_feature_importance.png", use_container_width=True)
 
         else:
             st.error("Cannot predict. Model is missing.")
+
+with col2:
+    st.subheader("📍 Tactical Pitch Map")
+    
+    # Create dark mode figure
+    fig, ax = plt.subplots(figsize=(8, 5))
+    fig.patch.set_facecolor('#0e1117')
+    
+    # Draw statsbomb pitch
+    pitch = Pitch(pitch_type='statsbomb', pitch_color='#1e1e1e', line_color='#c7d5cc')
+    pitch.draw(ax=ax)
+    
+    # --- DYNAMIC HEATMAP LOGIC ---
+    if sub_position == "Forward":
+        x = np.random.normal(100, 10, 100) # Attacking Box
+        y = np.random.normal(40, 15, 100)
+        color_map = 'inferno' # Warm colors
+        label_x = 100
+    elif sub_position == "Defender":
+        x = np.random.normal(20, 10, 100) # Defensive Box
+        y = np.random.normal(40, 15, 100)
+        color_map = 'mako' # Cool colors
+        label_x = 20
+    else: # Midfielder
+        x = np.random.normal(60, 10, 100) # Center Circle
+        y = np.random.normal(40, 15, 100)
+        color_map = 'viridis' # Greenish colors
+        label_x = 60
+        
+    # Draw the glowing heatmap
+    pitch.kdeplot(x, y, ax=ax, fill=True, levels=100, thresh=0.1, cmap=color_map, alpha=0.6)
+    
+    # Add a marker and text
+    pitch.scatter(label_x, 40, ax=ax, color='white', edgecolors='black', s=300, marker='*', zorder=3)
+    ax.text(label_x, 20, f"Predicted {sub_position} Impact Zone", color='white', ha='center', fontsize=12, fontweight='bold')
+    
+    st.pyplot(fig)
