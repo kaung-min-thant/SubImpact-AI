@@ -7,15 +7,10 @@ import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 
 
-# --- 1. Page Config & State Management ---
+# --- 1. Page Config ---
 
 st.set_page_config(page_title="SubImpact AI", layout="wide")
 st.title("⚽ SubImpact AI: Football Substitution Assistant")
-
-if 'prediction_run' not in st.session_state:
-    st.session_state.prediction_run = False
-    st.session_state.prediction_result = None
-    st.session_state.active_position = "Forward"
 
 
 # --- 2. Load the Model, Features, & Scenarios ---
@@ -40,67 +35,98 @@ try:
     feature_cols = load_feature_names()
     scenario_dict = load_scenarios()
     model_loaded = True
+    default_momentum = list(scenario_dict.keys())[0]
 except Exception as e:
     model_loaded = False
+    default_momentum = None
     st.error(f"⚠️ Error loading files: {e}")
 
+# --- 3. State Initialization ---
+# We must inject the very first JSON values into memory before the page loads
+if 'app_init' not in st.session_state and model_loaded:
+    st.session_state.prediction_run = False
+    st.session_state.active_position = "Forward"
+    
+    # Load initial baseline values into the tuner memory
+    baseline = scenario_dict[default_momentum]
+    st.session_state.tuner_team_xg = float(round(baseline['team_xg_prev15'], 2))
+    st.session_state.tuner_opp_xg = float(round(baseline['opp_xg_prev15'], 2))
+    st.session_state.tuner_passes = int(baseline['passes_prev15'])
+    st.session_state.tuner_shots = int(baseline['shots_prev15'])
+    
+    st.session_state.app_init = True
 
-# --- 3. Sidebar UI (THE FROZEN FORM) ---
+
+# --- 4. The Magic Callback ---
+
+# This function runs ONLY when the dropdown changes. It injects new JSON math into the frozen sliders.
+def update_tuners():
+    selected = st.session_state.momentum_dropdown
+    new_base = scenario_dict[selected]
+    st.session_state.tuner_team_xg = float(round(new_base['team_xg_prev15'], 2))
+    st.session_state.tuner_opp_xg = float(round(new_base['opp_xg_prev15'], 2))
+    st.session_state.tuner_passes = int(new_base['passes_prev15'])
+    st.session_state.tuner_shots = int(new_base['shots_prev15'])
+
+
+# --- 5. Sidebar UI ---
 
 st.sidebar.header("Tactical Controls")
 
-# Wrapping everything in a form forces Streamlit to DO NOTHING until submitted.
+# The Dropdown stays OUTSIDE the form so it can trigger the callback instantly!
+st.sidebar.subheader("Match Momentum")
+momentum = st.sidebar.selectbox(
+    "How has the last 15 mins looked?", 
+    list(scenario_dict.keys()), 
+    key="momentum_dropdown", 
+    on_change=update_tuners # Triggers the injection!
+)
+
+# The Form FREEZES everything else so dragging sliders causes absolutely zero fading/flickering.
 with st.sidebar.form(key="tactical_form"):
     
-    st.subheader("1️⃣ Match Context")
+    st.subheader("Match Context")
     time_remaining = st.slider("Time Remaining (mins)", 1, 45, 20)
-    score_diff = st.slider("Score Difference ( vs them)", -10, 10, 0)
+    score_diff = st.slider("Score Difference", -10, 10, 0)
+    sub_position = st.radio("Player Position to Sub In", ["Forward", "Midfielder", "Defender"])
 
     st.markdown("---")
-    st.subheader("2️⃣ Substitution Details")
-    sub_position = st.radio("Player Position to Sub In", ["Forward", "Midfielder", "Defender"])
+    st.subheader("Substitution Details")
     pass_drop = st.slider("Outgoing Player Pass Drop (%)", 0.0, 1.0, 0.15)
     action_drop = st.slider("Outgoing Player Action Drop (%)", 0.0, 1.0, 0.20)
 
-    st.markdown("---")
-    st.subheader("3️⃣ Match Momentum")
-    momentum = st.selectbox("How has the last 15 mins looked?", list(scenario_dict.keys()))
-
+    # These sliders read directly from the injected memory bank (st.session_state.tuner_...)
     with st.expander("⚙️ Advanced Tactical Tuners (Optional)"):
-        st.caption("Because the form is frozen, these sliders won't auto-update. Check the box below to override the JSON medians with custom math.")
-        force_custom = st.checkbox("Enable Custom Tuners", value=False)
-        team_xg = st.slider("Team's xG", 0.0, 2.0, 1.0)
-        opp_xg = st.slider("Opponent's xG", 0.0, 2.0, 1.0)
-        passes = st.slider("Passes", 0, 200, 50)
-        shots = st.slider("Shots", 0, 15, 5)
+        st.caption("These settings auto-update based on Momentum, but you can override them manually.")
+        team_xg = st.slider("Team's xG", 0.0, 2.0, key="tuner_team_xg")
+        opp_xg = st.slider("Opponent's xG", 0.0, 2.0, key="tuner_opp_xg")
+        passes = st.slider("Passes", 0, 200, key="tuner_passes")
+        shots = st.slider("Shots", 0, 15, key="tuner_shots")
 
-    # THE BUTTON MUST BE INSIDE THE FORM!
     submit_button = st.form_submit_button("**Calculate SubImpact**", use_container_width=True, type="primary")
 
 
-# --- 4. Main Layout ---
+# --- 6. Main Layout ---
 
 col1, col2 = st.columns([1, 1]) 
 
 with col1:
-    st.subheader("🤖  SubImpact Engine")
+    st.subheader("🔁 SubImpact Engine")
     
     if submit_button:
         if model_loaded:
             position_mapping = {"Defender": 0, "Forward": 1, "Midfielder": 2}
             
-            # Load the perfect 46 features for the chosen scenario
+            # Start with the baseline 46 features
             input_dict = scenario_dict[momentum].copy() 
             
-            # If the user wants to break the rules and force custom numbers:
-            if force_custom:
-                input_dict['team_xg_prev15'] = team_xg 
-                input_dict['opp_xg_prev15'] = opp_xg
-                input_dict['xg_diff_prev15'] = team_xg - opp_xg 
-                input_dict['passes_prev15'] = passes
-                input_dict['shots_prev15'] = shots
+            # Apply exactly what is on the UI sliders
+            input_dict['team_xg_prev15'] = team_xg 
+            input_dict['opp_xg_prev15'] = opp_xg
+            input_dict['xg_diff_prev15'] = team_xg - opp_xg 
+            input_dict['passes_prev15'] = passes
+            input_dict['shots_prev15'] = shots
             
-            # Apply Tier 1 Sliders
             input_dict['time_remaining'] = time_remaining 
             input_dict['score_diff'] = score_diff
             input_dict['pass_success_rate_drop'] = pass_drop
@@ -116,7 +142,7 @@ with col1:
                     input_dict[col] = 0
             input_data = pd.DataFrame([input_dict])[feature_cols]
             
-            # Update memory bank ONLY when button is clicked
+            # Save final results to memory
             st.session_state.prediction_result = model.predict(input_data)[0]
             st.session_state.prediction_run = True
             st.session_state.active_position = sub_position
@@ -124,7 +150,7 @@ with col1:
         else:
             st.error("Cannot predict. Model is missing.")
 
-    # Render Prediction
+    # Render Prediction from memory
     if st.session_state.prediction_run:
         prediction = st.session_state.prediction_result
         
@@ -139,7 +165,7 @@ with col1:
         if prediction == 2:
             st.success(f"🟢 **POSITIVE IMPACT**\n\nBringing on a {st.session_state.active_position} here is highly recommended.")
         elif prediction == 0:
-            st.error(f"🔴 **NEGATIVE IMPACT**\n\nWarning! Bringing on a {st.session_state.active_position} may backfire in this game state.")
+            st.error(f"🔴 **NEGATIVE IMPACT**\n\nWarning. Bringing on a {st.session_state.active_position} may backfire in this game state.")
         else:
             st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {st.session_state.active_position} sub here is unlikely to change the momentum.")
 
@@ -149,7 +175,7 @@ with col2:
     @st.cache_resource
     def draw_pitch_map(position):
         fig, ax = plt.subplots(figsize=(8, 5))
-        fig.patch.set_facecolor('none')
+        fig.patch.set_facecolor('none') 
         
         pitch = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white', stripe=True)
         pitch.draw(ax=ax)
@@ -175,6 +201,5 @@ with col2:
         
         return fig
 
-    # Render pitch map using the LOCKED state from the memory bank
     cached_fig = draw_pitch_map(st.session_state.active_position)
     st.pyplot(cached_fig, transparent=True)
