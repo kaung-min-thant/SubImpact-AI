@@ -10,12 +10,13 @@ st.title("⚽ SubImpact: AI Substitution Assistant")
 
 # --- 2. Load the Model & Features ---
 @st.cache_resource
-def load_model():
+def load_model_data():
+    import joblib
+    # Load the dictionary that Minn and Tun created
     return joblib.load('phase2_best_gradient_boosting_model.pkl')
 
 @st.cache_data
 def load_feature_names():
-    # Reading the exact 46 column names the model needs
     df = pd.read_csv('phase2_feature_columns.csv')
     if 'feature' in df.columns:
         return df['feature'].tolist()
@@ -23,12 +24,20 @@ def load_feature_names():
         return df.iloc[:, 0].tolist()
 
 try:
-    model = load_model()
+    # 1. Load the dictionary from the .pkl file
+    model_dict = load_model_data()
+    
+    # 2. Extract ONLY the AI model using the exact key we found
+    model = model_dict['model']
+    
+    # 3. Load the feature columns
     feature_cols = load_feature_names()
+    
     model_loaded = True
+
 except Exception as e:
     model_loaded = False
-    st.error(f"⚠️ Error loading model files. Did you name them correctly? Error: {e}")
+    st.error(f"⚠️ Error loading model files. Error: {e}")
 
 # --- 3. Sidebar UI (Clean & Simple) ---
 st.sidebar.header("Tactical Situation")
