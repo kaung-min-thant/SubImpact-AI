@@ -71,9 +71,7 @@ def update_tuners():
 
 # --- 5. Sidebar UI ---
 
-st.sidebar.header("Tactical Controls")
-
-st.sidebar.subheader("Match Momentum")
+st.sidebar.header("Match Momentum")
 momentum = st.sidebar.selectbox(
     "How has the last 15 mins looked?", 
     list(scenario_dict.keys()), 
