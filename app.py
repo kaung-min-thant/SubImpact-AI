@@ -7,13 +7,13 @@ import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 
 # --- 1. Page Config & State Management ---
-st.set_page_config(page_title="SubImpact Tactical Board", layout="wide")
-st.title("⚽ SubImpact: AI Substitution Assistant")
+st.set_page_config(page_title="SubImpact AI", layout="wide")
+st.title("⚽ SubImpact AI: Football Substitution Assistant")
 
-# NEW: Initialize Streamlit's "Memory Bank" so the app never forgets the prediction!
 if 'prediction_run' not in st.session_state:
     st.session_state.prediction_run = False
     st.session_state.prediction_result = None
+    st.session_state.active_position = "Forward" # Sets the default pitch state
 
 # --- 2. Load the Model, Features, & Scenarios ---
 @st.cache_resource
@@ -75,7 +75,7 @@ if st.session_state.last_inputs != current_inputs:
     st.session_state.last_inputs = current_inputs
 
 # --- 4. Main Layout ---
-col1, col2 = st.columns([1.2, 1])
+col1, col2 = st.columns([1, 1])
 
 with col1:
     st.subheader("🤖 AI Prediction Engine")
@@ -112,7 +112,8 @@ with col1:
             # Predict and SAVE to memory!
             st.session_state.prediction_result = model.predict(input_data)[0]
             st.session_state.prediction_run = True
-            
+            st.session_state.active_position = sub_position # Locks the visual choice only on click!
+
         else:
             st.error("Cannot predict. Model is missing.")
 
@@ -138,8 +139,45 @@ with col1:
 with col2:
     st.subheader("📍 Predicted Impact Zone")
     
+    # FIX: Cache the drawing so Matplotlib doesn't waste CPU recalculating on slider moves!
+    @st.cache_resource
+    def draw_pitch_map(position):
+        fig, ax = plt.subplots(figsize=(8, 5))
+        fig.patch.set_facecolor('#0e1117')
+    
+        pitch = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white', stripe=True)
+        pitch.draw(ax=ax)
+        
+        np.random.seed(42)
+        if position == "Forward":
+            x = np.random.normal(100, 10, 100) 
+            y = np.random.normal(40, 15, 100)
+            color_map = 'inferno' 
+            label_x = 100
+        elif position == "Defender":
+            x = np.random.normal(20, 10, 100) 
+            y = np.random.normal(40, 15, 100)
+            color_map = 'mako' 
+            label_x = 20
+        else: 
+            x = np.random.normal(60, 10, 100) 
+            y = np.random.normal(40, 15, 100)
+            color_map = 'viridis' 
+            label_x = 60
+            
+        pitch.kdeplot(x, y, ax=ax, fill=True, levels=100, thresh=0.1, cmap=color_map, alpha=0.6)
+        
+        return fig
+
+    # Render the pitch using the LOCKED state, not the active sidebar dropdown
+    cached_fig = draw_pitch_map(st.session_state.active_position)
+    st.pyplot(cached_fig)
+    
+with col2:
+    st.subheader("📍 Predicted Impact Zone")
+    
     fig, ax = plt.subplots(figsize=(8, 5))
-    fig.patch.set_facecolor('#0e1117')
+    fig.patch.set_facecolor('none')
     
     pitch = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white', stripe=True)
     pitch.draw(ax=ax)
