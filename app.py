@@ -143,7 +143,7 @@ with col2:
     @st.cache_resource
     def draw_pitch_map(position):
         fig, ax = plt.subplots(figsize=(8, 5))
-        fig.patch.set_facecolor('#0e1117')
+        fig.patch.set_facecolor('none')
     
         pitch = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white', stripe=True)
         pitch.draw(ax=ax)
@@ -172,34 +172,3 @@ with col2:
     # Render the pitch using the LOCKED state, not the active sidebar dropdown
     cached_fig = draw_pitch_map(st.session_state.active_position)
     st.pyplot(cached_fig)
-    
-with col2:
-    st.subheader("📍 Predicted Impact Zone")
-    
-    fig, ax = plt.subplots(figsize=(8, 5))
-    fig.patch.set_facecolor('none')
-    
-    pitch = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white', stripe=True)
-    pitch.draw(ax=ax)
-    np.random.seed(42)
-
-    if sub_position == "Forward":
-        x = np.random.normal(100, 10, 100) 
-        y = np.random.normal(40, 15, 100)
-        color_map = 'inferno' 
-        label_x = 100
-    elif sub_position == "Defender":
-        x = np.random.normal(20, 10, 100) 
-        y = np.random.normal(40, 15, 100)
-        color_map = 'mako' 
-        label_x = 20
-    else: 
-        x = np.random.normal(60, 10, 100) 
-        y = np.random.normal(40, 15, 100)
-        color_map = 'viridis' 
-        label_x = 60
-        
-    pitch.kdeplot(x, y, ax=ax, fill=True, levels=100, thresh=0.1, cmap=color_map, alpha=0.6)
-    
-    st.pyplot(fig)
-    plt.close(fig)
