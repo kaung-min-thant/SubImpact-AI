@@ -190,8 +190,6 @@ with col1:
         else:
             st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {st.session_state.active_position} sub here is unlikely to change the momentum.")
 
-        st.markdown("---")
-
 with col2:
     st.subheader("Impact Zone")
     
@@ -234,7 +232,6 @@ with col2:
 # --- 7. xAI (SHAP) Layout ---
 
 if st.session_state.prediction_run:
-    st.markdown("---")
     with st.expander("**Why did SubImpact AI make this decision? (SHAP Explanation)**", expanded=False):
         st.write("This **Waterfall Chart** shows exactly how the specific match momentum and tactical tuners pushed the AI toward its final conclusion.")
         
