@@ -5,6 +5,7 @@ import json
 import numpy as np
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
+import shap
 
 
 # --- 1. Page Config ---
@@ -18,6 +19,10 @@ st.title("⚽ SubImpact AI: Football Substitution Assistant")
 @st.cache_resource
 def load_model_data():
     return joblib.load('phase2_best_gradient_boosting_model.pkl')
+
+@st.cache_resource
+def load_explainer(_model):
+    return shap.TreeExplainer(_model)
 
 @st.cache_data
 def load_feature_names():
@@ -92,11 +97,12 @@ with st.sidebar.form(key="tactical_form"):
 
     # These sliders read directly from the injected memory bank (st.session_state.tuner_...)
     with st.expander("⚙️ Advanced Tactical Tuners (Optional)"):
-        st.caption("These settings auto-update based on Momentum, but you can override them manually.")
-        team_xg = st.slider("Team's xG", 0.0, 2.0, key="tuner_team_xg")
-        opp_xg = st.slider("Opponent's xG", 0.0, 2.0, key="tuner_opp_xg")
-        passes = st.slider("Passes", 0, 200, key="tuner_passes")
-        shots = st.slider("Shots", 0, 15, key="tuner_shots")
+        st.markdown("<span style='font-size: 0.85em; color: gray;'>These settings auto-update based on Momentum, but you can override them manually."
+        "<br><b>Note: All stats represent the 15-minute window immediately prior to the substitution.</b></span>", unsafe_allow_html=True)
+        team_xg = st.slider("Team's xG (Last 15m)", 0.0, 2.0, key="tuner_team_xg")
+        opp_xg = st.slider("Opponent's xG (Last 15m)", 0.0, 2.0, key="tuner_opp_xg")
+        passes = st.slider("Passes (Last 15m)", 0, 200, key="tuner_passes")
+        shots = st.slider("Shots (Last 15m)", 0, 15, key="tuner_shots")
 
     submit_button = st.form_submit_button("**Calculate SubImpact**", use_container_width=True, type="primary")
 
@@ -105,7 +111,7 @@ with st.sidebar.form(key="tactical_form"):
 col1, col2 = st.columns([1, 1]) 
 
 with col1:
-    st.subheader("🔁 SubImpact Engine")
+    st.subheader("🖨️ Prediction Engine")
     
     if submit_button:
         if model_loaded:
@@ -140,6 +146,7 @@ with col1:
             st.session_state.prediction_result = model.predict(input_data)[0]
             st.session_state.prediction_run = True
             st.session_state.active_position = sub_position
+            st.session_state.last_input_data = input_data # Save the exact dataset we just predicted on so SHAP can explain it!
             
         else:
             st.error("Cannot predict. Model is missing.")
@@ -159,9 +166,37 @@ with col1:
         if prediction == 2:
             st.success(f"🟢 **POSITIVE IMPACT**\n\nBringing on a {st.session_state.active_position} here is highly recommended.")
         elif prediction == 0:
-            st.error(f"🔴 **NEGATIVE IMPACT**\n\nWarning. Bringing on a {st.session_state.active_position} may backfire in this game state.")
+            st.error(f"🔴 **NEGATIVE IMPACT**\n\nBringing on a {st.session_state.active_position} may backfire in this game state.")
         else:
             st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {st.session_state.active_position} sub here is unlikely to change the momentum.")
+
+        # --- EXPLAINABLE AI (SHAP) SECTION ---
+        with st.expander("📊 Why did the AI make this decision? (SHAP Explanation)", expanded=False):
+            st.write("This **Waterfall Chart** shows exactly how the specific match momentum and tactical tuners pushed the AI toward its final conclusion.")
+            
+            # 1. Create the Explainer using your specific LightGBM model
+            explainer = load_explainer(model)
+            
+            # 2. Calculate SHAP values for the exact scenario the user just submitted
+            shap_values = explainer(st.session_state.last_input_data)
+            
+            # 3. Handle Multi-class plotting (Positive, Neutral, Negative)
+            pred_class = st.session_state.prediction_result
+            
+            # Set up the Matplotlib figure safely for Streamlit
+            fig, ax = plt.subplots(figsize=(8, 5))
+            fig.patch.set_facecolor('none') # Transparent background for clean UI
+            
+            try:
+                # For multi-class, we isolate the specific class the AI chose
+                shap.plots.waterfall(shap_values[0, :, pred_class], show=False)
+            except Exception:
+                # Fallback just in case your specific LightGBM version outputs binary format
+                shap.plots.waterfall(shap_values[0], show=False)
+            
+            # Render it in the dashboard!
+            st.pyplot(fig, transparent=True)
+            plt.close(fig) # Prevent memory leaks
 
 with col2:
     st.subheader("📍 Impact Zone")
