@@ -20,17 +20,15 @@ def get_base64_image(image_path):
 
 try:
     logo_base64 = get_base64_image("logo.png")
-    # 'display: flex' and 'align-items: center' guarantee perfect vertical alignment!
     st.markdown(
         f"""
-        <div style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="data:image/png;base64,{logo_base64}" width="70" style="margin-right: 15px; border-radius: 12px; background-color: white; padding: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
-            
-            <div>
-                <h1 style="margin: 0; padding: 0; line-height: 1.1;">SubImpact AI</h1>
-                <h4 style="margin: 0; padding: 0; font-weight: 400; color: #888;">Your Football Substitution Assistant</h4>
-            </div>
-        </div>
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <img src="data:image/png;base64,{logo_base64}" width="70" style="margin-right: 15px; border-radius: 12px;">
+    <div>
+        <h1 style="margin: 0; padding: 0; line-height: 1.1;">SubImpact AI</h1>
+        <h4 style="margin: 0; padding: 0; font-weight: 400; color: #888;">Your Football Substitution Assistant</h4>
+    </div>
+</div>
         """,
         unsafe_allow_html=True
     )
