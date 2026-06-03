@@ -234,8 +234,8 @@ with col2:
 # --- 7. xAI (SHAP) Layout ---
 
 if st.session_state.prediction_run:
+    st.markdown("---")
     with st.expander("**Why did SubImpact AI make this decision? (SHAP Explanation)**", expanded=False):
-        st.markdown("---")
         st.write("This **Waterfall Chart** shows exactly how the specific match momentum and tactical tuners pushed the AI toward its final conclusion.")
         
         # 1. Load the CACHED Explainer 
@@ -258,5 +258,5 @@ if st.session_state.prediction_run:
             shap.plots.waterfall(shap_values[0], show=False)
         
         # Render it in the dashboard!
-        st.pyplot(fig, transparent=True)
+        st.pyplot(fig, transparent=False)
         plt.close(fig)
