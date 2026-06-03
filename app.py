@@ -25,8 +25,8 @@ try:
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
     <img src="data:image/png;base64,{logo_base64}" width="70" style="margin-right: 15px; border-radius: 12px;">
     <div>
-        <h1 style="margin: 0; padding: 0; line-height: 1.1;">SubImpact AI</h1>
-        <h4 style="margin: 0; padding: 0; font-weight: 400; color: #888;">Your Football Substitution Assistant</h4>
+        <h1 style="margin: 0; padding: 0; line-height: 1.1; font-size: clamp(24px, 6vw, 48px); white-space: nowrap;">SubImpact AI</h1>
+        <h4 style="margin: 0; padding: 0; font-weight: 400; color: #888; font-size: clamp(14px, 3vw, 18px);">Your Football Substitution Assistant</h4>
     </div>
 </div>
         """,
@@ -183,14 +183,14 @@ with col1:
         elif score_diff > 0 and st.session_state.active_position == "Defender":
             st.info("**Tactical Intuition:** Defending the lead. Attempting to decrease Opponent's xG.")
         
-        st.markdown("---")
-        
         if prediction == 2:
             st.success(f"🟢 **POSITIVE IMPACT**\n\nBringing on a {st.session_state.active_position} here is highly recommended.")
         elif prediction == 0:
             st.error(f"🔴 **NEGATIVE IMPACT**\n\nBringing on a {st.session_state.active_position} may backfire in this game state.")
         else:
             st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {st.session_state.active_position} sub here is unlikely to change the momentum.")
+
+        st.markdown("---")
 
 with col2:
     st.subheader("Impact Zone")
@@ -235,6 +235,7 @@ with col2:
 
 if st.session_state.prediction_run:
     with st.expander("**Why did SubImpact AI make this decision? (SHAP Explanation)**", expanded=False):
+        st.markdown("---")
         st.write("This **Waterfall Chart** shows exactly how the specific match momentum and tactical tuners pushed the AI toward its final conclusion.")
         
         # 1. Load the CACHED Explainer 
