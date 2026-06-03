@@ -11,6 +11,9 @@ import base64
 
 # --- 1. Page Config ---
 
+st.set_page_config(page_title="SubImpact AI", page_icon="logo.png", layout="wide")
+
+# Convert the local image to raw data so HTML can read it directly
 def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
@@ -21,8 +24,12 @@ try:
     st.markdown(
         f"""
         <div style="display: flex; align-items: center; margin-bottom: 20px;">
-            <img src="data:image/png;base64,{logo_base64}" width="70" style="margin-right: 15px; border-radius: 10px;">
-            <h1 style="margin: 0; padding: 0;">SubImpact AI: Football Substitution Assistant</h1>
+            <img src="data:image/png;base64,{logo_base64}" width="70" style="margin-right: 15px; border-radius: 12px; background-color: white; padding: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+            
+            <div>
+                <h1 style="margin: 0; padding: 0; line-height: 1.1;">SubImpact AI</h1>
+                <h4 style="margin: 0; padding: 0; font-weight: 400; color: #888;">Your Football Substitution Assistant</h4>
+            </div>
         </div>
         """,
         unsafe_allow_html=True
