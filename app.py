@@ -6,19 +6,30 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 import shap
+import base64
 
 
 # --- 1. Page Config ---
 
-st.set_page_config(page_title="SubImpact AI", page_icon="logo.png", layout="wide")
+def get_base64_image(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
 
-col_logo, col_title = st.columns([1, 15]) 
-
-with col_logo:
-    st.image("logo.png", width=45) 
-    
-with col_title:
-    st.title("SubImpact AI: Football Substitution Assistant")
+try:
+    logo_base64 = get_base64_image("logo.png")
+    # 'display: flex' and 'align-items: center' guarantee perfect vertical alignment!
+    st.markdown(
+        f"""
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+            <img src="data:image/png;base64,{logo_base64}" width="70" style="margin-right: 15px; border-radius: 10px;">
+            <h1 style="margin: 0; padding: 0;">SubImpact AI: Football Substitution Assistant</h1>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+except Exception as e:
+    # Fallback just in case the logo.png is moved or deleted
+    st.title("⚽ SubImpact AI: Football Substitution Assistant")
 
 
 # --- 2. Load the Model, Features, & Scenarios ---
