@@ -120,7 +120,7 @@ with st.sidebar.form(key="tactical_form"):
 
     # These sliders read directly from the injected memory bank (st.session_state.tuner_...)
     with st.expander("⚙️ Advanced Settings (Optional)"):
-        st.markdown("<span style='font-size: 0.85em; color: gray;'>These settings auto-update based on **Match Momentum** you selected, but you can override them manually.", unsafe_allow_html=True)
+        st.markdown("<span style='font-size: 0.85em; color: gray;'>These settings auto-update based on the **Match Momentum** you selected, but you can override them manually here.", unsafe_allow_html=True)
         team_xg = st.slider("Team's xG (Last 15m)", 0.0, 2.0, key="tuner_team_xg")
         opp_xg = st.slider("Opponent's xG (Last 15m)", 0.0, 2.0, key="tuner_opp_xg")
         passes = st.slider("Passes (Last 15m)", 0, 200, key="tuner_passes")
