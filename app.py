@@ -10,8 +10,15 @@ import shap
 
 # --- 1. Page Config ---
 
-st.set_page_config(page_title="SubImpact AI", layout="wide")
-st.title("⚽ SubImpact AI: Football Substitution Assistant")
+st.set_page_config(page_title="SubImpact AI", page_icon="logo.png", layout="wide")
+
+col_logo, col_title = st.columns([1, 15]) 
+
+with col_logo:
+    st.image("logo.png", width=45) 
+    
+with col_title:
+    st.title("SubImpact AI: Football Substitution Assistant")
 
 
 # --- 2. Load the Model, Features, & Scenarios ---
@@ -111,7 +118,7 @@ with st.sidebar.form(key="tactical_form"):
 col1, col2 = st.columns([1, 1]) 
 
 with col1:
-    st.subheader("🖨️ Prediction Engine")
+    st.subheader("Prediction Engine")
     
     if submit_button:
         if model_loaded:
@@ -157,9 +164,9 @@ with col1:
         
         st.markdown(f"**Scenario:** You are substituting in a **{st.session_state.active_position}** with **{time_remaining} minutes** left.")
         if score_diff < 0 and st.session_state.active_position == "Forward":
-            st.info("🧠 Tactical Intuition: Attacking the opponent. Attempting to increase Team's xG.")
+            st.info("**Tactical Intuition:** Attacking the opponent. Attempting to increase Team's xG.")
         elif score_diff > 0 and st.session_state.active_position == "Defender":
-            st.info("🧠 Tactical Intuition: Defending the lead. Attempting to decrease Opponent's xG.")
+            st.info("**Tactical Intuition:** Defending the lead. Attempting to decrease Opponent's xG.")
         
         st.markdown("---")
         
@@ -171,7 +178,7 @@ with col1:
             st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {st.session_state.active_position} sub here is unlikely to change the momentum.")
 
 with col2:
-    st.subheader("📍 Impact Zone")
+    st.subheader("Impact Zone")
     
     @st.cache_resource
     def draw_pitch_map(position):
@@ -207,9 +214,7 @@ with col2:
 
 # --- EXPLAINABLE AI (SHAP) SECTION ---
 if st.session_state.prediction_run:
-    st.markdown("---")
-    
-    with st.expander("📊 **Why did SubImpact AI make this decision? (SHAP Explanation)**", expanded=False):
+    with st.expander("**Why did SubImpact AI make this decision? (SHAP Explanation)**", expanded=False):
         st.write("This **Waterfall Chart** shows exactly how the specific match momentum and tactical tuners pushed the AI toward its final conclusion.")
         
         # 1. Load the CACHED Explainer 
