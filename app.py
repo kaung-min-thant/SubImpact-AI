@@ -198,7 +198,7 @@ with col2:
     
     @st.cache_resource
     def draw_pitch_map(position):
-        fig, ax = plt.subplots(figsize=(8, 5))
+        fig, ax = plt.subplots(figsize=(9, 6))
         fig.patch.set_facecolor('none') 
         
         pitch = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white', stripe=True)
@@ -226,9 +226,11 @@ with col2:
         return fig
 
     cached_fig = draw_pitch_map(st.session_state.active_position)
-    st.pyplot(cached_fig, transparent=True)
+    st.pyplot(cached_fig, transparent=True, use_container_width=True)
 
-# --- EXPLAINABLE AI (SHAP) SECTION ---
+
+# --- 7. xAI (SHAP) Layout ---
+
 if st.session_state.prediction_run:
     with st.expander("**Why did SubImpact AI make this decision? (SHAP Explanation)**", expanded=False):
         st.write("This **Waterfall Chart** shows exactly how the specific match momentum and tactical tuners pushed the AI toward its final conclusion.")
