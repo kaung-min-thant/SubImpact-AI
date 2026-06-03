@@ -119,9 +119,8 @@ with st.sidebar.form(key="tactical_form"):
     action_drop = st.slider("Outgoing Player Action Drop (%)", 0.0, 1.0, 0.20)
 
     # These sliders read directly from the injected memory bank (st.session_state.tuner_...)
-    with st.expander("⚙️ Advanced Tactical Tuners (Optional)"):
-        st.markdown("<span style='font-size: 0.85em; color: gray;'>These settings auto-update based on Momentum, but you can override them manually."
-        "<br><b>Note: All stats represent the 15-minute window immediately prior to the substitution.</b></span>", unsafe_allow_html=True)
+    with st.expander("⚙️ Advanced Settings (Optional)"):
+        st.markdown("<span style='font-size: 0.85em; color: gray;'>These settings auto-update based on **Match Momentum** you selected, but you can override them manually.", unsafe_allow_html=True)
         team_xg = st.slider("Team's xG (Last 15m)", 0.0, 2.0, key="tuner_team_xg")
         opp_xg = st.slider("Opponent's xG (Last 15m)", 0.0, 2.0, key="tuner_opp_xg")
         passes = st.slider("Passes (Last 15m)", 0, 200, key="tuner_passes")
@@ -198,11 +197,12 @@ with col2:
     
     @st.cache_resource
     def draw_pitch_map(position):
-        fig, ax = plt.subplots(figsize=(9, 6))
-        fig.patch.set_facecolor('none') 
-        
+        # Initialize the pitch object FIRST
         pitch = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white', stripe=True)
-        pitch.draw(ax=ax)
+        
+        # Let mplsoccer draw the figure directly. This permanently deletes the invisible margins!
+        fig, ax = pitch.draw(figsize=(9, 6))
+        fig.patch.set_facecolor('none') 
         
         np.random.seed(42)
         if position == "Forward":
@@ -226,7 +226,9 @@ with col2:
         return fig
 
     cached_fig = draw_pitch_map(st.session_state.active_position)
-    st.pyplot(cached_fig, transparent=True, use_container_width=True)
+    
+    # Add bbox_inches='tight' as a final bulletproof safeguard to crop dead pixels!
+    st.pyplot(cached_fig, transparent=True, use_container_width=True, bbox_inches='tight', pad_inches=0)
 
 
 # --- 7. xAI (SHAP) Layout ---
