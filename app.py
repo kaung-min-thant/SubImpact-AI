@@ -170,34 +170,6 @@ with col1:
         else:
             st.warning(f"🟡 **NEUTRAL IMPACT**\n\nA {st.session_state.active_position} sub here is unlikely to change the momentum.")
 
-        # --- EXPLAINABLE AI (SHAP) SECTION ---
-        with st.expander("📊 Why did the AI make this decision? (SHAP Explanation)", expanded=False):
-            st.write("This **Waterfall Chart** shows exactly how the specific match momentum and tactical tuners pushed the AI toward its final conclusion.")
-            
-            # 1. Create the Explainer using your specific LightGBM model
-            explainer = load_explainer(model)
-            
-            # 2. Calculate SHAP values for the exact scenario the user just submitted
-            shap_values = explainer(st.session_state.last_input_data)
-            
-            # 3. Handle Multi-class plotting (Positive, Neutral, Negative)
-            pred_class = st.session_state.prediction_result
-            
-            # Set up the Matplotlib figure safely for Streamlit
-            fig, ax = plt.subplots(figsize=(8, 5))
-            fig.patch.set_facecolor('none') # Transparent background for clean UI
-            
-            try:
-                # For multi-class, we isolate the specific class the AI chose
-                shap.plots.waterfall(shap_values[0, :, pred_class], show=False)
-            except Exception:
-                # Fallback just in case your specific LightGBM version outputs binary format
-                shap.plots.waterfall(shap_values[0], show=False)
-            
-            # Render it in the dashboard!
-            st.pyplot(fig, transparent=True)
-            plt.close(fig) # Prevent memory leaks
-
 with col2:
     st.subheader("📍 Impact Zone")
     
@@ -232,3 +204,33 @@ with col2:
 
     cached_fig = draw_pitch_map(st.session_state.active_position)
     st.pyplot(cached_fig, transparent=True)
+
+# --- EXPLAINABLE AI (SHAP) SECTION ---
+if st.session_state.prediction_run:
+    st.markdown("---")
+    
+    with st.expander("📊 **Why did SubImpact AI make this decision? (SHAP Explanation)**", expanded=False):
+        st.write("This **Waterfall Chart** shows exactly how the specific match momentum and tactical tuners pushed the AI toward its final conclusion.")
+        
+        # 1. Load the CACHED Explainer 
+        explainer = load_explainer(model)
+        
+        # 2. Calculate SHAP values for the exact scenario
+        shap_values = explainer(st.session_state.last_input_data)
+        
+        # 3. Handle Multi-class plotting
+        pred_class = st.session_state.prediction_result
+        
+        fig, ax = plt.subplots(figsize=(14, 6))
+        fig.patch.set_facecolor('none') 
+        
+        try:
+            # For multi-class, we isolate the specific class the AI chose
+            shap.plots.waterfall(shap_values[0, :, pred_class], show=False)
+        except Exception:
+            # Fallback
+            shap.plots.waterfall(shap_values[0], show=False)
+        
+        # Render it in the dashboard!
+        st.pyplot(fig, transparent=True)
+        plt.close(fig)
