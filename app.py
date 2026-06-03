@@ -248,7 +248,7 @@ if st.session_state.prediction_run:
         pred_class = st.session_state.prediction_result
         
         fig, ax = plt.subplots(figsize=(14, 6))
-        fig.patch.set_facecolor('none') 
+        fig.patch.set_facecolor('white') 
         
         try:
             # For multi-class, we isolate the specific class the AI chose
