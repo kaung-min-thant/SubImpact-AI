@@ -192,7 +192,8 @@ with col1:
 
 with col2:
     st.subheader("Impact Zone")
-    
+    st.caption("⚠️ **Beta Feature:** This visualization is based purely on the selected position, independent of the ML prediction.")
+
     @st.cache_resource
     def draw_pitch_map(position):
         # Initialize the pitch object FIRST
