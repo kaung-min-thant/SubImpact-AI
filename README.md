@@ -10,7 +10,7 @@
 In modern football, substitutions are critical tactical decisions, but evaluating their actual impact is difficult because a goal after a substitution doesn't automatically prove causality. This project moves beyond basic intuition, using **StatsBomb Open Data** to analyze match momentum, substitution timing, pre/post Expected Goals (xG), and player fatigue proxies to provide a data-driven, explainable decision-support tool for coaching staffs. 
 
 ## ✨ Key Features & Final Results
-* **Event Data Pipeline:** Extracted and processed 5,207 independent substitution samples from ~1,900 matches across 6 major competitions using the `statsbombpy` API.
+* **Event Data Pipeline:** Extracted and processed 5,207 independent substitution samples from 925 matches across 6 major competitions using the `statsbombpy` API.
 * **4-Layer Feature Engineering:** Designed 40+ granular features categorized into Match Context, Momentum, Fatigue Proxies (e.g., dropping pass accuracy, pressure declines), and Position-Specific metrics.
 * **Advanced Predictive Engine:** Executed a model tournament, with the **ExtraTrees Classifier Ensemble** emerging as the global winner, achieving a **68.04% Accuracy (0.8431 Macro AUC)** on highly noisy football event data.
 * **Explainable AI (XAI):** Implemented heavily cached SHAP (SHapley Additive exPlanations) Waterfall plots to visually explain *why* the model made a specific prediction in real-time.
