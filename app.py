@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 from mplsoccer import Pitch
 import shap
 import base64
+import os
+import gdown
 
 
 # --- 1. Page Config ---
@@ -41,7 +43,15 @@ except Exception as e:
 
 @st.cache_resource
 def load_model_data():
-    return joblib.load('phase2_best_gradient_boosting_model.pkl')
+    file_id = '1A-5Ru9HoZN6eWEvUV6Z23SW0dayP8_oS'
+    model_path = 'final_best_model.pkl'
+    
+    # Download the model from Google Drive if it isn't already on the server
+    if not os.path.exists(model_path):
+        url = f'https://drive.google.com/uc?id={file_id}'
+        gdown.download(url, model_path, quiet=False)
+        
+    return joblib.load(model_path)
 
 @st.cache_resource
 def load_explainer(_model):
