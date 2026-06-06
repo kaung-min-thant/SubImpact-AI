@@ -43,13 +43,36 @@ except Exception:
 
 @st.cache_resource
 def load_model_data():
-    """Download model from Google Drive if not cached locally, then load it."""
+    """Download model from Google Drive if not cached locally, then load it.
+    Falls back to local backup model if Google Drive is unavailable."""
+    
+    # --- Plan A: Google Drive ---
     file_id    = '1A-5Ru9HoZN6eWEvUV6Z23SW0dayP8_oS'
     model_path = 'final_best_model.pkl'
+    
     if not os.path.exists(model_path):
-        url = f'https://drive.google.com/uc?id={file_id}'
-        gdown.download(url, model_path, quiet=False)
-    return joblib.load(model_path)
+        try:
+            url = f'https://drive.google.com/uc?id={file_id}'
+            gdown.download(url, model_path, quiet=False)
+        except Exception as e:
+            st.warning(f"⚠️ Could not download primary model from Google Drive: {e}")
+    
+    if os.path.exists(model_path):
+        try:
+            return joblib.load(model_path)
+        except Exception as e:
+            st.warning(f"⚠️ Primary model file is corrupted or unreadable: {e}")
+            os.remove(model_path)  # Remove bad file so next run retries
+
+    # --- Plan B: Local backup ---
+    backup_path = 'phase2_best_gradient_boosting_model.pkl'
+    
+    if not os.path.exists(backup_path):
+        st.error("❌ Backup model not found. Please ensure the file is in the repo.")
+        raise FileNotFoundError(f"Backup model not found at: {backup_path}")
+    
+    st.warning("⚠️ Running on the **backup model** (lower accuracy). Primary model unavailable.")
+    return joblib.load(backup_path)
 
 @st.cache_resource
 def load_explainer(_model):
