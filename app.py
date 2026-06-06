@@ -36,7 +36,6 @@ try:
         unsafe_allow_html=True
     )
 except Exception:
-    # Fallback if logo.png is missing
     st.title("⚽ SubImpact AI: Football Substitution Assistant")
 
 
@@ -45,7 +44,7 @@ except Exception:
 @st.cache_resource
 def load_model_data():
     """Download model from Google Drive if not cached locally, then load it."""
-    file_id   = '1A-5Ru9HoZN6eWEvUV6Z23SW0dayP8_oS'
+    file_id    = '1A-5Ru9HoZN6eWEvUV6Z23SW0dayP8_oS'
     model_path = 'final_best_model.pkl'
     if not os.path.exists(model_path):
         url = f'https://drive.google.com/uc?id={file_id}'
@@ -58,17 +57,45 @@ def load_explainer(_model):
     return shap.TreeExplainer(_model)
 
 @st.cache_data
-def load_feature_names(_model):
-    """Return the ordered feature list the model was trained on."""
-    return _model.feature_names_in_.tolist()
-
-@st.cache_data
 def load_scenarios():
     """Load the pre-built scenario baseline dicts from JSON."""
     with open('scenario_baselines.json', 'r') as f:
         return json.load(f)
 
-# --- Pitch visualisation (cached at module level, not inside a column block) ---
+
+def resolve_model(model_dict):
+    """
+    The saved bundle's 'model' key may be either:
+      - A plain sklearn estimator  (single best model)
+      - A dict with 'type': 'soft_voting_ensemble'  (ensemble)
+    Return (model_object_or_None, is_ensemble).
+    """
+    raw = model_dict.get('model')
+    if isinstance(raw, dict) and raw.get('type') == 'soft_voting_ensemble':
+        return raw, True
+    return raw, False
+
+
+def get_feature_cols(model_dict, model_obj, is_ensemble):
+    """
+    Retrieve the ordered feature column list from whichever source is available:
+      1. Top-level 'feature_cols' key in the bundle  (always present from v1.5)
+      2. model.feature_names_in_  (sklearn estimators trained with a DataFrame)
+      3. Ensemble's stored 'features' list
+    """
+    # Preferred: explicit key saved in the bundle
+    if 'feature_cols' in model_dict and model_dict['feature_cols']:
+        return model_dict['feature_cols']
+    # Sklearn estimator attribute
+    if not is_ensemble and hasattr(model_obj, 'feature_names_in_'):
+        return model_obj.feature_names_in_.tolist()
+    # Ensemble fallback
+    if is_ensemble and 'features' in model_dict.get('model', {}):
+        return model_dict['model']['features']
+    return None
+
+
+# --- Pitch visualisation (module-level so cache works correctly) ---
 
 @st.cache_resource
 def draw_pitch_map(position):
@@ -82,40 +109,59 @@ def draw_pitch_map(position):
 
     np.random.seed(42)
     if position == "Forward":
-        x         = np.random.normal(100, 10, 100)
-        y         = np.random.normal(40, 15, 100)
-        color_map = 'inferno'
+        x, y, color_map = np.random.normal(100, 10, 100), np.random.normal(40, 15, 100), 'inferno'
     elif position == "Defender":
-        x         = np.random.normal(20, 10, 100)
-        y         = np.random.normal(40, 15, 100)
-        color_map = 'mako'
-    else:  # Midfielder
-        x         = np.random.normal(60, 10, 100)
-        y         = np.random.normal(40, 15, 100)
-        color_map = 'viridis'
+        x, y, color_map = np.random.normal(20,  10, 100), np.random.normal(40, 15, 100), 'mako'
+    else:
+        x, y, color_map = np.random.normal(60,  10, 100), np.random.normal(40, 15, 100), 'viridis'
 
     pitch.kdeplot(x, y, ax=ax, fill=True, levels=100, thresh=0.1, cmap=color_map, alpha=0.6)
     return fig
 
 
+def predict_ensemble(ensemble_dict, input_data):
+    """Run soft-voting prediction across all models inside the ensemble dict."""
+    sub_models = ensemble_dict.get('models', {})
+    probs = []
+    for name, info in sub_models.items():
+        m        = info['model']
+        features = info.get('features', input_data.columns.tolist())
+        X        = input_data[features]
+        probs.append(m.predict_proba(X))
+    avg_prob = np.mean(probs, axis=0)
+    return int(np.argmax(avg_prob, axis=1)[0]), avg_prob
+
+
+# --- Load everything, guard sidebar against undefined variables ---
+
+model_loaded     = False
+model_obj        = None
+is_ensemble      = False
+feature_cols     = []
+scenario_dict    = {}
+default_momentum = None
+
 try:
     model_dict       = load_model_data()
-    model            = model_dict['model']
-    feature_cols     = load_feature_names(model)   # FIX 1: pass model as arg, not global reference
+    model_obj, is_ensemble = resolve_model(model_dict)
+    feature_cols     = get_feature_cols(model_dict, model_obj, is_ensemble)
     scenario_dict    = load_scenarios()
-    model_loaded     = True
     default_momentum = list(scenario_dict.keys())[0]
+
+    if feature_cols is None:
+        st.error("⚠️ Could not determine feature columns from the saved model bundle.")
+    else:
+        model_loaded = True
+
 except Exception as e:
-    model_loaded     = False
-    default_momentum = None
     st.error(f"⚠️ Error loading files: {e}")
 
 
 # --- 3. State Initialization ---
 
 if 'app_init' not in st.session_state and model_loaded:
-    st.session_state.prediction_run    = False
-    st.session_state.active_position   = "Forward"
+    st.session_state.prediction_run  = False
+    st.session_state.active_position = "Forward"
 
     baseline = scenario_dict[default_momentum]
     st.session_state.tuner_team_xg = float(round(baseline['team_xg_prev15'], 2))
@@ -130,8 +176,8 @@ if 'app_init' not in st.session_state and model_loaded:
 
 def update_tuners():
     """Fires when the momentum dropdown changes — resets the advanced sliders."""
-    selected   = st.session_state.momentum_dropdown
-    new_base   = scenario_dict[selected]
+    selected = st.session_state.momentum_dropdown
+    new_base = scenario_dict[selected]
     st.session_state.tuner_team_xg = float(round(new_base['team_xg_prev15'], 2))
     st.session_state.tuner_opp_xg  = float(round(new_base['opp_xg_prev15'],  2))
     st.session_state.tuner_passes  = int(new_base['passes_prev15'])
@@ -139,6 +185,10 @@ def update_tuners():
 
 
 # --- 5. Sidebar UI ---
+
+# Guard: don't render sidebar widgets if scenario_dict is empty
+if not model_loaded:
+    st.stop()
 
 st.sidebar.header("Match Momentum")
 momentum = st.sidebar.selectbox(
@@ -165,10 +215,10 @@ with st.sidebar.form(key="tactical_form"):
             "**Match Momentum** you selected, but you can override them manually here.</span>",
             unsafe_allow_html=True,
         )
-        team_xg = st.slider("Team's xG (Last 15m)",      0.0, 2.0,  key="tuner_team_xg")
-        opp_xg  = st.slider("Opponent's xG (Last 15m)",  0.0, 2.0,  key="tuner_opp_xg")
-        passes  = st.slider("Passes (Last 15m)",          0,   200,  key="tuner_passes")
-        shots   = st.slider("Shots (Last 15m)",           0,   15,   key="tuner_shots")
+        team_xg = st.slider("Team's xG (Last 15m)",     0.0, 2.0, key="tuner_team_xg")
+        opp_xg  = st.slider("Opponent's xG (Last 15m)", 0.0, 2.0, key="tuner_opp_xg")
+        passes  = st.slider("Passes (Last 15m)",         0,   200, key="tuner_passes")
+        shots   = st.slider("Shots (Last 15m)",          0,   15,  key="tuner_shots")
 
     submit_button = st.form_submit_button(
         "**Calculate SubImpact**", use_container_width=True, type="primary"
@@ -183,48 +233,49 @@ with col1:
     st.subheader("Prediction Engine")
 
     if submit_button:
-        if model_loaded:
-            position_mapping = {"Defender": 0, "Forward": 1, "Midfielder": 2}
+        position_mapping = {"Defender": 0, "Forward": 1, "Midfielder": 2}
 
-            input_dict = scenario_dict[momentum].copy()
+        input_dict = scenario_dict[momentum].copy()
 
-            input_dict['team_xg_prev15']       = team_xg
-            input_dict['opp_xg_prev15']        = opp_xg
-            input_dict['xg_diff_prev15']       = team_xg - opp_xg
-            input_dict['passes_prev15']        = passes
-            input_dict['shots_prev15']         = shots
-            input_dict['time_remaining']       = time_remaining
-            input_dict['score_diff']           = score_diff
-            input_dict['pass_success_rate_drop'] = pass_drop
-            input_dict['action_rate_drop']     = action_drop
-            input_dict['position_group_enc']   = position_mapping[sub_position]
-            input_dict['abs_score_diff']       = abs(score_diff)
-            input_dict['is_leading']           = 1 if score_diff > 0 else 0
-            input_dict['is_trailing']          = 1 if score_diff < 0 else 0
+        input_dict['team_xg_prev15']         = team_xg
+        input_dict['opp_xg_prev15']          = opp_xg
+        input_dict['xg_diff_prev15']         = team_xg - opp_xg
+        input_dict['passes_prev15']          = passes
+        input_dict['shots_prev15']           = shots
+        input_dict['time_remaining']         = time_remaining
+        input_dict['score_diff']             = score_diff
+        input_dict['pass_success_rate_drop'] = pass_drop
+        input_dict['action_rate_drop']       = action_drop
+        input_dict['position_group_enc']     = position_mapping[sub_position]
+        input_dict['abs_score_diff']         = abs(score_diff)
+        input_dict['is_leading']             = 1 if score_diff > 0 else 0
+        input_dict['is_trailing']            = 1 if score_diff < 0 else 0
 
-            for col in feature_cols:
-                if col not in input_dict:
-                    input_dict[col] = 0
-            input_data = pd.DataFrame([input_dict])[feature_cols]
+        for col in feature_cols:
+            if col not in input_dict:
+                input_dict[col] = 0
+        input_data = pd.DataFrame([input_dict])[feature_cols]
 
-            st.session_state.prediction_result = model.predict(input_data)[0]
-            st.session_state.prediction_run    = True
-            st.session_state.active_position   = sub_position
-            st.session_state.last_input_data   = input_data
+        if is_ensemble:
+            pred, _ = predict_ensemble(model_dict['model'], input_data)
         else:
-            st.error("Cannot predict. Model is missing.")
+            pred = int(model_obj.predict(input_data)[0])
 
-    # FIX 2: use .get() so this never crashes if model failed to load
+        st.session_state.prediction_result = pred
+        st.session_state.prediction_run    = True
+        st.session_state.active_position   = sub_position
+        st.session_state.last_input_data   = input_data
+
     if st.session_state.get("prediction_run", False):
         prediction = st.session_state.prediction_result
+        active_pos = st.session_state.active_position
 
         st.markdown(
-            f"**Scenario:** You are substituting in a **{st.session_state.active_position}** "
+            f"**Scenario:** You are substituting in a **{active_pos}** "
             f"with **{time_remaining} minutes** left."
         )
 
-        # Tactical intuition — all position/score combinations covered
-        active_pos = st.session_state.active_position
+        # Tactical intuition — all position / score combinations
         if score_diff < 0 and active_pos == "Forward":
             st.info("**Tactical Intuition:** Attacking the opponent. Attempting to increase Team's xG.")
         elif score_diff > 0 and active_pos == "Defender":
@@ -255,19 +306,30 @@ with col2:
 
 # --- 7. xAI (SHAP) Layout ---
 
-# FIX 2 (same): use .get() to guard against uninitialised state
 if st.session_state.get("prediction_run", False):
     with st.expander("**Why did SubImpact AI make this decision? (SHAP Explanation)**", expanded=False):
         st.write(
-            "This **Waterfall Chart** shows exactly how the specific match momentum and tactical tuners pushed the AI toward its final conclusion."
+            "This **Waterfall Chart** shows exactly how the specific match momentum and "
+            "tactical tuners pushed the AI toward its final conclusion."
         )
 
-        explainer   = load_explainer(model)
-        shap_values = explainer(st.session_state.last_input_data)
+        # SHAP only works on a single sklearn estimator, not the ensemble dict.
+        # If the best model is the ensemble, use the first sub-model for explanation.
+        if is_ensemble:
+            sub_models   = model_dict['model'].get('models', {})
+            explain_name = list(sub_models.keys())[0]
+            explain_model   = sub_models[explain_name]['model']
+            explain_features = sub_models[explain_name].get('features', feature_cols)
+            explain_data  = st.session_state.last_input_data[explain_features]
+            st.caption(f"ℹ️ SHAP explanation uses **{explain_name}** (first model in the ensemble).")
+        else:
+            explain_model    = model_obj
+            explain_data     = st.session_state.last_input_data
+
+        explainer   = load_explainer(explain_model)
+        shap_values = explainer(explain_data)
         pred_class  = st.session_state.prediction_result
 
-        # FIX 3: shap.plots.waterfall draws on its own internal figure.
-        # Use plt.gcf() AFTER the call to capture that figure, not a manually created one.
         try:
             shap.plots.waterfall(shap_values[0, :, pred_class], show=False)
         except Exception:
