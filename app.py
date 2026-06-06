@@ -354,8 +354,8 @@ if st.session_state.get("prediction_run", False):
 
         try:
             shap.plots.waterfall(shap_values[0, :, pred_class], show=False)
-        except Exception:
-            shap.plots.waterfall(shap_values[0], show=False)
+        except (IndexError, ValueError):
+            shap.plots.waterfall(shap_values[pred_class][0], show=False)
 
         fig = plt.gcf()
         fig.patch.set_facecolor('white')
