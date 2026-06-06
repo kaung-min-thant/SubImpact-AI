@@ -64,36 +64,35 @@ def load_scenarios():
 
 
 def resolve_model(model_dict):
-    """
-    The saved bundle's 'model' key may be either:
-      - A plain sklearn estimator  (single best model)
-      - A dict with 'type': 'soft_voting_ensemble'  (ensemble)
-    Return (model_object_or_None, is_ensemble).
-    """
     raw = model_dict.get('model')
+
+    # Case 2: ensemble dict
     if isinstance(raw, dict) and raw.get('type') == 'soft_voting_ensemble':
         return raw, True
+
+    # Case 3: trained_models entry — one more level deep
+    if isinstance(raw, dict) and 'model' in raw:
+        return raw['model'], False
+
+    # Case 1: plain estimator
     return raw, False
 
 
 def get_feature_cols(model_dict, model_obj, is_ensemble):
-    """
-    Retrieve the ordered feature column list from whichever source is available:
-      1. Top-level 'feature_cols' key in the bundle  (always present from v1.5)
-      2. model.feature_names_in_  (sklearn estimators trained with a DataFrame)
-      3. Ensemble's stored 'features' list
-    """
     # Preferred: explicit key saved in the bundle
     if 'feature_cols' in model_dict and model_dict['feature_cols']:
         return model_dict['feature_cols']
     # Sklearn estimator attribute
     if not is_ensemble and hasattr(model_obj, 'feature_names_in_'):
         return model_obj.feature_names_in_.tolist()
+    # trained_models entry has its own 'features' key
+    raw = model_dict.get('model')
+    if isinstance(raw, dict) and 'features' in raw:
+        return raw['features']
     # Ensemble fallback
     if is_ensemble and 'features' in model_dict.get('model', {}):
         return model_dict['model']['features']
     return None
-
 
 # --- Pitch visualisation (module-level so cache works correctly) ---
 
