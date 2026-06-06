@@ -355,15 +355,12 @@ if st.session_state.get("prediction_run", False):
         try:
             shap.plots.waterfall(shap_values[0, :, pred_class], show=False)
         except (IndexError, ValueError, TypeError):
-            # shap_values is a list of arrays (older SHAP) — rebuild a proper Explanation object
-            sv = shap_values[pred_class]  # shape: (samples, features)
-            explanation = shap.Explanation(
-                values       = sv.values[0] if hasattr(sv, 'values') else sv[0],
-                base_values  = sv.base_values[0] if hasattr(sv, 'base_values') else explainer.expected_value[pred_class],
-                data         = explain_data.iloc[0].values,
-                feature_names= explain_data.columns.tolist()
-            )
-            shap.plots.waterfall(explanation, show=False)
+            try:
+            # Shape is (samples, features) — no class dimension
+                shap.plots.waterfall(shap_values[0], show=False)
+            except (IndexError, ValueError, TypeError):
+                st.warning("⚠️ SHAP explanation could not be displayed for this model.")
+                st.code(f"shap_values shape: {shap_values.shape}\nExpected value: {explainer.expected_value}")
 
         fig = plt.gcf()
         fig.patch.set_facecolor('white')
