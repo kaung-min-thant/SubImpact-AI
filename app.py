@@ -335,34 +335,28 @@ if st.session_state.get("prediction_run", False):
             "tactical tuners pushed the AI toward its final conclusion."
         )
 
-        # SHAP only works on a single sklearn estimator, not the ensemble dict.
-        # If the best model is the ensemble, use the first sub-model for explanation.
         if is_ensemble:
-            sub_models   = model_dict['model'].get('models', {})
-            explain_name = list(sub_models.keys())[0]
-            explain_model   = sub_models[explain_name]['model']
+            sub_models       = model_dict['model'].get('models', {})
+            explain_name     = list(sub_models.keys())[0]
+            explain_model    = sub_models[explain_name]['model']
             explain_features = sub_models[explain_name].get('features', feature_cols)
-            explain_data  = st.session_state.last_input_data[explain_features]
+            explain_data     = st.session_state.last_input_data[explain_features]
             st.caption(f"ℹ️ SHAP explanation uses **{explain_name}** (first model in the ensemble).")
         else:
-            explain_model    = model_obj
-            explain_data     = st.session_state.last_input_data
+            explain_model = model_obj
+            explain_data  = st.session_state.last_input_data
 
         explainer   = load_explainer(explain_model)
         shap_values = explainer(explain_data)
         pred_class  = st.session_state.prediction_result
 
+        fig, ax = plt.subplots(figsize=(14, 6))
+        fig.patch.set_facecolor('white')
+
         try:
             shap.plots.waterfall(shap_values[0, :, pred_class], show=False)
-        except (IndexError, ValueError, TypeError):
-            try:
-            # Shape is (samples, features) — no class dimension
-                shap.plots.waterfall(shap_values[0], show=False)
-            except (IndexError, ValueError, TypeError):
-                st.warning("⚠️ SHAP explanation could not be displayed for this model.")
-                st.code(f"shap_values shape: {shap_values.shape}\nExpected value: {explainer.expected_value}")
+        except Exception:
+            shap.plots.waterfall(shap_values[0], show=False)
 
-        fig = plt.gcf()
-        fig.patch.set_facecolor('white')
         st.pyplot(fig, transparent=False)
         plt.close(fig)
