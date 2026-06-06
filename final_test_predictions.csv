@@ -1,0 +1,1043 @@
+match_id,competition,team,sub_minute,outgoing_player,replacement_player,impact_label,impact_score,actual_label,predicted_label,prob_Negative,prob_Neutral,prob_Positive
+3754091,Premier League 2015/2016,Stoke City,59,Xherdan Shaqiri,Jonathan Walters,Neutral,-0.0293,Neutral,Positive,0.226,0.296,0.478
+3754008,Premier League 2015/2016,Sunderland,69,Ola Toivonen,Sebastian Larsson,Positive,0.1113,Positive,Positive,0.218,0.116,0.666
+3879689,Serie A 2015/2016,Sampdoria,62,Édgar Osvaldo Barreto Cáceres,Luis Fernando Muriel Fruto,Positive,1.5673,Positive,Positive,0.002,0.012,0.986
+3773597,La Liga 2020/2021,Barcelona,66,Sergio Busquets i Burgos,Ronald Federico Araújo da Silva,Negative,-0.8981,Negative,Negative,0.655,0.07,0.275
+3754006,Premier League 2015/2016,West Bromwich Albion,74,Saido Berahino,Rickie Lambert,Positive,1.1222,Positive,Positive,0.018,0.015,0.967
+3754143,Premier League 2015/2016,Liverpool,61,Christian Benteke Liolo,Adam David Lallana,Positive,0.1613,Positive,Positive,0.238,0.309,0.453
+3878554,Serie A 2015/2016,Genoa,71,Leonardo Pavoletti,Darko Lazović,Negative,-0.1864,Negative,Negative,0.668,0.139,0.193
+3754175,Premier League 2015/2016,West Bromwich Albion,70,Craig Gardner,James McClean,Positive,0.136,Positive,Positive,0.13,0.146,0.724
+3857254,FIFA World Cup 2022,Tunisia,66,Anis Ben Slimane,Naïm Sliti,Negative,-0.7975,Negative,Positive,0.166,0.155,0.679
+3754297,Premier League 2015/2016,Manchester United,61,Ashley Young,Phil Jones,Negative,-0.2651,Negative,Neutral,0.19,0.443,0.367
+3857265,FIFA World Cup 2022,Poland,71,Sebastian Szymański,Przemysław Frankowski,Negative,-0.64,Negative,Negative,0.897,0.052,0.051
+3857264,FIFA World Cup 2022,Argentina,78,Enzo Fernandez,Germán Alejandro Pezzella,Neutral,-0.0345,Neutral,Neutral,0.192,0.72,0.088
+3879561,Serie A 2015/2016,Fiorentina,73,Josip Iličić,Joan Verdú Fernández,Positive,0.1057,Positive,Negative,0.587,0.124,0.289
+3857274,FIFA World Cup 2022,Netherlands,78,Cody Mathès Gakpo,Wout Weghorst,Neutral,0.0809,Neutral,Positive,0.325,0.197,0.478
+3879684,Serie A 2015/2016,Juventus,76,Álvaro Borja Morata Martín,Simone Zaza,Negative,-0.4576,Negative,Negative,0.722,0.171,0.107
+3879694,Serie A 2015/2016,Bologna,70,Emanuele Giaccherini,Juan Camilo Zúñiga Mosquera,Negative,-1.0405,Negative,Neutral,0.309,0.4,0.291
+3754011,Premier League 2015/2016,Manchester United,45,Matteo Darmian,Luis Antonio Valencia Mosquera,Negative,-0.1165,Negative,Negative,0.716,0.135,0.149
+3754198,Premier League 2015/2016,Tottenham Hotspur,10,Nacer Chadli,Clinton Mua N''Jie,Positive,0.2488,Positive,Positive,0.209,0.19,0.601
+3857291,FIFA World Cup 2022,Costa Rica,60,Anthony Daniel Contreras Enríquez,Álvaro José Zamora Mata,Neutral,0.0666,Neutral,Neutral,0.072,0.819,0.109
+3857297,FIFA World Cup 2022,Saudi Arabia,45,Sami Khalil Al Naji,Nawaf Shaker Al Abid,Positive,1.7091,Positive,Positive,0.367,0.133,0.5
+3895275,Bundesliga 2023/2024,Bayer Leverkusen,75,Patrik Schick,Amine Adli,Neutral,-0.0115,Neutral,Negative,0.58,0.045,0.375
+3857261,FIFA World Cup 2022,Wales,58,Ben Davies,Joseff Morrell,Positive,0.3077,Positive,Positive,0.11,0.074,0.816
+3879866,Serie A 2015/2016,AS Roma,58,Mohamed Salah,Francesco Totti,Neutral,-0.0247,Neutral,Positive,0.17,0.21,0.62
+3879658,Serie A 2015/2016,Udinese,65,Antonio Di Natale,Iván Rodrigo Piris Leguizamón,Negative,-0.4073,Negative,Negative,0.709,0.167,0.124
+3879616,Serie A 2015/2016,Sampdoria,64,Édgar Osvaldo Barreto Cáceres,Dávid Ivan,Positive,1.0594,Positive,Positive,0.005,0.011,0.984
+3754275,Premier League 2015/2016,Liverpool,65,Jordan Brian Henderson,Christian Benteke Liolo,Negative,-0.3735,Negative,Positive,0.284,0.295,0.421
+3879847,Serie A 2015/2016,Udinese,60,Ryder Matos Santos,Emil Hallfreðsson,Positive,0.7669,Positive,Positive,0.103,0.06,0.837
+3879556,Serie A 2015/2016,Empoli,69,Daniele Croce,Leandro Daniel Paredes,Positive,0.333,Positive,Positive,0.019,0.016,0.965
+3754266,Premier League 2015/2016,Crystal Palace,76,Yohan Cabaye,James McArthur,Negative,-0.3271,Negative,Negative,0.936,0.033,0.031
+3879556,Serie A 2015/2016,Frosinone,80,Mirko Gori,Alessandro Frara,Negative,-0.505,Negative,Negative,0.796,0.054,0.15
+3879816,Serie A 2015/2016,AS Roma,70,Stephan El Shaarawy,Edin Džeko,Neutral,0.0424,Neutral,Positive,0.175,0.406,0.419
+3754063,Premier League 2015/2016,Aston Villa,78,Jordan Ayew,Carlos Alberto Sánchez Moreno,Negative,-0.4436,Negative,Negative,0.573,0.279,0.148
+3754142,Premier League 2015/2016,Manchester City,73,Kevin De Bruyne,David Josué Jiménez Silva,Negative,-0.4402,Negative,Negative,0.765,0.114,0.121
+3879744,Serie A 2015/2016,Atalanta,64,Mauricio Ricardo Pinilla Ferreira,Marco Borriello,Positive,0.1103,Positive,Neutral,0.227,0.387,0.386
+3879610,Serie A 2015/2016,AS Roma,57,Mohamed Salah,Alessandro Florenzi,Positive,0.2842,Positive,Neutral,0.22,0.605,0.175
+3879590,Serie A 2015/2016,Torino,85,Davide Zappacosta,Bruno da Silva Peres,Negative,-0.3899,Negative,Negative,0.83,0.094,0.076
+3878599,Serie A 2015/2016,Atalanta,69,Alejandro Darío Gómez,Gaetano Monachello,Positive,0.2008,Positive,Positive,0.268,0.209,0.523
+3879804,Serie A 2015/2016,Genoa,77,Blerim Džemaili,Panagiotis Tachtsidis,Negative,-0.4926,Negative,Negative,0.784,0.079,0.137
+3837771,Ligue 1 2022/2023,Troyes,71,Thierno Balde,Renaud Ripart,Neutral,-0.069,Neutral,Neutral,0.056,0.551,0.393
+3879672,Serie A 2015/2016,Chievo,35,Alessandro Gamberini,Dario Dainelli,Positive,1.2568,Positive,Positive,0.155,0.147,0.698
+3857275,FIFA World Cup 2022,France,72,Youssouf Fofana,Antoine Griezmann,Positive,0.382,Positive,Positive,0.197,0.287,0.516
+3754020,Premier League 2015/2016,AFC Bournemouth,60,Joshua King,Lee Tomlin,Neutral,-0.0438,Neutral,Positive,0.186,0.208,0.606
+3879601,Serie A 2015/2016,Atalanta,59,Jasmin Kurtič,Maximiliano Nicol Moralez,Positive,0.684,Positive,Positive,0.047,0.007,0.946
+3879780,Serie A 2015/2016,Fiorentina,74,Khouma El Hadji Babacar,Nikola Kalinić,Negative,-0.1154,Negative,Positive,0.243,0.266,0.491
+3879854,Serie A 2015/2016,Sassuolo,68,Alessandro Longhi,Marcello Gazzola,Negative,-0.7003,Negative,Negative,0.845,0.091,0.064
+3879734,Serie A 2015/2016,AC Milan,61,M''Baye Babacar Niang,Kevin-Prince Boateng,Negative,-0.3315,Negative,Negative,0.723,0.179,0.098
+3754174,Premier League 2015/2016,Leicester City,77,Danny Drinkwater,Andrej Kramarić,Positive,1.164,Positive,Positive,0.095,0.078,0.827
+3754314,Premier League 2015/2016,Arsenal,24,Daniel Nii Tackie Mensah Welbeck,Jack Wilshere,Negative,-0.1957,Negative,Negative,0.515,0.331,0.154
+3879656,Serie A 2015/2016,Bologna,71,Godfred Donsah,Erick Antonio Pulgar Farfán,Positive,0.4675,Positive,Positive,0.314,0.153,0.533
+3879655,Serie A 2015/2016,Lazio,65,Miroslav Klose,Alessandro Matri,Positive,0.1426,Positive,Positive,0.322,0.293,0.385
+3879753,Serie A 2015/2016,Empoli,55,Riccardo Saponara,Alessandro Piu,Positive,1.0293,Positive,Positive,0.091,0.072,0.837
+3879744,Serie A 2015/2016,Sampdoria,74,Carlos Joaquín Correa,Luis Fernando Muriel Fruto,Positive,0.2658,Positive,Neutral,0.247,0.419,0.334
+3879549,Serie A 2015/2016,AC Milan,75,Riccardo Montolivo,Juraj Kucka,Positive,0.4242,Positive,Positive,0.161,0.242,0.597
+3754294,Premier League 2015/2016,Liverpool,80,James Philip Milner,Jordon Ibe,Negative,-0.3857,Negative,Negative,0.603,0.199,0.198
+3879797,Serie A 2015/2016,Carpi,77,Matteo Mancosu,Jonathan de Guzmán,Positive,0.2671,Positive,Positive,0.193,0.07,0.737
+3857260,FIFA World Cup 2022,Saudi Arabia,36,Ali Albulayhi,Riyadh Sharahili,Positive,0.3272,Positive,Positive,0.114,0.07,0.816
+3773631,La Liga 2020/2021,Real Betis,81,Nabil Fekir,Sergio Canales Madrazo,Neutral,-0.0493,Neutral,Neutral,0.243,0.655,0.102
+3895067,Bundesliga 2023/2024,Darmstadt 98,58,Thomas Poppler Isherwood,Filip Stojilković,Negative,-0.4652,Negative,Negative,0.802,0.051,0.147
+3879680,Serie A 2015/2016,Chievo,72,Roberto Inglese,Massimo Gobbi,Positive,0.1101,Positive,Positive,0.22,0.257,0.523
+3857273,FIFA World Cup 2022,Iran,75,Ehsan Hajsafi,Mehdi Torabi,Negative,-0.1937,Negative,Negative,0.926,0.028,0.046
+3754284,Premier League 2015/2016,Arsenal,81,Alex Iwobi,Francis Joseph Coquelin,Positive,0.5334,Positive,Positive,0.288,0.068,0.644
+3879620,Serie A 2015/2016,Hellas Verona,72,Boško Janković,Luca Toni,Negative,-1.2953,Negative,Positive,0.303,0.192,0.505
+3754307,Premier League 2015/2016,Manchester City,56,David Josué Jiménez Silva,Fabian Delph,Positive,0.4295,Positive,Negative,0.673,0.17,0.157
+3754148,Premier League 2015/2016,Tottenham Hotspur,84,Ryan Mason,Tom Carroll,Negative,-0.4533,Negative,Negative,0.937,0.023,0.04
+3879623,Serie A 2015/2016,Empoli,73,Riccardo Saponara,Rade Krunić,Positive,0.2688,Positive,Positive,0.067,0.067,0.866
+3879690,Serie A 2015/2016,AC Milan,68,Riccardo Montolivo,Juraj Kucka,Neutral,0.0312,Neutral,Negative,0.579,0.161,0.26
+3879825,Serie A 2015/2016,Empoli,18,Vincent Laurini,Luca Bittante,Positive,0.9422,Positive,Positive,0.015,0.032,0.953
+3754128,Premier League 2015/2016,AFC Bournemouth,52,Joshua King,Yann Kermorgant,Negative,-0.258,Negative,Negative,0.718,0.175,0.107
+3878548,Serie A 2015/2016,Udinese,85,Ali Adnan Kadhim Al Tameemi,Silvan Widmer,Negative,-0.2874,Negative,Negative,0.736,0.093,0.171
+3754312,Premier League 2015/2016,Crystal Palace,45,Yannick Bolasie Yala,Jordon Mutch,Positive,0.2528,Positive,Positive,0.341,0.189,0.47
+3879771,Serie A 2015/2016,AC Milan,67,Cristian Eduardo Zapata Valencia,Alessio Romagnoli,Negative,-0.1648,Negative,Positive,0.328,0.261,0.411
+3879729,Serie A 2015/2016,Sassuolo,61,Lorenzo Pellegrini,Joseph Alfred Duncan,Positive,0.3831,Positive,Positive,0.242,0.235,0.523
+3857263,FIFA World Cup 2022,Spain,65,Marco Asensio Willemsen,Jorge Resurrección Merodio,Negative,-1.0896,Negative,Negative,0.87,0.066,0.064
+3879741,Serie A 2015/2016,Chievo,35,Antonio Floro Flores,Paul-José M''Poku Ebunge,Negative,-0.8498,Negative,Negative,0.887,0.037,0.076
+3754280,Premier League 2015/2016,Norwich City,35,Alexander Banor Tettey,Gary O''Neil,Negative,-0.2124,Negative,Positive,0.096,0.236,0.668
+3879552,Serie A 2015/2016,Bologna,73,Luca Rizzo,Saphir Sliti Taïder,Positive,0.5297,Positive,Positive,0.021,0.026,0.953
+3754120,Premier League 2015/2016,West Ham United,60,James Tomkins,Samuel Mark Byram,Neutral,0.0669,Neutral,Neutral,0.174,0.547,0.279
+3879611,Serie A 2015/2016,Palermo,58,Roberto Vitiello,Andrea Rispoli,Positive,0.7076,Positive,Positive,0.127,0.215,0.658
+3879713,Serie A 2015/2016,Chievo,72,Paul-José M''Poku Ebunge,Massimo Gobbi,Positive,0.5052,Positive,Positive,0.089,0.018,0.893
+3879782,Serie A 2015/2016,Frosinone,62,Mirko Gori,Danilo Soddimo,Positive,0.6053,Positive,Positive,0.149,0.143,0.708
+3857272,FIFA World Cup 2022,United States,76,Weston McKennie,Brenden Aaronson,Neutral,-0.0985,Neutral,Negative,0.416,0.377,0.207
+3754211,Premier League 2015/2016,Leicester City,72,José Leonardo Ulloa,Shinji Okazaki,Positive,1.1508,Positive,Negative,0.629,0.088,0.283
+3754211,Premier League 2015/2016,Leicester City,76,Jamie Vardy,Andrew Philip King,Positive,1.3075,Positive,Negative,0.696,0.13,0.174
+3754227,Premier League 2015/2016,West Ham United,62,Mark Noble,Manuel Lanzini,Negative,-0.1248,Negative,Negative,0.618,0.19,0.192
+3754163,Premier League 2015/2016,Everton,66,Bryan Oviedo,Séamus Coleman,Positive,0.1684,Positive,Positive,0.253,0.278,0.469
+3754349,Premier League 2015/2016,West Ham United,72,Emmanuel Emenike,Andy Carroll,Positive,0.6852,Positive,Positive,0.074,0.067,0.859
+3879852,Serie A 2015/2016,Palermo,68,Aleksandar Trajkovski,Robin Quaison,Neutral,0.0082,Neutral,Negative,0.744,0.101,0.155
+3879740,Serie A 2015/2016,Frosinone,69,Aleksandar Tonev,Arlind Afrim Ajeti,Positive,0.8627,Positive,Positive,0.09,0.024,0.886
+3754074,Premier League 2015/2016,Tottenham Hotspur,63,Nacer Chadli,Clinton Mua N''Jie,Positive,0.5185,Positive,Positive,0.13,0.065,0.805
+3753994,Premier League 2015/2016,Southampton,82,Shane Long,Charlie Austin,Negative,-0.7462,Negative,Negative,0.855,0.036,0.109
+3869685,FIFA World Cup 2022,Argentina,63,Ángel Fabián Di María Hernández,Marcos Javier Acuña,Negative,-0.3205,Negative,Negative,0.695,0.13,0.175
+3879688,Serie A 2015/2016,Atalanta,81,Jasmin Kurtič,Giulio Migliaccio,Positive,0.3031,Positive,Negative,0.394,0.239,0.367
+3773631,La Liga 2020/2021,Real Betis,74,Juan Miguel Jiménez López,Cristian Tello Herrera,Positive,0.4339,Positive,Positive,0.131,0.091,0.778
+3879580,Serie A 2015/2016,Juventus,36,Roberto Maximiliano Pereyra,Kwadwo Asamoah,Positive,0.8419,Positive,Neutral,0.291,0.437,0.272
+3754315,Premier League 2015/2016,Norwich City,72,Wes Hoolahan,Graham Dorrans,Negative,-0.3304,Negative,Negative,0.866,0.058,0.076
+3754140,Premier League 2015/2016,Everton,59,Arouna Koné,Muhamed Bešić,Positive,0.2858,Positive,Positive,0.153,0.078,0.769
+3837662,Ligue 1 2022/2023,Paris Saint-Germain,83,Vitor Machado Ferreira,Leandro Daniel Paredes,Neutral,0.041,Neutral,Positive,0.202,0.368,0.43
+3754205,Premier League 2015/2016,Arsenal,69,Theo Walcott,Olivier Giroud,Neutral,0.0431,Neutral,Positive,0.373,0.206,0.421
+3857292,FIFA World Cup 2022,Costa Rica,73,Johan Alberto Venegas Ulloa,Ronald Alberto Matarrita Ulate,Neutral,0.0762,Neutral,Positive,0.035,0.024,0.941
+3879845,Serie A 2015/2016,Napoli,74,Dries Mertens,Lorenzo Insigne,Negative,-0.2059,Negative,Negative,0.698,0.165,0.137
+3857300,FIFA World Cup 2022,Argentina,58,Alejandro Darío Gómez,Julián Álvarez,Positive,1.2624,Positive,Positive,0.051,0.056,0.893
+3879634,Serie A 2015/2016,Carpi,50,Ryder Matos Santos,Marco Borriello,Negative,-0.117,Negative,Negative,0.834,0.088,0.078
+3879657,Serie A 2015/2016,AS Roma,81,Mohamed Salah,Umar Sadiq Mesbah,Negative,-0.1268,Negative,Negative,0.767,0.111,0.122
+3879714,Serie A 2015/2016,Empoli,67,Massimo Maccarone,Levan Mchedlidze,Positive,0.5391,Positive,Positive,0.065,0.084,0.851
+3754031,Premier League 2015/2016,Manchester United,85,Morgan Schneiderlin,Will Keane,Neutral,0.0018,Neutral,Negative,0.387,0.371,0.242
+3754285,Premier League 2015/2016,Aston Villa,82,Jordan Veretout,Adama Traoré Diarra,Neutral,-0.0911,Neutral,Neutral,0.32,0.389,0.291
+3753980,Premier League 2015/2016,Arsenal,74,Mesut Özil,Kieran Gibbs,Neutral,0.0968,Neutral,Positive,0.163,0.392,0.445
+3879688,Serie A 2015/2016,Atalanta,72,Andrea Conti,Gianpaolo Bellini,Negative,-0.2224,Negative,Negative,0.705,0.167,0.128
+3754024,Premier League 2015/2016,Swansea City,56,Leroy Fer,Modou Barrow,Neutral,-0.0447,Neutral,Negative,0.645,0.153,0.202
+3879718,Serie A 2015/2016,Udinese,56,Bruno Miguel Borges Fernandes,Emmanuel Agyemang-Badu,Negative,-0.627,Negative,Positive,0.226,0.197,0.577
+3878549,Serie A 2015/2016,Empoli,56,Daniele Croce,Franco Signorelli,Negative,-0.2056,Negative,Positive,0.276,0.31,0.414
+3879549,Serie A 2015/2016,Genoa,69,Giovanni Marchese,Jules Olivier Ntcham,Positive,0.6365,Positive,Positive,0.092,0.123,0.785
+3879780,Serie A 2015/2016,Fiorentina,6,Nenad Tomović,Facundo Sebastián Roncaglia,Neutral,0.0601,Neutral,Neutral,0.345,0.566,0.089
+3878601,Serie A 2015/2016,Sampdoria,81,Luis Fernando Muriel Fruto,Alejandro Miguel Rodriguez,Negative,-1.1383,Negative,Negative,0.98,0.01,0.01
+3879729,Serie A 2015/2016,Palermo,79,Uroš Đurđević,Andrea Rispoli,Negative,-0.4515,Negative,Positive,0.211,0.379,0.41
+3879704,Serie A 2015/2016,Inter Milan,75,Martín Montoya Torralbo,Yuto Nagatomo,Positive,0.7611,Positive,Positive,0.285,0.131,0.584
+3754195,Premier League 2015/2016,Newcastle United,84,Jack Colback,Florian Thauvin,Positive,0.7377,Positive,Positive,0.018,0.022,0.96
+3879626,Serie A 2015/2016,Inter Milan,85,Jonathan Ludovic Biabiany,Ivan Perišić,Neutral,0.0015,Neutral,Negative,0.756,0.06,0.184
+3878598,Serie A 2015/2016,Palermo,62,Alberto Gilardino,Uroš Đurđević,Neutral,-0.0645,Neutral,Negative,0.383,0.259,0.358
+3879797,Serie A 2015/2016,Sassuolo,66,Alessandro Longhi,Paolo Cannavaro,Positive,0.2413,Positive,Neutral,0.258,0.408,0.334
+3754335,Premier League 2015/2016,Norwich City,49,Graham Dorrans,Nathan Redmond,Positive,0.5654,Positive,Positive,0.092,0.07,0.838
+3879774,Serie A 2015/2016,Palermo,67,Ivaylo Chochev,Robin Quaison,Positive,0.3683,Positive,Positive,0.22,0.254,0.526
+3837706,Ligue 1 2022/2023,Stade Brestois,61,Mahdi Camara,Hugo Magnetti,Positive,1.3738,Positive,Positive,0.068,0.045,0.887
+3878599,Serie A 2015/2016,Atalanta,79,Gianpaolo Bellini,Rafael Tolói,Positive,0.8338,Positive,Positive,0.285,0.326,0.389
+3754133,Premier League 2015/2016,West Bromwich Albion,73,José Salomón Rondón Giménez,Rickie Lambert,Negative,-0.147,Negative,Neutral,0.279,0.377,0.344
+3754226,Premier League 2015/2016,Sunderland,72,Sebastián Coates Nión,DeAndre Yedlin,Positive,0.2249,Positive,Positive,0.069,0.152,0.779
+3753972,Premier League 2015/2016,Swansea City,69,Leon Britton,Gylfi Þór Sigurðsson,Neutral,0.0176,Neutral,Neutral,0.103,0.62,0.277
+3754051,Premier League 2015/2016,Watford,79,Almen Abdi,Valon Behrami,Positive,0.4951,Positive,Positive,0.183,0.241,0.576
+3754007,Premier League 2015/2016,West Bromwich Albion,62,James McClean,Cristian Gamboa Luna,Negative,-0.2523,Negative,Negative,0.72,0.109,0.171
+3754223,Premier League 2015/2016,Crystal Palace,79,Yohan Cabaye,Mile Jedinak,Negative,-0.5353,Negative,Negative,0.669,0.184,0.147
+3754193,Premier League 2015/2016,AFC Bournemouth,77,Adam Smith,Marc Pugh,Positive,0.2623,Positive,Positive,0.094,0.063,0.843
+3895220,Bundesliga 2023/2024,Darmstadt 98,64,Gerrit Holtmann,Sebastian Polter,Neutral,-0.006,Neutral,Positive,0.156,0.407,0.437
+3754203,Premier League 2015/2016,Leicester City,81,Riyad Mahrez,Christian Fuchs,Neutral,-0.0586,Neutral,Negative,0.512,0.279,0.209
+3754071,Premier League 2015/2016,Sunderland,71,Lee Cattermole,Jack Rodwell,Positive,0.6115,Positive,Negative,0.712,0.148,0.14
+3754185,Premier League 2015/2016,Manchester United,24,Ander Herrera Agüera,Faustino Marcos Alberto Rojo,Neutral,-0.089,Neutral,Negative,0.513,0.288,0.199
+3857285,FIFA World Cup 2022,Senegal,61,Abdou Diallo,Ismail Jakobs,Positive,0.2195,Positive,Positive,0.26,0.282,0.458
+3754059,Premier League 2015/2016,West Bromwich Albion,59,James McClean,Rickie Lambert,Neutral,-0.0233,Neutral,Negative,0.615,0.187,0.198
+3754284,Premier League 2015/2016,West Bromwich Albion,45,Sandro Ranieri Guimarães Cordeiro,José Salomón Rondón Giménez,Positive,0.238,Positive,Positive,0.145,0.052,0.803
+3879643,Serie A 2015/2016,Sampdoria,59,Lazaros Christodoulopoulos,Carlos Mario Carbonero Mancilla,Positive,0.2474,Positive,Positive,0.166,0.264,0.57
+3857281,FIFA World Cup 2022,Canada,45,Stephen Antunes Eustáquio,Ismael Koné,Positive,0.3381,Positive,Positive,0.052,0.021,0.927
+3879724,Serie A 2015/2016,Carpi,70,Marco Crimi,Antonio Di Gaudio,Positive,0.172,Positive,Positive,0.237,0.374,0.389
+3878544,Serie A 2015/2016,Genoa,82,Alberto Facundo Costa,Giuseppe Panico,Neutral,-0.0579,Neutral,Positive,0.149,0.168,0.683
+3879631,Serie A 2015/2016,Udinese,63,Manuel Rolando Iturra Urrutia,Bruno Miguel Borges Fernandes,Neutral,0.0118,Neutral,Neutral,0.316,0.432,0.252
+3753999,Premier League 2015/2016,Watford,67,Allan Romeo Nyom,Steven Berghuis,Neutral,0.0158,Neutral,Positive,0.094,0.121,0.785
+3879773,Serie A 2015/2016,Udinese,14,Felipe Dias da Silva dal Belo,Thomas Heurtaux,Neutral,0.031,Neutral,Positive,0.287,0.287,0.426
+3879647,Serie A 2015/2016,Bologna,45,Daniele Gastaldello,Alex Ferrari,Positive,0.8226,Positive,Positive,0.037,0.026,0.937
+3879568,Serie A 2015/2016,Torino,45,Alessandro Gazzi,Giuseppe Vives,Neutral,0.051,Neutral,Positive,0.254,0.262,0.484
+3754258,Premier League 2015/2016,Manchester City,24,Wilfried Guemiand Bony,Jesús Navas González,Negative,-0.1167,Negative,Negative,0.426,0.222,0.352
+3895232,Bundesliga 2023/2024,Bayern Munich,70,Leon Goretzka,Mathys Tel,Neutral,-0.0069,Neutral,Neutral,0.266,0.406,0.328
+3754106,Premier League 2015/2016,Aston Villa,65,Carles Gil de Pareja Vicent,Jordan Ayew,Negative,-0.2574,Negative,Positive,0.359,0.271,0.37
+3754188,Premier League 2015/2016,Southampton,63,Dušan Tadić,Juan Miguel Jiménez López,Negative,-0.1431,Negative,Negative,0.808,0.134,0.058
+3879804,Serie A 2015/2016,Frosinone,67,Federico Dionisi,Samuele Longo,Negative,-0.4129,Negative,Negative,0.408,0.307,0.285
+3895292,Bundesliga 2023/2024,Union Berlin,77,Brenden Aaronson,Benedict Hollerbach,Neutral,0.0444,Neutral,Positive,0.355,0.21,0.435
+3878600,Serie A 2015/2016,Inter Milan,83,Ivan Perišić,Andrea Ranocchia,Negative,-0.1891,Negative,Negative,0.763,0.142,0.095
+3878550,Serie A 2015/2016,Bologna,54,Godfred Donsah,Amadou Diawara,Positive,0.1986,Positive,Positive,0.286,0.236,0.478
+3879841,Serie A 2015/2016,Palermo,61,Robin Quaison,Aleksandar Trajkovski,Neutral,0.0183,Neutral,Positive,0.351,0.286,0.363
+3879577,Serie A 2015/2016,Empoli,67,Leandro Daniel Paredes,Marcel Büchel,Negative,-0.3586,Negative,Negative,0.893,0.038,0.069
+3754201,Premier League 2015/2016,Arsenal,84,Mathieu Flamini,Francis Joseph Coquelin,Neutral,-0.0855,Neutral,Negative,0.63,0.092,0.278
+3754115,Premier League 2015/2016,Aston Villa,67,Jordan Ayew,Adama Traoré Diarra,Positive,0.2165,Positive,Positive,0.101,0.146,0.753
+3838017,Ligue 1 2022/2023,Paris Saint-Germain,80,El Chadaille Bitshiabu,Marcos Aoás Corrêa,Positive,0.3276,Positive,Positive,0.062,0.093,0.845
+3753976,Premier League 2015/2016,Arsenal,63,Joel Nathaniel Campbell Samuels,Daniel Nii Tackie Mensah Welbeck,Negative,-0.6173,Negative,Neutral,0.226,0.496,0.278
+3754335,Premier League 2015/2016,Leicester City,69,Shinji Okazaki,José Leonardo Ulloa,Positive,0.7131,Positive,Positive,0.066,0.014,0.92
+3869519,FIFA World Cup 2022,Argentina,61,Leandro Daniel Paredes,Lisandro Martínez,Positive,0.1274,Positive,Negative,0.431,0.293,0.276
+3895258,Bundesliga 2023/2024,Bayer Leverkusen,78,Piero Martín Hincapié Reyna,Edmond Fayçal Tapsoba,Neutral,-0.0743,Neutral,Neutral,0.147,0.714,0.139
+3753974,Premier League 2015/2016,Everton,68,Ross Barkley,Gerard Deulofeu Lázaro,Negative,-0.7437,Negative,Negative,0.885,0.049,0.066
+3878602,Serie A 2015/2016,Palermo,70,Robin Quaison,Aleksandar Trajkovski,Positive,0.4701,Positive,Negative,0.531,0.34,0.129
+3754187,Premier League 2015/2016,Stoke City,45,Xherdan Shaqiri,José Luis Sanmartín Mato,Positive,0.6493,Positive,Positive,0.015,0.149,0.836
+3895302,Bundesliga 2023/2024,Werder Bremen,68,Felix Agu,Olivier Deman,Negative,-0.5331,Negative,Positive,0.32,0.257,0.423
+3895220,Bundesliga 2023/2024,Darmstadt 98,66,Fabian Holland,Marvin Mehlem,Neutral,-0.0204,Neutral,Neutral,0.126,0.577,0.297
+3879625,Serie A 2015/2016,Sampdoria,81,Roberto Soriano,Federico Bonazzoli,Negative,-0.1236,Negative,Negative,0.382,0.278,0.34
+3857285,FIFA World Cup 2022,Netherlands,61,Vincent Janssen,Memphis Depay,Negative,-0.2195,Negative,Positive,0.346,0.207,0.447
+3879614,Serie A 2015/2016,Torino,62,Andrea Belotti,Maximiliano Gastón López,Negative,-1.1601,Negative,Negative,0.954,0.008,0.038
+3878594,Serie A 2015/2016,Juventus,45,Claudio Marchisio,Paul Pogba,Positive,0.3845,Positive,Negative,0.721,0.084,0.195
+3878544,Serie A 2015/2016,Genoa,67,Diego Ángel Capel Trinidad,Panagiotis Tachtsidis,Negative,-0.2764,Negative,Negative,0.358,0.302,0.34
+3879857,Serie A 2015/2016,Empoli,68,Marcel Büchel,Daniele Croce,Negative,-0.1556,Negative,Negative,0.362,0.313,0.325
+3754294,Premier League 2015/2016,Everton,56,Ross Barkley,Tom Cleverley,Negative,-0.2073,Negative,Positive,0.086,0.077,0.837
+3773571,La Liga 2020/2021,Barcelona,70,Ronald Federico Araújo da Silva,Samuel Yves Umtiti,Negative,-0.6847,Negative,Negative,0.97,0.003,0.027
+3753978,Premier League 2015/2016,Swansea City,79,Jonjo Shelvey,Leon Britton,Positive,0.9032,Positive,Positive,0.096,0.17,0.734
+3879615,Serie A 2015/2016,Sassuolo,66,Diego Falcinelli,Gregoire Defrel,Neutral,-0.0722,Neutral,Neutral,0.307,0.517,0.176
+3753977,Premier League 2015/2016,Stoke City,83,Ibrahim Afellay,Mame Biram Diouf,Negative,-0.4801,Negative,Negative,0.78,0.123,0.097
+3754147,Premier League 2015/2016,Manchester City,74,Gaël Clichy,Aleksandar Kolarov,Negative,-0.7901,Negative,Negative,0.619,0.236,0.145
+3879541,Serie A 2015/2016,Fiorentina,55,Khouma El Hadji Babacar,Nikola Kalinić,Negative,-0.1289,Negative,Negative,0.68,0.155,0.165
+3754038,Premier League 2015/2016,Norwich City,84,Wes Hoolahan,Vadis Odjidja-Ofoe,Neutral,0.0678,Neutral,Neutral,0.198,0.504,0.298
+3773415,La Liga 2020/2021,Cádiz,58,Álvaro Negredo Sánchez,Anthony Rubén Lozano Colón,Negative,-0.3083,Negative,Negative,0.641,0.086,0.273
+3837818,Ligue 1 2022/2023,Angers,79,Batista Mendy,Waniss Taibi,Positive,0.1391,Positive,Positive,0.064,0.065,0.871
+3879638,Serie A 2015/2016,Genoa,59,Darko Lazović,Diego Ángel Capel Trinidad,Positive,0.1747,Positive,Positive,0.266,0.293,0.441
+3753977,Premier League 2015/2016,Stoke City,83,Marko Arnautović,Stephen Ireland,Negative,-0.4801,Negative,Negative,0.809,0.115,0.076
+3879586,Serie A 2015/2016,Hellas Verona,45,Eros Pisano,Luca Siligardi,Neutral,-0.0541,Neutral,Neutral,0.058,0.497,0.445
+3879862,Serie A 2015/2016,Napoli,82,José María Callejón Bueno,Omar El Kaddouri,Neutral,0.0,Neutral,Positive,0.227,0.325,0.448
+3857270,FIFA World Cup 2022,Uruguay,72,Edinson Roberto Cavani Gómez,Luis Alberto Suárez Díaz,Positive,0.2386,Positive,Positive,0.152,0.171,0.677
+3754057,Premier League 2015/2016,Tottenham Hotspur,71,Christian Dannemann Eriksen,Tom Carroll,Negative,-0.3429,Negative,Negative,0.476,0.254,0.27
+3879558,Serie A 2015/2016,Carpi,68,Raphael Martinho Alves de Lima,Raffaele Bianco,Negative,-0.7725,Negative,Negative,0.422,0.245,0.333
+3879872,Serie A 2015/2016,Bologna,70,Anthony Mounier,Erick Antonio Pulgar Farfán,Neutral,0.0351,Neutral,Positive,0.341,0.275,0.384
+3754015,Premier League 2015/2016,Manchester City,54,Raheem Sterling,Jesús Navas González,Negative,-0.1677,Negative,Negative,0.625,0.194,0.181
+3754067,Premier League 2015/2016,West Ham United,61,Mark Noble,Andy Carroll,Positive,0.2047,Positive,Neutral,0.295,0.401,0.304
+3753977,Premier League 2015/2016,Watford,75,Nathan Aké,Ikechi Anya,Negative,-0.1953,Negative,Neutral,0.193,0.478,0.329
+3879620,Serie A 2015/2016,Hellas Verona,46,Michelangelo Albertazzi,Filip Helander,Neutral,-0.0161,Neutral,Neutral,0.252,0.4,0.348
+3773672,La Liga 2020/2021,Barcelona,60,Anssumane Fati,Pedro González López,Negative,-0.355,Negative,Negative,0.758,0.126,0.116
+3837747,Ligue 1 2022/2023,Paris Saint-Germain,24,Danilo Luís Hélio Pereira,Nordi Mukiele Mulere,Neutral,-0.0704,Neutral,Negative,0.522,0.24,0.238
+3857283,FIFA World Cup 2022,Belgium,74,Michy Batshuayi Tunga,Charles De Ketelaere,Positive,0.582,Positive,Positive,0.026,0.033,0.941
+3754333,Premier League 2015/2016,Newcastle United,62,Cheik Ismaël Tioté,Jonjo Shelvey,Positive,0.8852,Positive,Positive,0.165,0.171,0.664
+3879670,Serie A 2015/2016,Juventus,83,José Martín Cáceres Silva,Daniele Rugani,Negative,-0.4225,Negative,Negative,0.886,0.053,0.061
+3879876,Serie A 2015/2016,Atalanta,77,Remo Freuler,Gaetano Monachello,Positive,0.3978,Positive,Positive,0.26,0.248,0.492
+3879830,Serie A 2015/2016,Genoa,66,Luca Rigoni,Panagiotis Tachtsidis,Positive,0.3445,Positive,Negative,0.587,0.233,0.18
+3773571,La Liga 2020/2021,Barcelona,80,Pedro González López,Philippe Coutinho Correia,Positive,0.2581,Positive,Positive,0.213,0.232,0.555
+3869684,FIFA World Cup 2022,Morocco,45,Abdelhamid Sabiri,Ilias Chair,Negative,-0.1901,Negative,Negative,0.457,0.265,0.278
+3754115,Premier League 2015/2016,Chelsea,82,Pedro Eliezer Rodríguez Ledesma,Eden Hazard,Neutral,0.0662,Neutral,Neutral,0.291,0.418,0.291
+3754265,Premier League 2015/2016,Tottenham Hotspur,74,Erik Lamela,Heung-Min Son,Negative,-0.8409,Negative,Negative,0.722,0.09,0.188
+3837844,Ligue 1 2022/2023,Paris Saint-Germain,30,Sergio Ramos García,Renato Júnior Luz Sanches,Neutral,-0.0712,Neutral,Negative,0.443,0.279,0.278
+3879689,Serie A 2015/2016,Sampdoria,63,Pedro Miguel Almeida Lopes Pereira,Carlos Mario Carbonero Mancilla,Positive,1.9404,Positive,Positive,0.009,0.008,0.983
+3754016,Premier League 2015/2016,Newcastle United,69,Ayoze Pérez Gutiérrez,Papiss Demba Cissé,Positive,0.2565,Positive,Positive,0.08,0.111,0.809
+3879864,Serie A 2015/2016,Juventus,70,Kwadwo Asamoah,Simone Padoin,Positive,0.2241,Positive,Positive,0.1,0.088,0.812
+3754291,Premier League 2015/2016,Tottenham Hotspur,44,Mousa Sidi Yaya Dembélé,Christian Dannemann Eriksen,Positive,0.8189,Positive,Positive,0.054,0.063,0.883
+3879650,Serie A 2015/2016,Empoli,62,Massimo Maccarone,Marko Livaja,Negative,-0.2685,Negative,Negative,0.577,0.215,0.208
+3879644,Serie A 2015/2016,Palermo,64,Mato Jajalo,Giuseppe Pezzella,Negative,-0.2952,Negative,Negative,0.49,0.305,0.205
+3764440,La Liga 2020/2021,Elche,80,Omenuke Mfulu,Luis Miguel Sánchez Benítez,Positive,0.3496,Positive,Positive,0.033,0.009,0.958
+3878606,Serie A 2015/2016,Torino,75,Bruno da Silva Peres,Davide Zappacosta,Negative,-0.2862,Negative,Negative,0.561,0.222,0.217
+3773597,La Liga 2020/2021,Barcelona,78,Ousmane Dembélé,Martin Braithwaite Christensen,Neutral,0.0437,Neutral,Positive,0.123,0.354,0.523
+3869151,FIFA World Cup 2022,Australia,71,Mitchell Thomas Duke,Jamie MacLaren,Positive,0.3857,Positive,Positive,0.021,0.048,0.931
+3879833,Serie A 2015/2016,Juventus,74,Paulo Bruno Exequiel Dybala,Simone Zaza,Negative,-0.3697,Negative,Negative,0.854,0.064,0.082
+3773625,La Liga 2020/2021,Barcelona,66,Gerard Piqué Bernabéu,Ronald Federico Araújo da Silva,Negative,-0.2964,Negative,Positive,0.34,0.065,0.595
+3879556,Serie A 2015/2016,Frosinone,72,Danilo Soddimo,Yussif Raman Chibsah,Negative,-0.9312,Negative,Negative,0.89,0.045,0.065
+3754336,Premier League 2015/2016,Everton,8,Muhamed Bešić,Steven Naismith,Positive,0.6059,Positive,Neutral,0.328,0.505,0.167
+3857269,FIFA World Cup 2022,Switzerland,74,Breel-Donald Embolo,Haris Seferović,Negative,-0.1343,Negative,Negative,0.649,0.187,0.164
+3879576,Serie A 2015/2016,Frosinone,67,Danilo Soddimo,Paolo Sammarco,Negative,-0.3635,Negative,Negative,0.608,0.151,0.241
+3754154,Premier League 2015/2016,Newcastle United,82,Cheik Ismaël Tioté,Jonjo Shelvey,Neutral,0.0228,Neutral,Positive,0.291,0.234,0.475
+3869354,FIFA World Cup 2022,England,78,Bukayo Saka,Raheem Sterling,Positive,1.1593,Positive,Positive,0.091,0.047,0.862
+3879857,Serie A 2015/2016,Empoli,81,Marco Zambelli,Luca Bittante,Positive,0.1875,Positive,Positive,0.162,0.243,0.595
+3754264,Premier League 2015/2016,Newcastle United,69,Aleksandar Mitrović,Seydou Doumbia,Negative,-0.3179,Negative,Positive,0.154,0.223,0.623
+3754322,Premier League 2015/2016,Manchester City,74,Samir Nasri,Fabian Delph,Positive,0.4675,Positive,Negative,0.836,0.064,0.1
+3857268,FIFA World Cup 2022,Belgium,61,Eden Hazard,Leandro Trossard,Positive,0.5087,Positive,Positive,0.184,0.063,0.753
+3754186,Premier League 2015/2016,Leicester City,59,Shinji Okazaki,José Leonardo Ulloa,Positive,0.5264,Positive,Positive,0.106,0.147,0.747
+3879838,Serie A 2015/2016,Lazio,82,Abdoulay Konko,Ravel Morrison,Positive,0.3169,Positive,Positive,0.179,0.158,0.663
+3879749,Serie A 2015/2016,Inter Milan,77,Jonathan Ludovic Biabiany,Assane Demoya Gnoukouri,Negative,-0.3669,Negative,Negative,0.493,0.337,0.17
+3754062,Premier League 2015/2016,West Bromwich Albion,59,Claudio Ariel Yacob,Saido Berahino,Neutral,-0.0702,Neutral,Negative,0.576,0.234,0.19
+3857281,FIFA World Cup 2022,Croatia,85,Mateo Kovačić,Lovro Majer,Positive,0.1988,Positive,Positive,0.127,0.026,0.847
+3857264,FIFA World Cup 2022,Argentina,82,Alexis Mac Allister,Thiago Ezequiel Almada,Neutral,0.09,Neutral,Negative,0.531,0.298,0.171
+3879633,Serie A 2015/2016,Lazio,56,Sergej Milinković-Savić,Felipe Anderson Pereira Gomes,Positive,0.2058,Positive,Positive,0.061,0.1,0.839
+3879706,Serie A 2015/2016,Fiorentina,85,Joan Verdú Fernández,Jakub Błaszczykowski,Neutral,0.0755,Neutral,Negative,0.392,0.347,0.261
+3754256,Premier League 2015/2016,Everton,72,Aaron Lennon,Gerard Deulofeu Lázaro,Positive,0.2526,Positive,Positive,0.118,0.169,0.713
+3754143,Premier League 2015/2016,Liverpool,61,Roberto Firmino Barbosa de Oliveira,Daniel Andre Sturridge,Positive,0.1613,Positive,Positive,0.226,0.261,0.513
+3879795,Serie A 2015/2016,Carpi,52,Lorenzo Lollo,Marco Crimi,Negative,-0.6885,Negative,Negative,0.851,0.079,0.07
+3879818,Serie A 2015/2016,Bologna,80,Saphir Sliti Taïder,Matteo Brighi,Negative,-1.0418,Negative,Negative,0.514,0.253,0.233
+3773466,La Liga 2020/2021,Barcelona,71,Philippe Coutinho Correia,Pedro González López,Negative,-0.4601,Negative,Negative,0.91,0.027,0.063
+3879796,Serie A 2015/2016,Genoa,64,Luca Rigoni,Panagiotis Tachtsidis,Positive,0.8145,Positive,Positive,0.114,0.013,0.873
+3773466,La Liga 2020/2021,Celta Vigo,45,Joseph Aidoo,Miguel Baeza Pérez,Negative,-0.1059,Negative,Positive,0.308,0.239,0.453
+3878547,Serie A 2015/2016,Frosinone,75,Aleandro Rosi,Matteo Ciofani,Positive,0.1671,Positive,Positive,0.29,0.299,0.411
+3754117,Premier League 2015/2016,Arsenal,85,Mesut Özil,Calum Chambers,Neutral,0.0573,Neutral,Positive,0.22,0.231,0.549
+3857268,FIFA World Cup 2022,Canada,57,David Junior Hoilett,Cyle Larin,Negative,-0.2588,Negative,Negative,0.614,0.144,0.242
+3857287,FIFA World Cup 2022,Uruguay,63,Luis Alberto Suárez Díaz,Edinson Roberto Cavani Gómez,Neutral,-0.0127,Neutral,Neutral,0.259,0.391,0.35
+3879547,Serie A 2015/2016,AS Roma,54,Francesco Totti,Juan Manuel Iturbe Arévalo,Negative,-1.189,Negative,Negative,0.809,0.021,0.17
+3879606,Serie A 2015/2016,Chievo,76,Valter Birsa,Simone Pepe,Neutral,0.0713,Neutral,Positive,0.259,0.224,0.517
+3879871,Serie A 2015/2016,Carpi,85,Raphael Martinho Alves de Lima,Isaac Cofie,Positive,0.8422,Positive,Positive,0.018,0.005,0.977
+3753978,Premier League 2015/2016,Southampton,73,Dušan Tadić,Jay Rodriguez,Negative,-1.0079,Negative,Negative,0.639,0.119,0.242
+3879693,Serie A 2015/2016,Juventus,57,Giorgio Chiellini,José Martín Cáceres Silva,Positive,0.1152,Positive,Negative,0.509,0.305,0.186
+3879717,Serie A 2015/2016,Sassuolo,67,Davide Biondini,Lorenzo Pellegrini,Neutral,-0.0129,Neutral,Positive,0.287,0.273,0.44
+3837827,Ligue 1 2022/2023,Rennes,75,Adrien Truffert,Birger Meling,Positive,0.4515,Positive,Positive,0.068,0.065,0.867
+3895302,Bundesliga 2023/2024,Werder Bremen,68,Nick Woltemade,Dawid Kownacki,Negative,-0.5331,Negative,Positive,0.325,0.243,0.432
+3879831,Serie A 2015/2016,Sassuolo,36,Davide Biondini,Joseph Alfred Duncan,Positive,0.3226,Positive,Neutral,0.24,0.406,0.354
+3857290,FIFA World Cup 2022,Switzerland,80,Ruben Vargas,Fabian Rieder,Positive,0.1678,Positive,Negative,0.685,0.111,0.204
+3754167,Premier League 2015/2016,Manchester City,72,Kevin De Bruyne,Fernando Francisco Reges,Negative,-0.9779,Negative,Negative,0.451,0.179,0.37
+3879649,Serie A 2015/2016,Frosinone,77,Mirko Gori,Nicolás Ignacio Castillo Mora,Negative,-0.4941,Negative,Positive,0.278,0.252,0.47
+3754075,Premier League 2015/2016,Aston Villa,66,Carlos Alberto Sánchez Moreno,Leandro Bacuna,Positive,0.7822,Positive,Positive,0.146,0.024,0.83
+3754158,Premier League 2015/2016,West Ham United,83,Manuel Lanzini,Enner Remberto Valencia Lastra,Negative,-0.83,Negative,Negative,0.41,0.321,0.269
+3837859,Ligue 1 2022/2023,Paris Saint-Germain,75,Carlos Soler Barragán,Warren Zaire Emery,Negative,-0.2806,Negative,Negative,0.822,0.075,0.103
+3879851,Serie A 2015/2016,AC Milan,72,Ignazio Abate,Luca Antonelli,Positive,0.2173,Positive,Neutral,0.233,0.469,0.298
+3879809,Serie A 2015/2016,Sassuolo,78,Davide Biondini,Diego Falcinelli,Positive,0.1444,Positive,Negative,0.415,0.327,0.258
+3754065,Premier League 2015/2016,Leicester City,76,Shinji Okazaki,Andrew Philip King,Neutral,-0.0258,Neutral,Positive,0.34,0.193,0.467
+3857292,FIFA World Cup 2022,Costa Rica,73,Keysher Fuller Spence,Jewison Bennette,Neutral,0.0762,Neutral,Positive,0.034,0.028,0.938
+3879875,Serie A 2015/2016,Hellas Verona,45,Artur Ioniţă,Rômulo Souza Orestes Caldeira,Negative,-0.3866,Negative,Negative,0.737,0.117,0.146
+3754154,Premier League 2015/2016,Newcastle United,74,Papiss Demba Cissé,Aleksandar Mitrović,Negative,-0.3138,Negative,Positive,0.338,0.322,0.34
+3753982,Premier League 2015/2016,Southampton,45,Matt Targett,Dušan Tadić,Neutral,-0.0407,Neutral,Positive,0.31,0.295,0.395
+3879855,Serie A 2015/2016,Napoli,83,Gonzalo Gerardo Higuaín,Manolo Gabbiadini,Positive,0.3523,Positive,Negative,0.649,0.202,0.149
+3879858,Serie A 2015/2016,Bologna,71,Daniele Gastaldello,Saphir Sliti Taïder,Negative,-0.2548,Negative,Negative,0.368,0.355,0.277
+3838017,Ligue 1 2022/2023,Paris Saint-Germain,57,Hugo Ekitike,Carlos Soler Barragán,Negative,-0.2241,Negative,Negative,0.781,0.019,0.2
+3878546,Serie A 2015/2016,Napoli,62,Gonzalo Gerardo Higuaín,Manolo Gabbiadini,Positive,0.1149,Positive,Positive,0.132,0.144,0.724
+3879708,Serie A 2015/2016,Atalanta,22,Rafael Tolói,Alessandro Diamanti,Positive,0.6388,Positive,Negative,0.437,0.352,0.211
+3895194,Bundesliga 2023/2024,Bayer Leverkusen,61,Adam Hložek,Florian Wirtz,Positive,0.2682,Positive,Negative,0.526,0.177,0.297
+3895333,Bundesliga 2023/2024,Bayer Leverkusen,82,Robert Andrich,Gustavo Adolfo Puerta Molano,Neutral,0.0715,Neutral,Negative,0.764,0.081,0.155
+3879700,Serie A 2015/2016,Palermo,85,Robin Quaison,Aleksandar Trajkovski,Positive,1.2622,Positive,Positive,0.156,0.04,0.804
+3879619,Serie A 2015/2016,Sassuolo,78,Nicola Sansone,Antonio Floro Flores,Positive,0.1767,Positive,Neutral,0.2,0.499,0.301
+3878597,Serie A 2015/2016,Napoli,71,Lorenzo Insigne,José María Callejón Bueno,Negative,-0.2057,Negative,Negative,0.435,0.382,0.183
+3879616,Serie A 2015/2016,Fiorentina,73,Milan Badelj,Mario Suárez Mata,Negative,-0.3702,Negative,Negative,0.408,0.382,0.21
+3879729,Serie A 2015/2016,Sassuolo,80,Simone Missiroli,Nicola Sansone,Positive,0.4515,Positive,Negative,0.549,0.211,0.24
+3879667,Serie A 2015/2016,Sassuolo,59,Karim Laribi,Joseph Alfred Duncan,Positive,0.248,Positive,Negative,0.489,0.187,0.324
+3879698,Serie A 2015/2016,Empoli,69,Massimo Maccarone,Marko Livaja,Negative,-0.542,Negative,Negative,0.807,0.051,0.142
+3837771,Ligue 1 2022/2023,Paris Saint-Germain,83,Juan Bernat Velasco,Nuno Mendes,Negative,-1.4388,Negative,Negative,0.941,0.017,0.042
+3754283,Premier League 2015/2016,Aston Villa,73,Jack Grealish,"Charles N""Zogbia",Negative,-0.3643,Negative,Positive,0.312,0.204,0.484
+3879735,Serie A 2015/2016,Empoli,84,Riccardo Saponara,Levan Mchedlidze,Neutral,0.039,Neutral,Neutral,0.197,0.412,0.391
+3754024,Premier League 2015/2016,Newcastle United,65,Cheik Ismaël Tioté,Jonjo Shelvey,Negative,-0.3108,Negative,Positive,0.288,0.107,0.605
+3895180,Bundesliga 2023/2024,Bayer Leverkusen,82,Jonas Hofmann,Adam Hložek,Positive,0.3892,Positive,Positive,0.073,0.021,0.906
+3879666,Serie A 2015/2016,Sampdoria,58,Eder Citadin Martins,Carlos Joaquín Correa,Negative,-0.8963,Negative,Negative,0.7,0.183,0.117
+3879843,Serie A 2015/2016,Torino,70,Daniele Baselli,Marco Benassi,Negative,-0.2262,Negative,Negative,0.591,0.195,0.214
+3879637,Serie A 2015/2016,Lazio,68,Sergej Milinković-Savić,Alessandro Matri,Positive,0.1709,Positive,Positive,0.303,0.264,0.433
+3754120,Premier League 2015/2016,Southampton,71,Graziano Pellè,Charlie Austin,Negative,-0.3006,Negative,Negative,0.542,0.229,0.229
+3754100,Premier League 2015/2016,Sunderland,72,Younes Kaboul,John O''Shea,Negative,-0.2967,Negative,Negative,0.527,0.218,0.255
+3754208,Premier League 2015/2016,Manchester City,45,Gnégnéri Yaya Touré,Fernando Luiz Rosa,Positive,0.8701,Positive,Positive,0.003,0.009,0.988
+3879595,Serie A 2015/2016,Fiorentina,79,Davide Astori,Nenad Tomović,Neutral,-0.0244,Neutral,Neutral,0.224,0.496,0.28
+3753979,Premier League 2015/2016,Sunderland,58,Steven Fletcher,Jeremain Lens,Negative,-0.1382,Negative,Negative,0.515,0.252,0.233
+3879662,Serie A 2015/2016,Chievo,73,Valter Birsa,Simone Pepe,Neutral,0.0239,Neutral,Positive,0.197,0.261,0.542
+3879861,Serie A 2015/2016,Frosinone,29,Francesco Bardi,Massimo Zenildo Zappino,Positive,0.1226,Positive,Positive,0.207,0.099,0.694
+3754128,Premier League 2015/2016,Aston Villa,58,Jordan Ayew,Rudy Gestede,Positive,0.3291,Positive,Positive,0.19,0.235,0.575
+3895052,Bundesliga 2023/2024,RB Leipzig,61,Timo Werner,Yussuf Yurary Poulsen,Positive,1.1485,Positive,Positive,0.052,0.029,0.919
+3754254,Premier League 2015/2016,Newcastle United,77,Ayoze Pérez Gutiérrez,Cheik Ismaël Tioté,Negative,-0.4506,Negative,Positive,0.239,0.192,0.569
+3754078,Premier League 2015/2016,Chelsea,83,Willian Borges da Silva,Radamel Falcao García Zárate,Neutral,0.0693,Neutral,Neutral,0.348,0.366,0.286
+3879649,Serie A 2015/2016,Frosinone,82,Aleandro Rosi,Robert Gucher,Negative,-0.553,Negative,Neutral,0.263,0.387,0.35
+3879632,Serie A 2015/2016,AS Roma,82,Juan Manuel Iturbe Arévalo,Vassilis Torosidis,Positive,0.7902,Positive,Positive,0.039,0.026,0.935
+3879631,Serie A 2015/2016,Chievo,70,Valter Birsa,Simone Pepe,Negative,-0.1456,Negative,Negative,0.411,0.307,0.282
+3857272,FIFA World Cup 2022,England,77,Bukayo Saka,Marcus Rashford,Neutral,0.0649,Neutral,Neutral,0.15,0.708,0.142
+3857260,FIFA World Cup 2022,Mexico,85,Edson Omar Álvarez Velázquez,Rogelio Gabriel Funes Mori,Negative,-0.7661,Negative,Negative,0.876,0.074,0.05
+3879865,Serie A 2015/2016,Genoa,65,Blerim Džemaili,Gabriel Moisés Antunes da Silva,Positive,0.1846,Positive,Positive,0.355,0.287,0.358
+3773597,La Liga 2020/2021,Barcelona,67,Pedro González López,Moriba Kourouma Kourouma,Negative,-0.8981,Negative,Negative,0.649,0.07,0.281
+3879818,Serie A 2015/2016,Bologna,45,Luca Rizzo,Juan Camilo Zúñiga Mosquera,Positive,0.3615,Positive,Positive,0.181,0.282,0.537
+3754023,Premier League 2015/2016,AFC Bournemouth,45,Charlie Daniels,Tyrone Mings,Neutral,-0.0584,Neutral,Neutral,0.26,0.402,0.338
+3879608,Serie A 2015/2016,Hellas Verona,66,Boško Janković,Artur Ioniţă,Negative,-0.1674,Negative,Positive,0.336,0.313,0.351
+3857271,FIFA World Cup 2022,Iran,62,Milad Mohammadi,Mehdi Torabi,Negative,-0.1806,Negative,Neutral,0.29,0.396,0.314
+3879857,Serie A 2015/2016,Inter Milan,62,Stevan Jovetić,Eder Citadin Martins,Positive,0.1598,Positive,Positive,0.168,0.202,0.63
+3857272,FIFA World Cup 2022,United States,77,Sergino Dest,Shaquell Moore,Neutral,-0.0649,Neutral,Negative,0.637,0.165,0.198
+3879551,Serie A 2015/2016,Hellas Verona,77,Emil Hallfreðsson,Matuzalém Francelino da Silva,Positive,0.8627,Positive,Positive,0.08,0.031,0.889
+3857301,FIFA World Cup 2022,Qatar,82,Pedro Miguel Correia,Mohammed Waed Abdulwahhab Al Bayati,Neutral,0.08,Neutral,Neutral,0.163,0.641,0.196
+3895167,Bundesliga 2023/2024,Bayer Leverkusen,83,Exequiel Alejandro Palacios,Piero Martín Hincapié Reyna,Positive,0.2103,Positive,Positive,0.261,0.333,0.406
+3754084,Premier League 2015/2016,West Bromwich Albion,73,Stéphane Sessègnon,Callum McManaman,Neutral,-0.0383,Neutral,Positive,0.166,0.248,0.586
+3857289,FIFA World Cup 2022,Argentina,62,Gonzalo Ariel Montiel,Nahuel Molina Lucero,Neutral,0.0655,Neutral,Positive,0.102,0.424,0.474
+3754121,Premier League 2015/2016,AFC Bournemouth,73,Benik Afobe,Dan Gosling,Positive,0.3096,Positive,Positive,0.188,0.099,0.713
+3754337,Premier League 2015/2016,Southampton,80,Sadio Mané,Juan Miguel Jiménez López,Negative,-1.1574,Negative,Negative,0.902,0.039,0.059
+3857267,FIFA World Cup 2022,Ecuador,45,Alan Steven Franco Palma,Jeremy Leonel Sarmiento Morante,Positive,0.8367,Positive,Positive,0.008,0.036,0.956
+3879702,Serie A 2015/2016,Genoa,58,Jesús Joaquín Fernández Sáez de la Torre,Alessio Cerci,Negative,-0.1594,Negative,Negative,0.493,0.17,0.337
+3895340,Bundesliga 2023/2024,Bochum,19,Takuma Asano,Tim Oermann,Negative,-0.1491,Negative,Negative,0.561,0.189,0.25
+3773597,La Liga 2020/2021,Real Sociedad,60,Cristian Portugués Manzanera,Adnan Januzaj,Positive,0.8375,Positive,Positive,0.009,0.017,0.974
+3857264,FIFA World Cup 2022,Poland,82,Grzegorz Krychowiak,Krzysztof Piątek,Neutral,-0.09,Neutral,Positive,0.158,0.289,0.553
+3879767,Serie A 2015/2016,Fiorentina,33,Matías Vecino Falero,Milan Badelj,Positive,1.0931,Positive,Positive,0.01,0.009,0.981
+3754171,Premier League 2015/2016,Manchester United,45,Memphis Depay,Marouane Fellaini-Bakkioui,Neutral,-0.0602,Neutral,Neutral,0.118,0.724,0.158
+3754227,Premier League 2015/2016,West Ham United,45,Pedro Mba Obiang Avomo,Andy Carroll,Neutral,-0.0456,Neutral,Negative,0.45,0.179,0.371
+3753996,Premier League 2015/2016,Chelsea,82,Pedro Eliezer Rodríguez Ledesma,Oscar dos Santos Emboaba Júnior,Positive,0.2298,Positive,Positive,0.194,0.368,0.438
+3879611,Serie A 2015/2016,Chievo,71,Roberto Inglese,Sergio Pellissier,Positive,0.3422,Positive,Positive,0.171,0.158,0.671
+3754240,Premier League 2015/2016,Stoke City,74,Mame Biram Diouf,Bojan Krkíc Pérez,Negative,-0.1193,Negative,Positive,0.039,0.024,0.937
+3879595,Serie A 2015/2016,Hellas Verona,68,Jacopo Sala,Mattia Zaccagni,Positive,0.8136,Positive,Positive,0.032,0.031,0.937
+3773547,La Liga 2020/2021,Osasuna,73,Rubén García Santos,Enrique Barja Afonso,Negative,-0.11,Negative,Negative,0.916,0.036,0.048
+3754295,Premier League 2015/2016,Aston Villa,81,Kieran Richardson,Rudy Gestede,Neutral,-0.0746,Neutral,Negative,0.422,0.331,0.247
+3879673,Serie A 2015/2016,Atalanta,78,Andrea Conti,Marcelo Alejandro Estigarribia Balmori,Negative,-0.6831,Negative,Negative,0.811,0.06,0.129
+3773695,La Liga 2020/2021,Barcelona,74,Sergino Dest,Sergi Roberto Carnicer,Negative,-0.7762,Negative,Negative,0.907,0.012,0.081
+3879871,Serie A 2015/2016,Udinese,77,Bruno Miguel Borges Fernandes,Antonio Di Natale,Positive,0.6354,Positive,Negative,0.51,0.235,0.255
+3879682,Serie A 2015/2016,Torino,80,Marco Benassi,Giuseppe Vives,Positive,0.3238,Positive,Neutral,0.231,0.397,0.372
+3879802,Serie A 2015/2016,Palermo,64,Gastón Brugman,Robin Quaison,Positive,0.1574,Positive,Positive,0.209,0.214,0.577
+3879698,Serie A 2015/2016,AC Milan,45,Alex Rodrigo Dias da Costa,Cristian Eduardo Zapata Valencia,Positive,0.2361,Positive,Negative,0.52,0.198,0.282
+3857294,FIFA World Cup 2022,Netherlands,65,Davy Klaassen,Steven Berghuis,Neutral,-0.0245,Neutral,Neutral,0.24,0.531,0.229
+3869519,FIFA World Cup 2022,Croatia,45,Mario Pašalić,Nikola Vlašić,Positive,1.0032,Positive,Positive,0.005,0.008,0.987
+3754177,Premier League 2015/2016,AFC Bournemouth,60,Max-Alain Gradel,Marc Pugh,Negative,-0.2515,Negative,Negative,0.473,0.332,0.195
+3878551,Serie A 2015/2016,AC Milan,54,Jesús Joaquín Fernández Sáez de la Torre,Giacomo Bonaventura,Positive,0.3575,Positive,Positive,0.185,0.221,0.594
+3754210,Premier League 2015/2016,Norwich City,77,Cameron Jerome,Patrick Bamford,Neutral,0.0128,Neutral,Neutral,0.099,0.688,0.213
+3879692,Serie A 2015/2016,Empoli,59,Rade Krunić,Marcel Büchel,Negative,-0.6713,Negative,Negative,0.85,0.045,0.105
+3879582,Serie A 2015/2016,Lazio,74,Antonio Candreva,Ricardo Kishna,Negative,-0.2739,Negative,Negative,0.764,0.102,0.134
+3857296,FIFA World Cup 2022,Belgium,71,Leander Dendoncker,Youri Tielemans,Negative,-0.4655,Negative,Negative,0.876,0.044,0.08
+3857271,FIFA World Cup 2022,Iran,19,Alireza Safar Beiranvand,Seyed Hossein Hosseini,Neutral,0.068,Neutral,Positive,0.216,0.388,0.396
+3754143,Premier League 2015/2016,Newcastle United,67,Siem Stefan de Jong,Ayoze Pérez Gutiérrez,Neutral,-0.0596,Neutral,Neutral,0.299,0.418,0.283
+3754254,Premier League 2015/2016,Manchester United,58,Bastian Schweinsteiger,Michael Carrick,Positive,0.1237,Positive,Positive,0.221,0.333,0.446
+3879737,Serie A 2015/2016,Lazio,79,Alessandro Matri,Miroslav Klose,Positive,0.3386,Positive,Negative,0.94,0.024,0.036
+3838017,Ligue 1 2022/2023,Clermont Foot,83,Grejohn Kyei,Komnen Andrić,Neutral,-0.0114,Neutral,Neutral,0.315,0.371,0.314
+3879813,Serie A 2015/2016,Udinese,61,Emil Hallfreðsson,Ryder Matos Santos,Positive,0.6821,Positive,Positive,0.172,0.095,0.733
+3754216,Premier League 2015/2016,AFC Bournemouth,45,Junior Stanislas,Lewis Grabban,Positive,0.238,Positive,Positive,0.034,0.048,0.918
+3879849,Serie A 2015/2016,Bologna,53,Domenico Maietta,Marios Oikonomou,Positive,0.2012,Positive,Positive,0.246,0.245,0.509
+3879801,Serie A 2015/2016,Inter Milan,84,Davide Santon,Eder Citadin Martins,Positive,0.8892,Positive,Positive,0.011,0.02,0.969
+3754028,Premier League 2015/2016,Manchester City,63,Sergio Leonel Agüero del Castillo,Wilfried Guemiand Bony,Positive,0.5909,Positive,Positive,0.064,0.07,0.866
+3754150,Premier League 2015/2016,Sunderland,53,Sebastian Larsson,Jeremain Lens,Positive,0.3519,Positive,Negative,0.535,0.207,0.258
+3895180,Bundesliga 2023/2024,Eintracht Frankfurt,82,Fares Chaïbi,Jessic Ngankam,Negative,-0.3892,Negative,Positive,0.398,0.155,0.447
+3879794,Serie A 2015/2016,Bologna,70,Archimede Morleo,Adam Masina,Negative,-1.2179,Negative,Negative,0.768,0.055,0.177
+3754166,Premier League 2015/2016,Leicester City,70,Marc Albrighton,Nathan Dyer,Negative,-0.9187,Negative,Negative,0.889,0.035,0.076
+3879685,Serie A 2015/2016,Atalanta,70,Alberto Grassi,Giulio Migliaccio,Negative,-1.1352,Negative,Positive,0.226,0.301,0.473
+3754261,Premier League 2015/2016,Arsenal,82,Alex Oxlade-Chamberlain,Daniel Nii Tackie Mensah Welbeck,Positive,0.7917,Positive,Negative,0.778,0.071,0.151
+3879598,Serie A 2015/2016,AS Roma,76,Edin Džeko,William Vainqueur,Negative,-0.297,Negative,Negative,0.793,0.091,0.116
+3754018,Premier League 2015/2016,Swansea City,72,Jefferson Antonio Montero Vite,Kyle Naughton,Positive,0.5223,Positive,Positive,0.059,0.124,0.817
+3879739,Serie A 2015/2016,Juventus,57,Álvaro Borja Morata Martín,Simone Zaza,Neutral,0.0266,Neutral,Negative,0.372,0.325,0.303
+3879570,Serie A 2015/2016,Genoa,56,Serge Gakpé,Issa Cissokho,Negative,-0.2905,Negative,Positive,0.191,0.251,0.558
+3753977,Premier League 2015/2016,Watford,54,José Manuel Jurado Marín,Nordin Amrabat,Neutral,-0.0757,Neutral,Positive,0.254,0.154,0.592
+3754128,Premier League 2015/2016,Aston Villa,77,Scott Sinclair,Kieran Richardson,Negative,-0.1908,Negative,Negative,0.752,0.117,0.131
+3754187,Premier League 2015/2016,Stoke City,75,Glenn Whelan,Charlie Adam,Positive,1.7023,Positive,Positive,0.008,0.011,0.981
+3879818,Serie A 2015/2016,Torino,69,Giuseppe Vives,Alessandro Gazzi,Positive,0.4159,Positive,Positive,0.18,0.047,0.773
+3754091,Premier League 2015/2016,Stoke City,60,José Luis Sanmartín Mato,Peter Crouch,Neutral,-0.0193,Neutral,Positive,0.225,0.27,0.505
+3879783,Serie A 2015/2016,Udinese,45,Edenílson Andrade dos Santos,Duván Esteban Zapata Banguera,Positive,0.3677,Positive,Positive,0.163,0.091,0.746
+3878546,Serie A 2015/2016,Sassuolo,72,Antonio Floro Flores,Nicola Sansone,Positive,0.2927,Positive,Negative,0.561,0.254,0.185
+3754173,Premier League 2015/2016,Arsenal,79,Olivier Giroud,Joel Nathaniel Campbell Samuels,Negative,-0.3756,Negative,Negative,0.686,0.164,0.15
+3754024,Premier League 2015/2016,Swansea City,83,Alberto Paloschi,Wayne Routledge,Negative,-0.3721,Negative,Negative,0.706,0.104,0.19
+3754300,Premier League 2015/2016,Everton,62,Brendan Joel Zibusiso Galloway,Arouna Koné,Negative,-0.1757,Negative,Negative,0.617,0.187,0.196
+3837963,Ligue 1 2022/2023,Paris Saint-Germain,45,Carlos Soler Barragán,Fabián Ruiz Peña,Positive,0.7304,Positive,Positive,0.186,0.103,0.711
+3754090,Premier League 2015/2016,Newcastle United,82,Daryl Janmaat,Jamaal Lascelles,Positive,0.295,Positive,Neutral,0.285,0.371,0.344
+3754262,Premier League 2015/2016,AFC Bournemouth,57,Max-Alain Gradel,Marc Pugh,Neutral,0.037,Neutral,Negative,0.461,0.323,0.216
+3837896,Ligue 1 2022/2023,Nantes,80,Moussa Sissoko,Evann Guessand,Negative,-0.5376,Negative,Negative,0.724,0.169,0.107
+3754217,Premier League 2015/2016,Arsenal,74,Alexis Alejandro Sánchez Sánchez,Alex Oxlade-Chamberlain,Neutral,0.0426,Neutral,Neutral,0.092,0.701,0.207
+3754006,Premier League 2015/2016,Leicester City,68,José Leonardo Ulloa,Andrew Philip King,Negative,-0.841,Negative,Negative,0.94,0.021,0.039
+3878554,Serie A 2015/2016,Genoa,73,Sebastian De Maio,Giovanni Marchese,Positive,0.3605,Positive,Neutral,0.381,0.383,0.236
+3879818,Serie A 2015/2016,Torino,79,Joel Chukwuma Obi,Alexander Farnerud,Positive,1.0418,Positive,Positive,0.294,0.209,0.497
+3754227,Premier League 2015/2016,Leicester City,53,Marc Albrighton,Jeffrey Schlupp,Neutral,0.0206,Neutral,Positive,0.252,0.354,0.394
+3754164,Premier League 2015/2016,Southampton,64,Steven Davis,James Ward-Prowse,Positive,0.3482,Positive,Positive,0.14,0.164,0.696
+3754116,Premier League 2015/2016,Chelsea,45,Matt Miazga,Robert Kenedy Nunes do Nascimento,Positive,0.7386,Positive,Positive,0.108,0.207,0.685
+3754026,Premier League 2015/2016,Stoke City,64,Charlie Adam,Stephen Ireland,Positive,0.2897,Positive,Positive,0.096,0.041,0.863
+3879654,Serie A 2015/2016,Atalanta,78,Cristian Raimondi,Gaetano Monachello,Positive,0.7371,Positive,Positive,0.011,0.008,0.981
+3879607,Serie A 2015/2016,AC Milan,63,Juraj Kucka,Luiz Adriano de Souza da Silva,Positive,0.3216,Positive,Positive,0.132,0.019,0.849
+3879557,Serie A 2015/2016,Chievo,69,Alessandro Gamberini,Fabrizio Cacciatore,Positive,0.2016,Positive,Positive,0.234,0.217,0.549
+3879617,Serie A 2015/2016,Bologna,74,Anthony Mounier,Luca Rizzo,Positive,1.8896,Positive,Positive,0.019,0.003,0.978
+3754285,Premier League 2015/2016,West Ham United,74,Aaron Cresswell,Alexandre Dimitri Song-Billong,Positive,0.9271,Positive,Positive,0.012,0.015,0.973
+3878547,Serie A 2015/2016,Torino,60,Maximiliano Gastón López,Josef Alexander Martínez Mencia,Negative,-0.2739,Negative,Negative,0.651,0.193,0.156
+3837785,Ligue 1 2022/2023,Paris Saint-Germain,60,Carlos Soler Barragán,Renato Júnior Luz Sanches,Negative,-0.1375,Negative,Negative,0.412,0.181,0.407
+3879672,Serie A 2015/2016,AS Roma,68,Mohamed Salah,Lorenzo Di Livio,Negative,-0.3559,Negative,Negative,0.747,0.141,0.112
+3879609,Serie A 2015/2016,Udinese,51,Felipe Dias da Silva dal Belo,Iván Rodrigo Piris Leguizamón,Positive,0.1216,Positive,Positive,0.204,0.204,0.592
+3857271,FIFA World Cup 2022,Iran,45,Alireza Jahanbakhsh,Ali Gholizadeh,Neutral,0.0732,Neutral,Neutral,0.146,0.618,0.236
+3754061,Premier League 2015/2016,Stoke City,74,Glenn Whelan,Bojan Krkíc Pérez,Positive,0.1395,Positive,Positive,0.277,0.21,0.513
+3895275,Bundesliga 2023/2024,Freiburg,60,Matthias Ginter,Philipp Lienhart,Negative,-0.1282,Negative,Negative,0.869,0.024,0.107
+3754351,Premier League 2015/2016,Liverpool,64,Emre Can,Roberto Firmino Barbosa de Oliveira,Positive,0.1183,Positive,Negative,0.549,0.23,0.221
+3754177,Premier League 2015/2016,AFC Bournemouth,68,Benik Afobe,Lewis Grabban,Neutral,0.0194,Neutral,Positive,0.232,0.189,0.579
+3879655,Serie A 2015/2016,Sampdoria,83,Lazaros Christodoulopoulos,Federico Bonazzoli,Positive,0.4481,Positive,Positive,0.24,0.311,0.449
+3857278,FIFA World Cup 2022,Iran,45,Sardar Azmoun,Saman Ghoddos,Positive,0.9655,Positive,Positive,0.056,0.055,0.889
+3764440,La Liga 2020/2021,Elche,71,Lucas Ariel Boyé,Guido Marcelo Carrillo,Negative,-0.2781,Negative,Positive,0.456,0.012,0.532
+3879546,Serie A 2015/2016,Atalanta,64,Andrea Masiello,Gianpaolo Bellini,Negative,-0.1412,Negative,Neutral,0.271,0.393,0.336
+3754025,Premier League 2015/2016,Chelsea,75,Diego da Silva Costa,Loïc Rémy,Positive,0.9902,Positive,Positive,0.138,0.14,0.722
+3879754,Serie A 2015/2016,Torino,84,Daniele Baselli,Joel Chukwuma Obi,Negative,-0.7824,Negative,Negative,0.967,0.011,0.022
+3754321,Premier League 2015/2016,Aston Villa,76,Jordan Veretout,Rudy Gestede,Positive,0.9756,Positive,Positive,0.057,0.029,0.914
+3879621,Serie A 2015/2016,Atalanta,54,Gianpaolo Bellini,Davide Brivio,Positive,0.4372,Positive,Positive,0.121,0.133,0.746
+3773428,La Liga 2020/2021,Cádiz,61,Álvaro Giménez Candela,Álvaro Negredo Sánchez,Positive,0.9206,Positive,Negative,0.389,0.295,0.316
+3879626,Serie A 2015/2016,Frosinone,76,Daniel Ciofani,Samuele Longo,Negative,-0.4908,Negative,Positive,0.433,0.118,0.449
+3879859,Serie A 2015/2016,Lazio,49,Felipe Anderson Pereira Gomes,Ogenyi Eddy Onazi,Positive,0.5506,Positive,Positive,0.037,0.034,0.929
+3754290,Premier League 2015/2016,Leicester City,76,Riyad Mahrez,Demarai Gray,Negative,-0.1388,Negative,Negative,0.78,0.105,0.115
+3857258,FIFA World Cup 2022,Serbia,65,Saša Lukić,Darko Lazović,Positive,0.8037,Positive,Positive,0.008,0.015,0.977
+3879555,Serie A 2015/2016,Atalanta,73,Jasmin Kurtič,Luca Cigarini,Negative,-0.5957,Negative,Negative,0.688,0.214,0.098
+3754074,Premier League 2015/2016,Swansea City,73,Gylfi Þór Sigurðsson,Modou Barrow,Negative,-0.1773,Negative,Positive,0.243,0.326,0.431
+3754164,Premier League 2015/2016,Southampton,82,Sadio Mané,Maya Yoshida,Negative,-0.1352,Negative,Negative,0.531,0.201,0.268
+3764440,La Liga 2020/2021,Elche,59,Miguel Ángel Garrido Cifuentes,Fidel Chaves de la Torre,Negative,-0.7315,Negative,Positive,0.327,0.116,0.557
+3773625,La Liga 2020/2021,Barcelona,80,Ronald Federico Araújo da Silva,Samuel Yves Umtiti,Positive,1.2429,Positive,Positive,0.192,0.237,0.571
+3895340,Bundesliga 2023/2024,Bochum,45,Bernardo Fernandes da Silva Junior,Erhan Mašović,Negative,-0.9543,Negative,Positive,0.356,0.255,0.389
+3754132,Premier League 2015/2016,Stoke City,55,Marko Arnautović,Jonathan Walters,Neutral,-0.0785,Neutral,Neutral,0.374,0.407,0.219
+3879874,Serie A 2015/2016,Lazio,84,Ogenyi Eddy Onazi,Stefano Mauri,Negative,-1.0535,Negative,Negative,0.915,0.026,0.059
+3857263,FIFA World Cup 2022,Germany,69,İlkay Gündoğan,Leroy Sané,Positive,1.3076,Positive,Positive,0.034,0.016,0.95
+3754078,Premier League 2015/2016,Swansea City,70,Jefferson Antonio Montero Vite,Wayne Routledge,Neutral,0.0519,Neutral,Neutral,0.179,0.467,0.354
+3879630,Serie A 2015/2016,Juventus,67,Juan Guillermo Cuadrado Bello,Stephan Lichtsteiner,Negative,-0.231,Negative,Negative,0.724,0.195,0.081
+3754124,Premier League 2015/2016,Manchester United,69,Juan Manuel Mata García,Bastian Schweinsteiger,Negative,-0.1224,Negative,Positive,0.155,0.122,0.723
+3895121,Bundesliga 2023/2024,Freiburg,66,Philipp Lienhart,Manuel Gulde,Positive,0.6624,Positive,Positive,0.12,0.083,0.797
+3869254,FIFA World Cup 2022,Portugal,72,João Félix Sequeira,Cristiano Ronaldo dos Santos Aveiro,Positive,0.1317,Positive,Positive,0.051,0.042,0.907
+3754124,Premier League 2015/2016,Manchester City,25,Raheem Sterling,Fernando Francisco Reges,Positive,0.2178,Positive,Positive,0.268,0.161,0.571
+3837963,Ligue 1 2022/2023,Lorient,64,Ibrahima Koné,Cheikh Ahmadou Bamba Mbacke Dieng,Positive,0.4473,Positive,Positive,0.215,0.07,0.715
+3754247,Premier League 2015/2016,Stoke City,70,Bojan Krkíc Pérez,Geoff Cameron,Positive,0.2601,Positive,Positive,0.307,0.24,0.453
+3857294,FIFA World Cup 2022,Netherlands,85,Frenkie de Jong,Kenneth Taylor,Neutral,0.029,Neutral,Neutral,0.148,0.627,0.225
+3754202,Premier League 2015/2016,Arsenal,71,Theo Walcott,Alex Iwobi,Positive,0.2422,Positive,Positive,0.177,0.23,0.593
+3754235,Premier League 2015/2016,West Bromwich Albion,45,Stéphane Sessègnon,Rickie Lambert,Positive,0.27,Positive,Positive,0.204,0.154,0.642
+3837902,Ligue 1 2022/2023,Paris Saint-Germain,74,Timothee Pembele,Juan Bernat Velasco,Negative,-0.4487,Negative,Negative,0.781,0.035,0.184
+3879555,Serie A 2015/2016,Sampdoria,69,Luis Fernando Muriel Fruto,Antonio Cassano,Positive,0.5527,Positive,Positive,0.052,0.038,0.91
+3754256,Premier League 2015/2016,Manchester United,80,Ander Herrera Agüera,Marouane Fellaini-Bakkioui,Negative,-0.4776,Negative,Negative,0.783,0.069,0.148
+3879862,Serie A 2015/2016,Napoli,80,Marek Hamšík,David López Silva,Positive,0.145,Positive,Positive,0.217,0.196,0.587
+3878554,Serie A 2015/2016,Genoa,55,Goran Pandev,Leonardo Pavoletti,Positive,0.27,Positive,Negative,0.561,0.202,0.237
+3837902,Ligue 1 2022/2023,Paris Saint-Germain,74,Fabián Ruiz Peña,Vitor Machado Ferreira,Negative,-0.4487,Negative,Negative,0.831,0.041,0.128
+3754235,Premier League 2015/2016,West Ham United,81,Mauro Matías Zárate,Michail Antonio,Neutral,-0.073,Neutral,Negative,0.798,0.086,0.116
+3879634,Serie A 2015/2016,Genoa,69,Sebastian De Maio,Goran Pandev,Neutral,-0.0177,Neutral,Positive,0.304,0.165,0.531
+3754251,Premier League 2015/2016,West Ham United,85,Michail Antonio,Carl Jenkinson,Positive,0.3601,Positive,Positive,0.164,0.1,0.736
+3879675,Serie A 2015/2016,Lazio,45,Felipe Anderson Pereira Gomes,Keita Baldé Diao,Negative,-0.1339,Negative,Positive,0.266,0.269,0.465
+3857255,FIFA World Cup 2022,Japan,61,Daizen Maeda,Takuma Asano,Negative,-0.7855,Negative,Negative,0.899,0.036,0.065
+3754160,Premier League 2015/2016,Arsenal,63,Alex Oxlade-Chamberlain,Theo Walcott,Positive,0.2562,Positive,Positive,0.232,0.282,0.486
+3879789,Serie A 2015/2016,Fiorentina,71,Milan Badelj,Mauro Matías Zárate,Negative,-0.4223,Negative,Negative,0.567,0.194,0.239
+3754059,Premier League 2015/2016,Chelsea,55,Willian Borges da Silva,Gary Cahill,Negative,-0.3592,Negative,Negative,0.666,0.134,0.2
+3879543,Serie A 2015/2016,Frosinone,84,Nicolás Ignacio Castillo Mora,Federico Dionisi,Positive,0.1626,Positive,Positive,0.239,0.097,0.664
+3879764,Serie A 2015/2016,Genoa,56,Jesús Joaquín Fernández Sáez de la Torre,Diego Ángel Capel Trinidad,Neutral,-0.0597,Neutral,Positive,0.089,0.053,0.858
+3773377,La Liga 2020/2021,Barcelona,85,Pedro González López,Miralem Pjanić,Negative,-0.4221,Negative,Negative,0.607,0.165,0.228
+3837876,Ligue 1 2022/2023,Paris Saint-Germain,74,Fabián Ruiz Peña,Danilo Luís Hélio Pereira,Positive,0.2093,Positive,Positive,0.09,0.104,0.806
+3754146,Premier League 2015/2016,Stoke City,82,Bojan Krkíc Pérez,Osazemwinde Peter Odemwingie,Neutral,0.0893,Neutral,Positive,0.224,0.199,0.577
+3754283,Premier League 2015/2016,Everton,73,Ross Barkley,Leon Osman,Positive,0.3643,Positive,Positive,0.203,0.111,0.686
+3879707,Serie A 2015/2016,AS Roma,82,Mohamed Salah,William Vainqueur,Positive,0.3634,Positive,Negative,0.431,0.33,0.239
+3857258,FIFA World Cup 2022,Brazil,78,Richarlison de Andrade,Gabriel Fernando de Jesus,Positive,0.1265,Positive,Positive,0.297,0.115,0.588
+3878556,Serie A 2015/2016,Torino,60,Josef Alexander Martínez Mencia,Maximiliano Gastón López,Positive,0.2253,Positive,Negative,0.522,0.226,0.252
+3754226,Premier League 2015/2016,Liverpool,60,Jordan Brian Henderson,Lucas Pezzini Leiva,Neutral,0.0422,Neutral,Negative,0.693,0.2,0.107
+3754337,Premier League 2015/2016,Southampton,72,Cédric Ricardo Alves Soares,Rhu-endly Martina,Negative,-1.3876,Negative,Negative,0.839,0.051,0.11
+3879708,Serie A 2015/2016,Sassuolo,71,Diego Falcinelli,Nicola Sansone,Neutral,0.094,Neutral,Neutral,0.17,0.589,0.241
+3754020,Premier League 2015/2016,Liverpool,51,Jordan Brian Henderson,Emre Can,Negative,-0.1387,Negative,Negative,0.48,0.292,0.228
+3879649,Serie A 2015/2016,Palermo,45,Uroš Đurđević,Alberto Gilardino,Negative,-0.3489,Negative,Negative,0.495,0.289,0.216
+3754251,Premier League 2015/2016,Liverpool,60,Roberto Firmino Barbosa de Oliveira,Adam David Lallana,Negative,-0.9268,Negative,Negative,0.791,0.085,0.124
+3754347,Premier League 2015/2016,West Ham United,76,Alexandre Dimitri Song-Billong,Pedro Mba Obiang Avomo,Neutral,0.0895,Neutral,Positive,0.264,0.125,0.611
+3878599,Serie A 2015/2016,Sassuolo,63,Nicola Sansone,Matteo Politano,Neutral,-0.0938,Neutral,Negative,0.432,0.274,0.294
+3879807,Serie A 2015/2016,Carpi,81,Raffaele Bianco,Gaetano Letizia,Positive,0.1442,Positive,Negative,0.608,0.204,0.188
+3754028,Premier League 2015/2016,Manchester City,70,Fabian Delph,Fernando Francisco Reges,Positive,0.3108,Positive,Positive,0.063,0.047,0.89
+3879699,Serie A 2015/2016,Napoli,74,Lorenzo Insigne,Dries Mertens,Positive,0.8936,Positive,Negative,0.549,0.155,0.296
+3773477,La Liga 2020/2021,Real Betis,61,Joaquín Sánchez Rodríguez,Aitor Ruibal García,Positive,1.9482,Positive,Positive,0.008,0.011,0.981
+3895067,Bundesliga 2023/2024,Bayer Leverkusen,71,Jonathan Tah,Josip Stanišić,Positive,0.1791,Positive,Positive,0.424,0.012,0.564
+3879751,Serie A 2015/2016,Palermo,66,Franco Damián Vázquez,Enzo Maresca,Positive,0.4221,Positive,Positive,0.113,0.077,0.81
+3754042,Premier League 2015/2016,Liverpool,80,Oluwaseyi Babajide Ojo,Sergi Canós Tenes,Negative,-0.2864,Negative,Positive,0.188,0.118,0.694
+3754017,Premier League 2015/2016,Aston Villa,84,Gabriel Imuetinyan Agbonlahor,Adama Traoré Diarra,Negative,-0.4572,Negative,Positive,0.212,0.341,0.447
+3879631,Serie A 2015/2016,Udinese,72,Rodrigo Sebastián Aguirre Soto,Antonio Di Natale,Positive,0.1746,Positive,Positive,0.342,0.308,0.35
+3895052,Bundesliga 2023/2024,Bayer Leverkusen,77,Jeremie Frimpong,Arthur Augusto de Matos Soares,Positive,0.5129,Positive,Positive,0.06,0.016,0.924
+3857268,FIFA World Cup 2022,Canada,57,Atiba Hutchinson,Ismael Koné,Negative,-0.2588,Negative,Negative,0.614,0.151,0.235
+3754124,Premier League 2015/2016,Manchester City,49,Joe Hart,Wilfredo Daniel Caballero,Negative,-0.3002,Negative,Negative,0.679,0.178,0.143
+3754169,Premier League 2015/2016,Sunderland,45,Jordi Gómez García-Penche,Jack Rodwell,Neutral,-0.0124,Neutral,Negative,0.503,0.248,0.249
+3754329,Premier League 2015/2016,West Ham United,58,Manuel Lanzini,Pedro Mba Obiang Avomo,Negative,-0.6199,Negative,Negative,0.82,0.061,0.119
+3895107,Bundesliga 2023/2024,FC Köln,74,Denis Huseinbašić,Mathias Flaga Olesen,Positive,0.2733,Positive,Positive,0.169,0.043,0.788
+3879837,Serie A 2015/2016,Inter Milan,64,Juan Guilherme Nunes Jesus,Ivan Perišić,Positive,0.3509,Positive,Negative,0.658,0.141,0.201
+3754095,Premier League 2015/2016,Sunderland,45,Jeremain Lens,Wahbi Khazri,Negative,-0.7246,Negative,Negative,0.876,0.044,0.08
+3879631,Serie A 2015/2016,Chievo,60,Riccardo Meggiorini,Roberto Inglese,Positive,0.5922,Positive,Positive,0.148,0.066,0.786
+3879784,Serie A 2015/2016,Torino,75,Cristian Molinaro,Davide Zappacosta,Positive,0.2571,Positive,Positive,0.06,0.177,0.763
+3879726,Serie A 2015/2016,Genoa,53,Alessio Cerci,Jesús Joaquín Fernández Sáez de la Torre,Negative,-0.4252,Negative,Negative,0.471,0.277,0.252
+3879672,Serie A 2015/2016,Chievo,17,Riccardo Meggiorini,Roberto Inglese,Positive,0.4077,Positive,Positive,0.132,0.091,0.777
+3879855,Serie A 2015/2016,Atalanta,69,Marco D''Alessandro,Gaetano Monachello,Neutral,0.0283,Neutral,Positive,0.245,0.216,0.539
+3764440,La Liga 2020/2021,Elche,59,Emiliano Ariel Rigoni,José Antonio Morente Oliva,Negative,-0.7315,Negative,Positive,0.316,0.123,0.561
+3895292,Bundesliga 2023/2024,Union Berlin,61,Rani Khedira,Aïssa Bilal Laïdouni,Positive,1.3216,Positive,Positive,0.004,0.004,0.992
+3895286,Bundesliga 2023/2024,Bayer Leverkusen,85,Jeremie Frimpong,Nathan Tella,Positive,0.3294,Positive,Positive,0.183,0.04,0.777
+3879836,Serie A 2015/2016,AC Milan,69,Carlos Arturo Bacca Ahumada,Jérémy Ménez,Positive,0.1609,Positive,Neutral,0.206,0.422,0.372
+3754141,Premier League 2015/2016,West Ham United,78,Reece Oxford,Kevin Nolan,Negative,-0.1814,Negative,Positive,0.122,0.192,0.686
+3879576,Serie A 2015/2016,Sampdoria,82,Ervin Zukanović,Mattia Cassani,Neutral,-0.0927,Neutral,Negative,0.623,0.13,0.247
+3879593,Serie A 2015/2016,Palermo,77,Achraf Lazaar,Ivaylo Chochev,Neutral,0.0568,Neutral,Positive,0.164,0.202,0.634
+3879537,Serie A 2015/2016,AC Milan,79,Carlos Arturo Bacca Ahumada,Luiz Adriano de Souza da Silva,Neutral,-0.0924,Neutral,Positive,0.353,0.199,0.448
+3879635,Serie A 2015/2016,Inter Milan,82,Ivan Perišić,Stevan Jovetić,Neutral,0.0679,Neutral,Neutral,0.327,0.412,0.261
+3879768,Serie A 2015/2016,Sampdoria,57,Lazaros Christodoulopoulos,Matías Agustín Silvestre,Positive,0.7471,Positive,Positive,0.146,0.062,0.792
+3857295,FIFA World Cup 2022,Japan,45,Ayase Ueda,Takuma Asano,Positive,0.4539,Positive,Positive,0.127,0.253,0.62
+3754065,Premier League 2015/2016,Tottenham Hotspur,81,Tom Carroll,Heung-Min Son,Neutral,0.0667,Neutral,Positive,0.311,0.203,0.486
+3754007,Premier League 2015/2016,Stoke City,80,Mame Biram Diouf,Stephen Ireland,Positive,0.2413,Positive,Positive,0.222,0.283,0.495
+3837818,Ligue 1 2022/2023,Angers,61,Pierrick Capelle,Farid El Melali,Negative,-0.3295,Negative,Negative,0.811,0.104,0.085
+3754137,Premier League 2015/2016,Everton,63,Gerard Deulofeu Lázaro,Ross Barkley,Positive,0.16,Positive,Positive,0.074,0.042,0.884
+3878558,Serie A 2015/2016,Sampdoria,21,Andrea Coda,Ervin Zukanović,Neutral,0.0465,Neutral,Positive,0.161,0.152,0.687
+3753983,Premier League 2015/2016,Swansea City,84,Sung-Yeung Ki,Leon Britton,Positive,0.1104,Positive,Positive,0.121,0.081,0.798
+3879554,Serie A 2015/2016,Palermo,50,Andrea Rispoli,Alberto Gilardino,Neutral,-0.0828,Neutral,Negative,0.456,0.339,0.205
+3879594,Serie A 2015/2016,AC Milan,83,Alessio Cerci,Keisuke Honda,Neutral,0.0911,Neutral,Negative,0.661,0.119,0.22
+3754141,Premier League 2015/2016,West Ham United,62,Mauro Matías Zárate,Matt Jarvis,Neutral,-0.0652,Neutral,Neutral,0.285,0.439,0.276
+3754326,Premier League 2015/2016,Swansea City,55,Jonjo Shelvey,Sung-Yeung Ki,Positive,0.178,Positive,Positive,0.151,0.184,0.665
+3879698,Serie A 2015/2016,Empoli,53,Raffaele Maiello,Daniele Croce,Positive,1.0639,Positive,Positive,0.169,0.129,0.702
+3754218,Premier League 2015/2016,Southampton,66,Steven Davis,Graziano Pellè,Negative,-0.2441,Negative,Negative,0.708,0.178,0.114
+3838004,Ligue 1 2022/2023,Strasbourg,65,Colin Dagba,Dimitri Liénard,Positive,0.6509,Positive,Positive,0.259,0.274,0.467
+3773428,La Liga 2020/2021,Barcelona,76,Sergino Dest,Francisco António Machado Mota de Castro Trincão,Positive,1.0564,Positive,Positive,0.031,0.071,0.898
+3878555,Serie A 2015/2016,Juventus,71,Stephan Lichtsteiner,Roberto Maximiliano Pereyra,Negative,-0.3272,Negative,Positive,0.245,0.237,0.518
+3773387,La Liga 2020/2021,Levante UD,60,Enis Bardhi,Daniel Gómez Alcón,Negative,-0.3056,Negative,Negative,0.816,0.082,0.102
+3754224,Premier League 2015/2016,Swansea City,77,Modou Barrow,Kyle Naughton,Neutral,0.0225,Neutral,Positive,0.136,0.333,0.531
+3879847,Serie A 2015/2016,Torino,71,Marco Benassi,Daniele Baselli,Positive,0.44,Positive,Positive,0.115,0.095,0.79
+3754243,Premier League 2015/2016,Norwich City,80,Steven Naismith,Wes Hoolahan,Negative,-1.2709,Negative,Positive,0.339,0.15,0.511
+3773497,La Liga 2020/2021,Real Madrid,71,Toni Kroos,Francisco Román Alarcón Suárez,Positive,0.3744,Positive,Positive,0.041,0.018,0.941
+3878603,Serie A 2015/2016,Udinese,52,Manuel Rolando Iturra Urrutia,Bruno Miguel Borges Fernandes,Negative,-0.1927,Negative,Negative,0.589,0.271,0.14
+3773597,La Liga 2020/2021,Real Sociedad,82,Alexander Isak,Jon Bautista Orgilles,Neutral,0.0471,Neutral,Neutral,0.111,0.796,0.093
+3895302,Bundesliga 2023/2024,Bayer Leverkusen,76,Granit Xhaka,Exequiel Alejandro Palacios,Positive,0.4783,Positive,Positive,0.233,0.051,0.716
+3879786,Serie A 2015/2016,Napoli,64,José María Callejón Bueno,Dries Mertens,Negative,-0.5691,Negative,Negative,0.84,0.064,0.096
+3754094,Premier League 2015/2016,Manchester United,78,Anthony Martial,Memphis Depay,Neutral,0.0304,Neutral,Neutral,0.124,0.62,0.256
+3754258,Premier League 2015/2016,Aston Villa,71,Scott Sinclair,Leandro Bacuna,Positive,0.8527,Positive,Positive,0.014,0.024,0.962
+3879826,Serie A 2015/2016,Hellas Verona,79,Michelangelo Albertazzi,Paweł Wszołek,Negative,-0.7182,Negative,Negative,0.947,0.02,0.033
+3754162,Premier League 2015/2016,Manchester United,30,Jesse Lingard,Andreas Hoelgebaum Pereira,Negative,-0.7177,Negative,Negative,0.843,0.054,0.103
+3753998,Premier League 2015/2016,Southampton,74,Sadio Mané,Juan Miguel Jiménez López,Negative,-0.1906,Negative,Positive,0.415,0.164,0.421
+3879855,Serie A 2015/2016,Napoli,78,José María Callejón Bueno,Omar El Kaddouri,Positive,0.2984,Positive,Negative,0.707,0.139,0.154
+3754218,Premier League 2015/2016,Southampton,78,Oriol Romeu Vidal,James Ward-Prowse,Positive,0.3836,Positive,Positive,0.249,0.166,0.585
+3837680,Ligue 1 2022/2023,Paris Saint-Germain,63,Renato Júnior Luz Sanches,Danilo Luís Hélio Pereira,Positive,0.4725,Positive,Negative,0.843,0.052,0.105
+3754012,Premier League 2015/2016,Southampton,78,Charlie Austin,Sadio Mané,Neutral,-0.0997,Neutral,Neutral,0.346,0.384,0.27
+3895067,Bundesliga 2023/2024,Darmstadt 98,68,Marvin Mehlem,Tobias Kempe,Negative,-0.1791,Negative,Negative,0.58,0.039,0.381
+3857259,FIFA World Cup 2022,Serbia,55,Strahinja Pavlović,Stefan Mitrović,Negative,-1.7027,Negative,Negative,0.891,0.039,0.07
+3857281,FIFA World Cup 2022,Croatia,72,Andrej Kramarić,Nikola Vlašić,Positive,0.1306,Positive,Negative,0.712,0.095,0.193
+3754351,Premier League 2015/2016,Crystal Palace,64,Bakary Sako,Connor Wickham,Negative,-0.1183,Negative,Positive,0.241,0.206,0.553
+3754234,Premier League 2015/2016,Tottenham Hotspur,81,Kyle Walker,Kieran Trippier,Positive,0.2706,Positive,Positive,0.179,0.253,0.568
+3879694,Serie A 2015/2016,Lazio,45,Filip Đorđević,Miroslav Klose,Positive,0.1172,Positive,Positive,0.186,0.132,0.682
+3754179,Premier League 2015/2016,Crystal Palace,78,James McArthur,Mile Jedinak,Negative,-0.4184,Negative,Negative,0.776,0.089,0.135
+3878604,Serie A 2015/2016,Lazio,45,Senad Lulić,Sergej Milinković-Savić,Negative,-0.4612,Negative,Positive,0.438,0.027,0.535
+3869552,FIFA World Cup 2022,Morocco,77,Selim Amallah,Abdessamad Ezzalzouli,Negative,-0.7052,Negative,Positive,0.178,0.142,0.68
+3754033,Premier League 2015/2016,Everton,80,Ross Barkley,Leon Osman,Positive,0.8613,Positive,Positive,0.009,0.005,0.986
+3878543,Serie A 2015/2016,Atalanta,63,Maximiliano Nicol Moralez,Marco D''Alessandro,Neutral,-0.0038,Neutral,Positive,0.3,0.343,0.357
+3754103,Premier League 2015/2016,Watford,63,José Manuel Jurado Marín,Almen Abdi,Neutral,-0.0829,Neutral,Positive,0.184,0.352,0.464
+3773415,La Liga 2020/2021,Cádiz,61,Salvador Sánchez Ponce,Iván Alejo Peralta,Negative,-0.5291,Negative,Negative,0.402,0.258,0.34
+3879843,Serie A 2015/2016,Sassuolo,85,Diego Falcinelli,Marcello Trotta,Positive,0.1682,Positive,Negative,0.702,0.093,0.205
+3754301,Premier League 2015/2016,West Bromwich Albion,67,José Salomón Rondón Giménez,Saido Berahino,Positive,0.7516,Positive,Positive,0.083,0.085,0.832
+3773369,La Liga 2020/2021,Huesca,59,Idrissa Doumbia,Jaime Seoane Valenciano,Negative,-1.219,Negative,Negative,0.923,0.022,0.055
+3879875,Serie A 2015/2016,Palermo,82,Andrea Rispoli,Roberto Vitiello,Negative,-0.1376,Negative,Neutral,0.148,0.487,0.365
+3869118,FIFA World Cup 2022,Senegal,45,Krépin Diatta,Pape Matar Sarr,Negative,-0.1756,Negative,Negative,0.803,0.027,0.17
+3878559,Serie A 2015/2016,Atalanta,76,Jasmin Kurtič,Luigi Giorgi,Positive,0.3673,Positive,Positive,0.318,0.192,0.49
+3754035,Premier League 2015/2016,West Bromwich Albion,79,Stéphane Sessègnon,Jonathan Leko,Positive,0.187,Positive,Positive,0.162,0.214,0.624
+3879581,Serie A 2015/2016,Chievo,71,Simone Pepe,Sergio Pellissier,Positive,0.5709,Positive,Positive,0.064,0.018,0.918
+3878543,Serie A 2015/2016,Atalanta,77,Alejandro Darío Gómez,Giulio Migliaccio,Negative,-0.1486,Negative,Positive,0.301,0.259,0.44
+3879539,Serie A 2015/2016,Napoli,67,Dries Mertens,Manolo Gabbiadini,Neutral,0.0346,Neutral,Neutral,0.191,0.489,0.32
+3754346,Premier League 2015/2016,Manchester City,85,Sergio Leonel Agüero del Castillo,Martín Gastón Demichelis,Positive,0.1414,Positive,Positive,0.163,0.065,0.772
+3838004,Ligue 1 2022/2023,Paris Saint-Germain,83,Vitor Machado Ferreira,Carlos Soler Barragán,Positive,0.424,Positive,Positive,0.211,0.094,0.695
+3754215,Premier League 2015/2016,Tottenham Hotspur,78,Bamidele Alli,Clinton Mua N''Jie,Positive,0.3031,Positive,Positive,0.135,0.099,0.766
+3869354,FIFA World Cup 2022,France,78,Ousmane Dembélé,Kingsley Coman,Negative,-1.1593,Negative,Negative,0.708,0.16,0.132
+3857301,FIFA World Cup 2022,Qatar,68,Karim Boudiaf,Abdulaziz Hatem Mohammed Abdullah,Negative,-0.6754,Negative,Negative,0.773,0.084,0.143
+3773665,La Liga 2020/2021,Osasuna,61,Enrique Barja Afonso,Jonathan Rodríguez Menéndez,Positive,0.456,Positive,Positive,0.223,0.269,0.508
+3754220,Premier League 2015/2016,Crystal Palace,68,Yohan Cabaye,Jordon Mutch,Negative,-0.2484,Negative,Positive,0.267,0.305,0.428
+3754316,Premier League 2015/2016,Sunderland,74,Billy Jones,DeAndre Yedlin,Positive,1.0554,Positive,Positive,0.028,0.034,0.938
+3879669,Serie A 2015/2016,Napoli,72,David López Silva,Allan Marques Loureiro,Negative,-0.1425,Negative,Negative,0.762,0.101,0.137
+3895333,Bundesliga 2023/2024,Bayer Leverkusen,71,Nathan Tella,Jeremie Frimpong,Negative,-0.3337,Negative,Negative,0.954,0.023,0.023
+3754244,Premier League 2015/2016,Norwich City,75,Steven Naismith,Martin Olsson,Negative,-0.4698,Negative,Positive,0.276,0.169,0.555
+3895095,Bundesliga 2023/2024,Bayer Leverkusen,78,Granit Xhaka,Robert Andrich,Negative,-0.7021,Negative,Negative,0.898,0.017,0.085
+3754180,Premier League 2015/2016,Sunderland,85,Jermain Defoe,Duncan Watmore,Positive,0.3813,Positive,Positive,0.276,0.091,0.633
+3879580,Serie A 2015/2016,Atalanta,72,Marten de Roon,Giulio Migliaccio,Negative,-0.4297,Negative,Positive,0.148,0.136,0.716
+3773526,La Liga 2020/2021,Barcelona,71,Óscar Mingueza García,Sergino Dest,Positive,0.5277,Positive,Positive,0.164,0.019,0.817
+3754344,Premier League 2015/2016,Swansea City,71,André Ayew Pelé,Nathan Dyer,Negative,-0.2824,Negative,Negative,0.788,0.068,0.144
+3773665,La Liga 2020/2021,Osasuna,70,Rubén García Santos,Adrián López Álvarez,Negative,-0.352,Negative,Negative,0.753,0.13,0.117
+3878546,Serie A 2015/2016,Sassuolo,81,Gregoire Defrel,Diego Falcinelli,Positive,0.634,Positive,Positive,0.247,0.254,0.499
+3754296,Premier League 2015/2016,Manchester City,62,Sergio Leonel Agüero del Castillo,Wilfried Guemiand Bony,Positive,0.6671,Positive,Positive,0.078,0.043,0.879
+3879834,Serie A 2015/2016,Fiorentina,60,Matías Vecino Falero,Borja Valero Iglesias,Positive,0.4934,Positive,Positive,0.043,0.033,0.924
+3857285,FIFA World Cup 2022,Senegal,73,Krépin Diatta,Nicolas Jackson,Negative,-0.2078,Negative,Negative,0.744,0.091,0.165
+3753979,Premier League 2015/2016,Sunderland,59,Sebastian Larsson,Duncan Watmore,Positive,0.1175,Positive,Negative,0.488,0.255,0.257
+3879545,Serie A 2015/2016,Sampdoria,59,Carlos Joaquín Correa,Dávid Ivan,Negative,-0.3582,Negative,Positive,0.224,0.325,0.451
+3773369,La Liga 2020/2021,Huesca,59,Daniel Escriche Romero,Sergio Gómez Martín,Negative,-1.219,Negative,Negative,0.928,0.024,0.048
+3879561,Serie A 2015/2016,Atalanta,45,Germán Gustavo Denis,Marco D''Alessandro,Positive,0.456,Positive,Positive,0.028,0.045,0.927
+3754304,Premier League 2015/2016,Crystal Palace,85,Connor Wickham,Patrick Bamford,Positive,0.1899,Positive,Neutral,0.292,0.377,0.331
+3754332,Premier League 2015/2016,Tottenham Hotspur,74,Eric Dier,Ryan Mason,Positive,0.1925,Positive,Positive,0.108,0.115,0.777
+3879867,Serie A 2015/2016,Frosinone,75,Alessandro Frara,Danilo Soddimo,Positive,0.7256,Positive,Positive,0.06,0.093,0.847
+3754183,Premier League 2015/2016,Southampton,81,Steven Davis,Graziano Pellè,Negative,-0.4262,Negative,Negative,0.933,0.021,0.046
+3754057,Premier League 2015/2016,Norwich City,72,Youssouf Chafiq Mulumbu Ngangu,Graham Dorrans,Positive,0.2596,Positive,Positive,0.136,0.169,0.695
+3754105,Premier League 2015/2016,West Bromwich Albion,27,Jonas Olsson,James Grant Chester,Negative,-0.1343,Negative,Positive,0.349,0.239,0.412
+3879775,Serie A 2015/2016,Empoli,51,Marcel Büchel,Riccardo Saponara,Negative,-0.1046,Negative,Negative,0.871,0.088,0.041
+3754319,Premier League 2015/2016,Swansea City,61,Leon Britton,Modou Barrow,Positive,0.4668,Positive,Positive,0.301,0.129,0.57
+3878608,Serie A 2015/2016,Frosinone,53,Samuele Longo,Daniel Ciofani,Neutral,0.012,Neutral,Negative,0.709,0.122,0.169
+3879713,Serie A 2015/2016,Chievo,60,Ivan Radovanović,Giampiero Pinzi,Negative,-0.5361,Negative,Positive,0.34,0.203,0.457
+3879807,Serie A 2015/2016,Carpi,63,Antonio Di Gaudio,Kevin Lasagna,Neutral,-0.0306,Neutral,Negative,0.417,0.197,0.386
+3879666,Serie A 2015/2016,Sampdoria,35,Lorenzo De Silvestri,Mattia Cassani,Positive,0.5082,Positive,Negative,0.382,0.3,0.318
+3753988,Premier League 2015/2016,Swansea City,79,Modou Barrow,Marvin Emnes,Negative,-0.2225,Negative,Negative,0.697,0.17,0.133
+3754247,Premier League 2015/2016,Stoke City,64,Xherdan Shaqiri,Ibrahim Afellay,Positive,0.3959,Positive,Positive,0.136,0.179,0.685
+3878557,Serie A 2015/2016,Palermo,82,Robin Quaison,Roberto Vitiello,Negative,-0.27,Negative,Positive,0.192,0.218,0.59
+3754084,Premier League 2015/2016,Aston Villa,63,Libor Kozák,Rudy Gestede,Positive,0.3266,Positive,Positive,0.193,0.165,0.642
+3879801,Serie A 2015/2016,Torino,55,Joel Chukwuma Obi,Daniele Baselli,Negative,-0.4117,Negative,Negative,0.702,0.123,0.175
+3879806,Serie A 2015/2016,Bologna,71,Godfred Donsah,Franco Zuculini,Negative,-0.4083,Negative,Negative,0.765,0.043,0.192
+3879544,Serie A 2015/2016,Palermo,45,Oscar Hiljemark,Aleksandar Trajkovski,Neutral,0.0523,Neutral,Positive,0.148,0.195,0.657
+3879567,Serie A 2015/2016,AS Roma,54,Iago Falqué Silva,Radja Nainggolan,Positive,0.4877,Positive,Neutral,0.233,0.428,0.339
+3754306,Premier League 2015/2016,Norwich City,55,Youssouf Chafiq Mulumbu Ngangu,Nathan Redmond,Neutral,0.082,Neutral,Positive,0.189,0.213,0.598
+3754125,Premier League 2015/2016,Everton,79,Aaron Lennon,Gerard Deulofeu Lázaro,Positive,0.7878,Positive,Positive,0.081,0.042,0.877
+3879860,Serie A 2015/2016,Fiorentina,60,Manuel Pasqual,Marcos Alonso Mendoza,Negative,-0.1689,Negative,Negative,0.653,0.096,0.251
+3754037,Premier League 2015/2016,AFC Bournemouth,67,Joshua King,Benik Afobe,Positive,0.572,Positive,Positive,0.103,0.099,0.798
+3879641,Serie A 2015/2016,Hellas Verona,56,Paweł Wszołek,Boško Janković,Negative,-0.5566,Negative,Negative,0.632,0.169,0.199
+3879585,Serie A 2015/2016,Sassuolo,30,Antonio Floro Flores,Gianluca Pegolo,Negative,-0.751,Negative,Positive,0.379,0.229,0.392
+3879870,Serie A 2015/2016,Sampdoria,75,Carlos Joaquín Correa,Roberto Soriano,Negative,-0.7054,Negative,Negative,0.524,0.259,0.217
+3754159,Premier League 2015/2016,AFC Bournemouth,78,Callum Wilson,Lewis Grabban,Negative,-0.2503,Negative,Negative,0.398,0.263,0.339
+3879781,Serie A 2015/2016,AC Milan,60,Jérémy Ménez,Luiz Adriano de Souza da Silva,Positive,0.1515,Positive,Neutral,0.217,0.482,0.301
+3879566,Serie A 2015/2016,Udinese,69,Felipe Dias da Silva dal Belo,Iván Rodrigo Piris Leguizamón,Negative,-0.5027,Negative,Negative,0.493,0.093,0.414
+3754179,Premier League 2015/2016,Crystal Palace,84,Yohan Cabaye,Fraizer Campbell,Negative,-0.7925,Negative,Negative,0.738,0.077,0.185
+3869321,FIFA World Cup 2022,Argentina,77,Marcos Javier Acuña,Nicolás Alejandro Tagliafico,Negative,-0.9869,Negative,Negative,0.943,0.033,0.024
+3869552,FIFA World Cup 2022,Morocco,45,Noussair Mazraoui,Yahia Attiyat allah,Positive,0.8058,Positive,Positive,0.053,0.129,0.818
+3754230,Premier League 2015/2016,Liverpool,82,Philippe Coutinho Correia,Jordon Ibe,Negative,-0.9274,Negative,Neutral,0.345,0.358,0.297
+3895275,Bundesliga 2023/2024,Bayer Leverkusen,82,Adam Hložek,Robert Andrich,Negative,-0.5264,Negative,Negative,0.98,0.006,0.014
+3878595,Serie A 2015/2016,Udinese,70,Cyril Théréau,Antonio Di Natale,Positive,0.136,Positive,Positive,0.267,0.192,0.541
+3837752,Ligue 1 2022/2023,Paris Saint-Germain,82,Marcos Aoás Corrêa,El Chadaille Bitshiabu,Negative,-1.1973,Negative,Negative,0.966,0.004,0.03
+3754180,Premier League 2015/2016,Swansea City,75,Bafétimbi Gomis,Éderzito António Macedo Lopes,Positive,0.2466,Positive,Positive,0.193,0.172,0.635
+3754275,Premier League 2015/2016,Leicester City,78,Marc Albrighton,Demarai Gray,Negative,-0.3618,Negative,Negative,0.852,0.082,0.066
+3857274,FIFA World Cup 2022,Netherlands,68,Davy Klaassen,Steven Berghuis,Positive,0.1903,Positive,Positive,0.182,0.103,0.715
+3754191,Premier League 2015/2016,Southampton,70,Jordy Clasie,Oriol Romeu Vidal,Negative,-0.1236,Negative,Positive,0.211,0.293,0.496
+3879779,Serie A 2015/2016,Bologna,76,Godfred Donsah,Franco Brienza,Positive,1.4027,Positive,Positive,0.008,0.005,0.987
+3879569,Serie A 2015/2016,Palermo,79,Achraf Lazaar,Fabio Daprelà,Positive,0.7663,Positive,Positive,0.354,0.272,0.374
+3879722,Serie A 2015/2016,Atalanta,81,Marco Borriello,Mauricio Ricardo Pinilla Ferreira,Negative,-0.2234,Negative,Positive,0.131,0.182,0.687
+3879623,Serie A 2015/2016,Fiorentina,45,Ante Rebić,Federico Bernardeschi,Positive,0.1146,Positive,Positive,0.165,0.2,0.635
+3879799,Serie A 2015/2016,Lazio,83,Danilo Cataldi,Filip Đorđević,Negative,-2.0053,Negative,Negative,0.93,0.021,0.049
+3837662,Ligue 1 2022/2023,Paris Saint-Germain,80,Achraf Hakimi Mouh,Nordi Mukiele Mulere,Negative,-0.3417,Negative,Negative,0.899,0.039,0.062
+3754106,Premier League 2015/2016,Aston Villa,85,Leandro Bacuna,Alan Hutton,Positive,0.1997,Positive,Positive,0.153,0.076,0.771
+3754042,Premier League 2015/2016,Liverpool,63,Jordon Ibe,Daniel William John Ings,Negative,-0.2192,Negative,Negative,0.493,0.24,0.267
+3879620,Serie A 2015/2016,Napoli,77,Marek Hamšík,David López Silva,Negative,-0.6356,Negative,Negative,0.706,0.051,0.243
+3754259,Premier League 2015/2016,Swansea City,82,André Ayew Pelé,Modou Barrow,Negative,-0.3087,Negative,Negative,0.616,0.214,0.17
+3879792,Serie A 2015/2016,Chievo,80,Simone Pepe,Giampiero Pinzi,Negative,-0.1176,Negative,Neutral,0.233,0.391,0.376
+3879619,Serie A 2015/2016,Sassuolo,71,Gregoire Defrel,Matteo Politano,Negative,-0.1019,Negative,Positive,0.2,0.153,0.647
+3754292,Premier League 2015/2016,West Bromwich Albion,73,Victor Chinedu Anichebe,José Salomón Rondón Giménez,Positive,0.1543,Positive,Positive,0.122,0.053,0.825
+3754213,Premier League 2015/2016,Swansea City,70,Gylfi Þór Sigurðsson,Éderzito António Macedo Lopes,Positive,0.5171,Positive,Positive,0.107,0.039,0.854
+3754273,Premier League 2015/2016,Watford,75,Almen Abdi,Valon Behrami,Positive,0.7206,Positive,Positive,0.047,0.013,0.94
+3879618,Serie A 2015/2016,Juventus,45,Anderson Hernanes de Carvalho Andrade,Leonardo Bonucci,Negative,-0.2571,Negative,Neutral,0.246,0.421,0.333
+3754264,Premier League 2015/2016,Chelsea,79,Willian Borges da Silva,Ruben Loftus-Cheek,Positive,0.2231,Positive,Negative,0.47,0.334,0.196
+3879577,Serie A 2015/2016,Empoli,50,Assane Dioussé El Hadji,Raffaele Maiello,Positive,0.7702,Positive,Neutral,0.314,0.444,0.242
+3879798,Serie A 2015/2016,Juventus,80,Roberto Maximiliano Pereyra,Kwadwo Asamoah,Positive,1.0104,Positive,Negative,0.398,0.289,0.313
+3879795,Serie A 2015/2016,Hellas Verona,45,Luca Siligardi,Federico Viviani,Positive,1.0396,Positive,Positive,0.004,0.058,0.938
+3879867,Serie A 2015/2016,Napoli,75,Kalidou Koulibaly,Vasco Regini,Negative,-0.7256,Negative,Negative,0.703,0.128,0.169
+3754146,Premier League 2015/2016,Stoke City,78,Marco van Ginkel,Stephen Ireland,Positive,0.242,Positive,Positive,0.184,0.232,0.584
+3753972,Premier League 2015/2016,AFC Bournemouth,85,Joshua King,Glenn Murray,Neutral,0.0158,Neutral,Negative,0.551,0.199,0.25
+3879554,Serie A 2015/2016,Torino,70,Marco Benassi,Afriyie Acquah,Neutral,-0.0699,Neutral,Negative,0.681,0.134,0.185
+3857298,FIFA World Cup 2022,Portugal,55,Otávio Edmilson da Silva Monteiro,William Silva de Carvalho,Positive,0.7571,Positive,Positive,0.21,0.373,0.417
+3754029,Premier League 2015/2016,Aston Villa,64,Jack Grealish,Carles Gil de Pareja Vicent,Positive,0.3369,Positive,Positive,0.291,0.234,0.475
+3879800,Serie A 2015/2016,Fiorentina,61,Khouma El Hadji Babacar,Mauro Matías Zárate,Neutral,0.0841,Neutral,Positive,0.191,0.342,0.467
+3879761,Serie A 2015/2016,Atalanta,71,Luca Cigarini,Giulio Migliaccio,Negative,-0.7026,Negative,Neutral,0.336,0.34,0.324
+3837659,Ligue 1 2022/2023,Paris Saint-Germain,85,Kylian Mbappé Lottin,Pablo Sarabia García,Negative,-0.1657,Negative,Negative,0.912,0.041,0.047
+3773672,La Liga 2020/2021,Sevilla,83,Luuk de Jong,Carlos Fernández Luna,Neutral,-0.0796,Neutral,Neutral,0.072,0.746,0.182
+3753987,Premier League 2015/2016,Tottenham Hotspur,64,Erik Lamela,Bamidele Alli,Negative,-0.5151,Negative,Negative,0.73,0.148,0.122
+3879624,Serie A 2015/2016,Palermo,72,Alberto Gilardino,Aleksandar Trajkovski,Positive,0.3304,Positive,Positive,0.054,0.09,0.856
+3879584,Serie A 2015/2016,Udinese,65,Bruno Miguel Borges Fernandes,Marco Antônio De Mattos Filho,Negative,-0.1297,Negative,Neutral,0.276,0.441,0.283
+3754019,Premier League 2015/2016,Chelsea,68,Willian Borges da Silva,Ramires Santos do Nascimento,Positive,0.4254,Positive,Positive,0.08,0.064,0.856
+3879793,Serie A 2015/2016,Sassuolo,82,Matteo Politano,Domenico Berardi,Neutral,-0.0254,Neutral,Neutral,0.239,0.409,0.352
+3837695,Ligue 1 2022/2023,Paris Saint-Germain,32,Vitor Machado Ferreira,Renato Júnior Luz Sanches,Neutral,-0.0614,Neutral,Negative,0.415,0.261,0.324
+3857274,FIFA World Cup 2022,Ecuador,73,Michael Steveen Estrada Martínez,Jeremy Leonel Sarmiento Morante,Negative,-0.2567,Negative,Negative,0.56,0.227,0.213
+3754175,Premier League 2015/2016,Sunderland,81,Wahbi Khazri,Dame N''Doye,Positive,0.4706,Positive,Negative,0.413,0.264,0.323
+3857266,FIFA World Cup 2022,Denmark,72,Mikkel Damsgaard,Kasper Dolberg,Negative,-0.3608,Negative,Negative,0.432,0.247,0.321
+3754142,Premier League 2015/2016,Everton,70,Leon Osman,Steven Pienaar,Positive,0.2872,Positive,Positive,0.259,0.057,0.684
+3879605,Serie A 2015/2016,Palermo,67,Oscar Hiljemark,Aleksandar Trajkovski,Positive,0.2685,Positive,Positive,0.188,0.134,0.678
+3879608,Serie A 2015/2016,Hellas Verona,58,Eros Pisano,Luca Siligardi,Negative,-0.1154,Negative,Negative,0.417,0.324,0.259
+3879550,Serie A 2015/2016,Inter Milan,76,Fredy Alejandro Guarín Vásquez,Marcelo Brozović,Positive,0.4737,Positive,Positive,0.152,0.029,0.819
+3857300,FIFA World Cup 2022,Saudi Arabia,77,Saleh Khalid Al Shehri,Sultan Abdullah Salim Al Ghannam,Positive,0.9786,Positive,Positive,0.01,0.009,0.981
+3754153,Premier League 2015/2016,Stoke City,64,Glenn Whelan,Jonathan Walters,Positive,1.7503,Positive,Positive,0.107,0.117,0.776
+3879686,Serie A 2015/2016,Sassuolo,15,Simone Missiroli,Lorenzo Pellegrini,Negative,-1.0284,Negative,Negative,0.892,0.026,0.082
+3878559,Serie A 2015/2016,Atalanta,68,Alberto Grassi,Giulio Migliaccio,Positive,0.3325,Positive,Positive,0.206,0.279,0.515
+3857275,FIFA World Cup 2022,France,78,Mattéo Guendouzi Olié,Ousmane Dembélé,Positive,0.348,Positive,Neutral,0.183,0.592,0.225
+3879595,Serie A 2015/2016,Hellas Verona,82,Matuzalém Francelino da Silva,Luca Checchin,Neutral,0.0244,Neutral,Positive,0.244,0.289,0.467
+3754246,Premier League 2015/2016,Manchester City,74,David Josué Jiménez Silva,Fabian Delph,Neutral,0.0742,Neutral,Positive,0.297,0.313,0.39
+3879820,Serie A 2015/2016,Palermo,71,Edoardo Goldaniga,Antonino La Gumina,Positive,0.3954,Positive,Positive,0.079,0.153,0.768
+3879777,Serie A 2015/2016,Juventus,79,Paulo Bruno Exequiel Dybala,Álvaro Borja Morata Martín,Negative,-0.315,Negative,Negative,0.676,0.109,0.215
+3754194,Premier League 2015/2016,West Ham United,68,Enner Remberto Valencia Lastra,Mauro Matías Zárate,Neutral,-0.0973,Neutral,Negative,0.532,0.169,0.299
+3879772,Serie A 2015/2016,Lazio,39,Senad Lulić,Edson Braafheid,Positive,0.2349,Positive,Positive,0.186,0.092,0.722
+3879594,Serie A 2015/2016,Chievo,45,Nicolas Sebastian Frey,Fabrizio Cacciatore,Negative,-0.2768,Negative,Positive,0.267,0.262,0.471
+3895052,Bundesliga 2023/2024,RB Leipzig,74,Ikoma Loïs Openda,Emil Peter Forsberg,Negative,-0.5232,Negative,Negative,0.803,0.108,0.089
+3879688,Serie A 2015/2016,Atalanta,84,Alejandro Darío Gómez,Alessandro Diamanti,Negative,-0.1539,Negative,Negative,0.552,0.232,0.216
+3879693,Serie A 2015/2016,Juventus,65,Paulo Bruno Exequiel Dybala,Álvaro Borja Morata Martín,Negative,-0.2354,Negative,Negative,0.62,0.229,0.151
+3879622,Serie A 2015/2016,Carpi,45,Lorenzo Pasciuti,Antonio Di Gaudio,Positive,0.1931,Positive,Positive,0.287,0.152,0.561
+3754158,Premier League 2015/2016,Swansea City,81,Wayne Routledge,Bafétimbi Gomis,Positive,1.8517,Positive,Positive,0.036,0.009,0.955
+3895139,Bundesliga 2023/2024,Union Berlin,77,Jérôme Roussillon,Robin Gosens,Positive,0.3355,Positive,Positive,0.074,0.07,0.856
+3754264,Premier League 2015/2016,Newcastle United,66,Cheik Ismaël Tioté,Jamaal Lascelles,Negative,-0.1054,Negative,Positive,0.295,0.266,0.439
+3754145,Premier League 2015/2016,West Bromwich Albion,73,Rickie Lambert,Victor Chinedu Anichebe,Positive,0.2405,Positive,Negative,0.428,0.269,0.303
+3879858,Serie A 2015/2016,AC Milan,56,José Mauri,Andrea Bertolacci,Negative,-0.1708,Negative,Positive,0.309,0.33,0.361
+3869519,FIFA World Cup 2022,Croatia,71,Andrej Kramarić,Marko Livaja,Positive,0.2083,Positive,Positive,0.129,0.103,0.768
+3773665,La Liga 2020/2021,Osasuna,83,Lucas Torró Marset,Oier Sanjurjo Mate,Positive,0.5571,Positive,Positive,0.026,0.011,0.963
+3879770,Serie A 2015/2016,Juventus,67,Sami Khedira,Mario Lemina,Negative,-0.1953,Negative,Negative,0.618,0.225,0.157
+3837662,Ligue 1 2022/2023,Paris Saint-Germain,62,Marco Verratti,Renato Júnior Luz Sanches,Negative,-0.1655,Negative,Negative,0.962,0.01,0.028
+3753975,Premier League 2015/2016,AFC Bournemouth,64,Benik Afobe,Lewis Grabban,Neutral,-0.0039,Neutral,Positive,0.258,0.307,0.435
+3878601,Serie A 2015/2016,Bologna,27,Emanuele Giaccherini,Luca Rizzo,Positive,0.2931,Positive,Positive,0.234,0.213,0.553
+3879851,Serie A 2015/2016,AC Milan,77,José Mauri,Jérémy Ménez,Positive,0.7422,Positive,Negative,0.568,0.225,0.207
+3879558,Serie A 2015/2016,Carpi,85,Marco Borriello,Andrea Lazzari,Positive,0.7039,Positive,Positive,0.04,0.011,0.949
+3754102,Premier League 2015/2016,Newcastle United,45,Cheik Ismaël Tioté,Vurnon Anita,Negative,-0.1105,Negative,Negative,0.713,0.152,0.135
+3879641,Serie A 2015/2016,Empoli,72,Leandro Daniel Paredes,Daniele Croce,Negative,-0.2251,Negative,Negative,0.598,0.187,0.215
+3754107,Premier League 2015/2016,Aston Villa,77,Jordan Veretout,Carlos Alberto Sánchez Moreno,Positive,0.1095,Positive,Positive,0.322,0.177,0.501
+3895258,Bundesliga 2023/2024,FC Köln,68,Justin Diehl,Leart Paqarada,Negative,-0.1035,Negative,Negative,0.394,0.354,0.252
+3754062,Premier League 2015/2016,West Bromwich Albion,6,James Morrison,Craig Gardner,Negative,-0.7203,Negative,Negative,0.438,0.226,0.336
+3879683,Serie A 2015/2016,Hellas Verona,63,Emil Hallfreðsson,Juan Ignacio Gómez Taleb,Neutral,-0.0038,Neutral,Negative,0.406,0.364,0.23
+3754135,Premier League 2015/2016,Manchester City,55,Fernando Luiz Rosa,Fabian Delph,Positive,0.5065,Positive,Positive,0.054,0.076,0.87
+3879573,Serie A 2015/2016,Lazio,64,Miroslav Klose,Alessandro Matri,Positive,1.2304,Positive,Positive,0.042,0.025,0.933
+3754036,Premier League 2015/2016,Sunderland,79,Fabio Borini,Ola Toivonen,Positive,0.3268,Positive,Negative,0.51,0.201,0.289
+3837938,Ligue 1 2022/2023,OGC Nice,74,Hichem Boudaoui,Gaëtan Laborde,Neutral,0.002,Neutral,Neutral,0.319,0.361,0.32
+3879638,Serie A 2015/2016,Inter Milan,45,Felipe Melo de Carvalho,Marcelo Brozović,Neutral,-0.038,Neutral,Negative,0.576,0.249,0.175
+3879587,Serie A 2015/2016,Inter Milan,73,Ivan Perišić,Fredy Alejandro Guarín Vásquez,Negative,-0.9096,Negative,Negative,0.948,0.02,0.032
+3879837,Serie A 2015/2016,Udinese,75,Edenílson Andrade dos Santos,Giovanni Pasquale,Positive,0.7752,Positive,Positive,0.066,0.028,0.906
+3879810,Serie A 2015/2016,AC Milan,76,Mario Barwuah Balotelli,Kevin-Prince Boateng,Neutral,0.0538,Neutral,Negative,0.365,0.27,0.365
+3857259,FIFA World Cup 2022,Serbia,77,Andrija Živković,Nemanja Radonjić,Positive,0.6239,Positive,Positive,0.011,0.009,0.98
+3754102,Premier League 2015/2016,Newcastle United,64,Paul Dummett,Massadio Haïdara,Neutral,-0.0936,Neutral,Negative,0.559,0.282,0.159
+3754114,Premier League 2015/2016,Chelsea,15,Eden Hazard,Pedro Eliezer Rodríguez Ledesma,Positive,0.4481,Positive,Positive,0.196,0.338,0.466
+3837683,Ligue 1 2022/2023,Toulouse,75,Thijs Dallinga,Ado Onaiwu,Positive,0.3325,Positive,Positive,0.029,0.009,0.962
+3754282,Premier League 2015/2016,Aston Villa,67,Carlos Alberto Sánchez Moreno,Jack Grealish,Positive,0.236,Positive,Positive,0.045,0.014,0.941
+3754144,Premier League 2015/2016,AFC Bournemouth,67,Adam Smith,Tommy Elphick,Neutral,0.054,Neutral,Positive,0.264,0.317,0.419
+3754080,Premier League 2015/2016,Watford,53,Miguel Ángel Britos Cabrera,Sebastian Prödl,Negative,-0.6618,Negative,Positive,0.26,0.081,0.659
+3857284,FIFA World Cup 2022,Germany,67,İlkay Gündoğan,Leon Goretzka,Neutral,-0.09,Neutral,Negative,0.449,0.172,0.379
+3754287,Premier League 2015/2016,Chelsea,74,Pedro Eliezer Rodríguez Ledesma,Eden Hazard,Positive,0.1375,Positive,Negative,0.715,0.082,0.203
+3879717,Serie A 2015/2016,AS Roma,79,Maicon Douglas Sisenando,Emerson Palmieri dos Santos,Negative,-0.2877,Negative,Positive,0.218,0.144,0.638
+3754322,Premier League 2015/2016,Manchester City,84,Sergio Leonel Agüero del Castillo,Kelechi Promise Iheanacho,Negative,-0.8064,Negative,Negative,0.944,0.02,0.036
+3754017,Premier League 2015/2016,Aston Villa,73,Jack Grealish,Carles Gil de Pareja Vicent,Negative,-0.8972,Negative,Negative,0.509,0.236,0.255
+3754254,Premier League 2015/2016,Newcastle United,68,Gabriel Antoine Obertan,Florian Thauvin,Negative,-0.7376,Negative,Negative,0.528,0.226,0.246
+3879638,Serie A 2015/2016,Genoa,80,Armando Izzo,Issa Cissokho,Neutral,0.0584,Neutral,Positive,0.306,0.328,0.366
+3754013,Premier League 2015/2016,Leicester City,16,Danny Drinkwater,Andrew Philip King,Neutral,0.0347,Neutral,Negative,0.413,0.204,0.383
+3879748,Serie A 2015/2016,Hellas Verona,73,Giampaolo Pazzini,Matteo Bianchetti,Positive,1.0565,Positive,Positive,0.049,0.026,0.925
+3879687,Serie A 2015/2016,Torino,65,Cristian Molinaro,Danilo Fernando Avelar,Neutral,-0.041,Neutral,Neutral,0.366,0.369,0.265
+3754322,Premier League 2015/2016,Chelsea,78,John Michael Nchekwube Obinna,Asmir Begović,Negative,-0.5593,Negative,Positive,0.142,0.098,0.76
+3754319,Premier League 2015/2016,Swansea City,81,André Ayew Pelé,Bafétimbi Gomis,Positive,0.2971,Positive,Positive,0.123,0.043,0.834
+3879615,Serie A 2015/2016,Carpi,76,Cristian Zaccardo,Wallace Oliveira dos Santos,Neutral,-0.0644,Neutral,Positive,0.205,0.292,0.503
+3837785,Ligue 1 2022/2023,Paris Saint-Germain,74,Sergio Ramos García,Presnel Kimpembe,Positive,0.7841,Positive,Positive,0.057,0.038,0.905
+3837928,Ligue 1 2022/2023,Lyon,61,Johann Lepenant,Corentin Tolisso,Positive,0.1962,Positive,Positive,0.194,0.043,0.763
+3754072,Premier League 2015/2016,Watford,68,Almen Abdi,Adlène Guédioura,Positive,0.5403,Positive,Positive,0.19,0.249,0.561
+3879813,Serie A 2015/2016,Sampdoria,64,Luis Fernando Muriel Fruto,Antonio Cassano,Negative,-0.7438,Negative,Negative,0.766,0.135,0.099
+3754086,Premier League 2015/2016,Watford,56,Adlène Guédioura,Ikechi Anya,Positive,1.728,Positive,Positive,0.025,0.012,0.963
+3879741,Serie A 2015/2016,Sassuolo,79,Domenico Berardi,Matteo Politano,Positive,0.1578,Positive,Positive,0.197,0.14,0.663
+3869684,FIFA World Cup 2022,Croatia,66,Lovro Majer,Mario Pašalić,Neutral,-0.0582,Neutral,Neutral,0.098,0.801,0.101
+3879594,Serie A 2015/2016,Chievo,74,Sergio Pellissier,Riccardo Meggiorini,Negative,-0.5328,Negative,Positive,0.28,0.274,0.446
+3754027,Premier League 2015/2016,Tottenham Hotspur,79,Mousa Sidi Yaya Dembélé,Tom Carroll,Negative,-0.7945,Negative,Negative,0.959,0.012,0.029
+3754040,Premier League 2015/2016,Liverpool,71,Lucas Pezzini Leiva,Roberto Firmino Barbosa de Oliveira,Positive,0.8422,Positive,Positive,0.073,0.111,0.816
+3879858,Serie A 2015/2016,AC Milan,69,Juraj Kucka,Andrea Poli,Positive,0.34,Positive,Positive,0.303,0.147,0.55
+3754138,Premier League 2015/2016,Crystal Palace,72,Jordon Mutch,Mile Jedinak,Neutral,0.0687,Neutral,Neutral,0.149,0.547,0.304
+3879819,Serie A 2015/2016,Genoa,45,Luca Rigoni,Riccardo Fiamozzi,Negative,-0.3891,Negative,Negative,0.851,0.098,0.051
+3879604,Serie A 2015/2016,Genoa,34,Ezequiel Muñoz,Armando Izzo,Neutral,0.0759,Neutral,Positive,0.241,0.34,0.419
+3837896,Ligue 1 2022/2023,Paris Saint-Germain,70,Nordi Mukiele Mulere,Carlos Soler Barragán,Negative,-0.189,Negative,Negative,0.634,0.124,0.242
+3879619,Serie A 2015/2016,Sassuolo,61,Joseph Alfred Duncan,Sergio Floccari,Positive,0.2055,Positive,Positive,0.176,0.133,0.691
+3837747,Ligue 1 2022/2023,Marseille,79,Jordan Veretout,Pape Gueye,Positive,0.1683,Positive,Positive,0.238,0.217,0.545
+3879658,Serie A 2015/2016,Udinese,74,Edenílson Andrade dos Santos,Ali Adnan Kadhim Al Tameemi,Positive,0.1306,Positive,Negative,0.445,0.246,0.309
+3838017,Ligue 1 2022/2023,Clermont Foot,69,Muhammed Cham Saracevic,Saîf-Eddine Khaoui,Negative,-0.6551,Negative,Negative,0.958,0.02,0.022
+3879571,Serie A 2015/2016,Atalanta,68,Luca Cigarini,Jasmin Kurtič,Negative,-1.1199,Negative,Negative,0.872,0.069,0.059
+3754326,Premier League 2015/2016,Crystal Palace,70,Jason Puncheon,Chung-Yong Lee,Positive,0.3622,Positive,Negative,0.446,0.203,0.351
+3753989,Premier League 2015/2016,Everton,45,Ross Barkley,Aaron Lennon,Negative,-0.54,Negative,Positive,0.09,0.117,0.793
+3895333,Bundesliga 2023/2024,Eintracht Frankfurt,79,Eric Junior Dina Ebimbe,Aurélio Gabriel Ulineia Buta,Neutral,0.0068,Neutral,Neutral,0.032,0.87,0.098
+3754060,Premier League 2015/2016,Everton,78,Steven Naismith,Arouna Koné,Neutral,-0.0646,Neutral,Negative,0.515,0.205,0.28
+3879716,Serie A 2015/2016,Fiorentina,55,Mauro Matías Zárate,Nikola Kalinić,Positive,0.9532,Positive,Positive,0.111,0.052,0.837
+3879566,Serie A 2015/2016,Genoa,45,Diego Ángel Capel Trinidad,Leonardo Pavoletti,Negative,-0.8016,Negative,Negative,0.505,0.216,0.279
+3857298,FIFA World Cup 2022,Ghana,76,André Ayew Pelé,Jordan Ayew,Neutral,0.0203,Neutral,Neutral,0.068,0.685,0.247
+3857262,FIFA World Cup 2022,Portugal,64,Rúben Diogo Da Silva Neves,Rafael Alexandre Conceição Leão,Negative,-0.1356,Negative,Negative,0.72,0.099,0.181
+3857290,FIFA World Cup 2022,Switzerland,70,Djibril Sow,Fabian Frei,Negative,-0.1391,Negative,Negative,0.748,0.154,0.098
+3879627,Serie A 2015/2016,Bologna,53,Emanuele Giaccherini,Franco Brienza,Negative,-0.101,Negative,Neutral,0.401,0.406,0.193
+3879547,Serie A 2015/2016,Carpi,70,Marco Borriello,Kevin Lasagna,Positive,1.0944,Positive,Positive,0.261,0.271,0.468
+3857299,FIFA World Cup 2022,South Korea,56,Chang-Hoon Kwon,Kang-In Lee,Positive,0.339,Positive,Positive,0.271,0.069,0.66
+3879628,Serie A 2015/2016,AC Milan,73,M''Baye Babacar Niang,Luiz Adriano de Souza da Silva,Positive,0.1137,Positive,Positive,0.326,0.319,0.355
+3754027,Premier League 2015/2016,Sunderland,75,Jeremain Lens,Duncan Watmore,Negative,-0.7496,Negative,Positive,0.306,0.204,0.49
+3754071,Premier League 2015/2016,Sunderland,82,Fabio Borini,Danny Graham,Positive,0.9171,Positive,Positive,0.237,0.335,0.428
+3754073,Premier League 2015/2016,Chelsea,45,Oscar dos Santos Emboaba Júnior,Diego da Silva Costa,Neutral,0.0381,Neutral,Negative,0.621,0.174,0.205
+3879757,Serie A 2015/2016,AS Roma,36,Radja Nainggolan,Iago Falqué Silva,Negative,-0.2493,Negative,Negative,0.699,0.093,0.208
+3879824,Serie A 2015/2016,Sampdoria,80,Roberto Soriano,Luis Fernando Muriel Fruto,Positive,0.1915,Positive,Positive,0.334,0.182,0.484
+3753973,Premier League 2015/2016,Chelsea,62,Loïc Rémy,Bertrand Isidore Traoré,Positive,0.7122,Positive,Negative,0.418,0.169,0.413
+3754303,Premier League 2015/2016,Swansea City,60,Wayne Routledge,Modou Barrow,Positive,1.1405,Positive,Positive,0.072,0.062,0.866
+3773415,La Liga 2020/2021,Barcelona,73,Pedro González López,Francisco António Machado Mota de Castro Trincão,Negative,-0.3803,Negative,Negative,0.597,0.04,0.363
+3879718,Serie A 2015/2016,Udinese,77,Ryder Matos Santos,Cyril Théréau,Positive,0.7811,Positive,Positive,0.012,0.011,0.977
+3879674,Serie A 2015/2016,AC Milan,64,Keisuke Honda,Alessio Cerci,Negative,-0.3798,Negative,Negative,0.812,0.09,0.098
+3879789,Serie A 2015/2016,Frosinone,23,Alessandro Frara,Robert Gucher,Positive,0.4164,Positive,Positive,0.303,0.189,0.508
+3753986,Premier League 2015/2016,Liverpool,45,Oluwaseyi Babajide Ojo,Divock Okoth Origi,Negative,-0.1484,Negative,Negative,0.803,0.056,0.141
+3754202,Premier League 2015/2016,Stoke City,63,Bojan Krkíc Pérez,Mame Biram Diouf,Negative,-0.4239,Negative,Negative,0.759,0.167,0.074
+3879571,Serie A 2015/2016,Carpi,72,Gaetano Letizia,Wallace Oliveira dos Santos,Positive,0.7889,Positive,Positive,0.034,0.013,0.953
+3754136,Premier League 2015/2016,Aston Villa,58,Scott Sinclair,Rudy Gestede,Positive,0.4119,Positive,Positive,0.134,0.078,0.788
+3879791,Serie A 2015/2016,AC Milan,83,Keisuke Honda,Jérémy Ménez,Negative,-0.1865,Negative,Negative,0.616,0.126,0.258
+3773656,La Liga 2020/2021,Atlético Madrid,83,João Félix Sequeira,Thomas Lemar,Neutral,0.0581,Neutral,Neutral,0.096,0.675,0.229
+3869253,FIFA World Cup 2022,South Korea,45,Jin-Su Kim,Chul Hong,Negative,-0.7486,Negative,Negative,0.559,0.061,0.38
+3879694,Serie A 2015/2016,Lazio,81,Antonio Candreva,Felipe Anderson Pereira Gomes,Negative,-1.0445,Negative,Negative,0.934,0.005,0.061
+3879850,Serie A 2015/2016,Juventus,84,Kwadwo Asamoah,Stefano Sturaro,Negative,-0.4655,Negative,Negative,0.684,0.165,0.151
+3869219,FIFA World Cup 2022,Japan,63,Daizen Maeda,Takuma Asano,Negative,-0.3055,Negative,Negative,0.813,0.076,0.111
+3754203,Premier League 2015/2016,West Ham United,82,Mauro Matías Zárate,Modibo Maïga,Neutral,0.0586,Neutral,Positive,0.332,0.294,0.374
+3878541,Serie A 2015/2016,Hellas Verona,73,Juan Ignacio Gómez Taleb,Luca Siligardi,Negative,-0.2394,Negative,Negative,0.646,0.218,0.136
+3879824,Serie A 2015/2016,AC Milan,53,Andrea Bertolacci,Andrea Poli,Positive,0.5276,Positive,Positive,0.203,0.246,0.551
+3878607,Serie A 2015/2016,Sassuolo,59,Antonio Floro Flores,Nicola Sansone,Negative,-0.9671,Negative,Negative,0.744,0.144,0.112
+3879557,Serie A 2015/2016,Chievo,53,Valter Birsa,Simone Pepe,Neutral,-0.017,Neutral,Positive,0.209,0.293,0.498
+3879718,Serie A 2015/2016,Empoli,78,Riccardo Saponara,Levan Mchedlidze,Negative,-0.7459,Negative,Negative,0.948,0.015,0.037
+3754023,Premier League 2015/2016,Leicester City,45,Riyad Mahrez,Shinji Okazaki,Neutral,0.0584,Neutral,Negative,0.433,0.289,0.278
+3879548,Serie A 2015/2016,Juventus,70,Paulo Bruno Exequiel Dybala,Álvaro Borja Morata Martín,Neutral,-0.0461,Neutral,Negative,0.577,0.218,0.205
+3773672,La Liga 2020/2021,Barcelona,74,Philippe Coutinho Correia,Miralem Pjanić,Positive,0.7275,Positive,Positive,0.098,0.044,0.858
+3879616,Serie A 2015/2016,Fiorentina,65,Manuel Pasqual,Marcos Alonso Mendoza,Negative,-1.0594,Negative,Negative,0.914,0.026,0.06
+3753981,Premier League 2015/2016,Crystal Palace,61,Bakary Sako,Marouane Chamakh,Positive,0.2644,Positive,Positive,0.193,0.16,0.647
+3754019,Premier League 2015/2016,Manchester United,75,Juan Manuel Mata García,Memphis Depay,Positive,0.4924,Positive,Positive,0.109,0.131,0.76
+3754066,Premier League 2015/2016,Manchester City,63,Jesús Navas González,Samir Nasri,Neutral,0.0843,Neutral,Neutral,0.365,0.383,0.252
+3754152,Premier League 2015/2016,Sunderland,67,Wahbi Khazri,Dame N''Doye,Positive,0.607,Positive,Positive,0.09,0.049,0.861
+3879673,Serie A 2015/2016,Udinese,71,Bruno Miguel Borges Fernandes,Manuel Rolando Iturra Urrutia,Negative,-0.1897,Negative,Negative,0.457,0.299,0.244
+3837785,Ligue 1 2022/2023,Auxerre,57,Paul Joly,Gauthier Hein,Positive,0.1375,Positive,Positive,0.162,0.09,0.748
+3879790,Serie A 2015/2016,Juventus,31,Paulo Bruno Exequiel Dybala,Álvaro Borja Morata Martín,Positive,0.2971,Positive,Neutral,0.365,0.409,0.226
+3879628,Serie A 2015/2016,Sampdoria,63,Lorenzo De Silvestri,Pedro Miguel Almeida Lopes Pereira,Negative,-0.2361,Negative,Positive,0.054,0.073,0.873
+3879787,Serie A 2015/2016,Inter Milan,81,Jonathan Ludovic Biabiany,Rey Manaj,Neutral,0.0748,Neutral,Positive,0.068,0.051,0.881
+3878599,Serie A 2015/2016,Atalanta,55,Jasmin Kurtič,Cristian Raimondi,Negative,-0.3053,Negative,Negative,0.466,0.314,0.22
+3895107,Bundesliga 2023/2024,FC Köln,74,Eric Martel,Steffen Tigges,Positive,0.2733,Positive,Positive,0.168,0.022,0.81
+3895266,Bundesliga 2023/2024,Bayer Leverkusen,58,Piero Martín Hincapié Reyna,Amine Adli,Neutral,0.0871,Neutral,Positive,0.165,0.154,0.681
+3879863,Serie A 2015/2016,Atalanta,51,Gianpaolo Bellini,Rafael Tolói,Neutral,-0.0981,Neutral,Positive,0.211,0.222,0.567
+3879552,Serie A 2015/2016,Udinese,45,Manuel Rolando Iturra Urrutia,Francesco Lodi,Positive,0.3246,Positive,Positive,0.137,0.095,0.768
+3754245,Premier League 2015/2016,West Bromwich Albion,69,José Salomón Rondón Giménez,Rickie Lambert,Negative,-0.2656,Negative,Negative,0.546,0.212,0.242
+3879716,Serie A 2015/2016,Fiorentina,55,Josip Iličić,Alberto Facundo Costa,Positive,0.9532,Positive,Positive,0.079,0.038,0.883
+3754338,Premier League 2015/2016,Newcastle United,56,Paul Dummett,Henri Saivet,Positive,1.0731,Positive,Positive,0.026,0.019,0.955
+3895139,Bundesliga 2023/2024,Bayer Leverkusen,85,Exequiel Alejandro Palacios,Robert Andrich,Negative,-0.5223,Negative,Negative,0.928,0.013,0.059
+3754318,Premier League 2015/2016,Arsenal,74,Mohamed Naser Elsayed Elneny,Olivier Giroud,Positive,0.4292,Positive,Positive,0.085,0.101,0.814
+3754061,Premier League 2015/2016,Chelsea,81,Nemanja Matić,Francesc Fàbregas i Soler,Negative,-0.405,Negative,Negative,0.594,0.264,0.142
+3879732,Serie A 2015/2016,Chievo,79,Valter Birsa,Filippo Costa,Negative,-0.8996,Negative,Negative,0.958,0.02,0.022
+3895292,Bundesliga 2023/2024,Union Berlin,45,Yorbe Vertessen,Mikkel Kaufmann,Negative,-1.3949,Negative,Negative,0.579,0.152,0.269
+3879864,Serie A 2015/2016,Juventus,61,Stefano Sturaro,Roberto Maximiliano Pereyra,Positive,0.2851,Positive,Positive,0.068,0.104,0.828
+3754096,Premier League 2015/2016,West Ham United,82,Michail Antonio,Nikica Jelavić,Negative,-0.3058,Negative,Negative,0.448,0.212,0.34
+3857271,FIFA World Cup 2022,Iran,45,Roozbeh Cheshmi,Mohammad Hossein Kanani Zadegan,Neutral,0.0732,Neutral,Neutral,0.083,0.672,0.245
+3879705,Serie A 2015/2016,Sassuolo,82,Domenico Berardi,Marcello Trotta,Neutral,-0.0355,Neutral,Positive,0.141,0.129,0.73
+3754038,Premier League 2015/2016,Arsenal,11,Laurent Koscielny,Gabriel Armando de Abreu,Positive,0.5156,Positive,Positive,0.173,0.402,0.425
+3869151,FIFA World Cup 2022,Argentina,79,Nahuel Molina Lucero,Exequiel Alejandro Palacios,Positive,0.7013,Positive,Positive,0.141,0.11,0.749
+3754231,Premier League 2015/2016,Leicester City,62,Marc Albrighton,Jeffrey Schlupp,Negative,-0.3082,Negative,Negative,0.471,0.341,0.188
+3879697,Serie A 2015/2016,Atalanta,77,Cristian Raimondi,Andrea Conti,Positive,0.2351,Positive,Neutral,0.258,0.384,0.358
+3754235,Premier League 2015/2016,West Ham United,63,Pedro Mba Obiang Avomo,Andy Carroll,Positive,1.1235,Positive,Positive,0.076,0.082,0.842
+3879567,Serie A 2015/2016,Empoli,78,Massimo Maccarone,Alessandro Piu,Positive,0.3982,Positive,Positive,0.156,0.139,0.705
+3754325,Premier League 2015/2016,West Bromwich Albion,54,Rickie Lambert,Saido Berahino,Neutral,-0.0012,Neutral,Negative,0.369,0.35,0.281
+3879661,Serie A 2015/2016,Napoli,71,Lorenzo Insigne,Dries Mertens,Neutral,0.0403,Neutral,Negative,0.76,0.118,0.122
+3837695,Ligue 1 2022/2023,Paris Saint-Germain,62,Kylian Mbappé Lottin,Neymar da Silva Santos Junior,Positive,0.3419,Positive,Negative,0.738,0.013,0.249
+3754328,Premier League 2015/2016,Swansea City,82,André Ayew Pelé,Bafétimbi Gomis,Positive,0.191,Positive,Positive,0.165,0.39,0.445
+3879764,Serie A 2015/2016,Genoa,62,Alessio Cerci,Darko Lazović,Positive,0.6487,Positive,Positive,0.041,0.042,0.917
+3879677,Serie A 2015/2016,Lazio,75,Ştefan Daniel Radu,Edson Braafheid,Negative,-0.1392,Negative,Positive,0.347,0.26,0.393
+3879649,Serie A 2015/2016,Palermo,80,Aleksandar Trajkovski,Gastón Brugman,Positive,0.5057,Positive,Negative,0.476,0.218,0.306
+3773625,La Liga 2020/2021,Sevilla,45,Munir El Haddadi Mohamed,Youssef En-Nesyri,Negative,-0.2239,Negative,Negative,0.805,0.08,0.115
+3754203,Premier League 2015/2016,West Ham United,45,Reece Oxford,Pedro Mba Obiang Avomo,Positive,0.374,Positive,Positive,0.333,0.23,0.437
+3879778,Serie A 2015/2016,Empoli,78,Leandro Daniel Paredes,Marko Livaja,Positive,0.2198,Positive,Negative,0.619,0.203,0.178
+3837650,Ligue 1 2022/2023,Paris Saint-Germain,76,Pablo Sarabia García,Hugo Ekitike,Positive,1.0185,Positive,Positive,0.099,0.132,0.769
+3857255,FIFA World Cup 2022,Spain,45,César Azpilicueta Tanco,Daniel Carvajal Ramos,Negative,-0.9707,Negative,Positive,0.287,0.246,0.467
+3754134,Premier League 2015/2016,Manchester United,82,Ander Herrera Agüera,Jesse Lingard,Positive,0.3324,Positive,Positive,0.077,0.071,0.852
+3754028,Premier League 2015/2016,Southampton,45,Oriol Romeu Vidal,Dušan Tadić,Positive,0.1305,Positive,Positive,0.257,0.356,0.387
+3754337,Premier League 2015/2016,Southampton,45,Steven Davis,Jay Rodriguez,Positive,0.5151,Positive,Neutral,0.328,0.377,0.295
+3878611,Serie A 2015/2016,Inter Milan,73,Stevan Jovetić,Rodrigo Sebastián Palacio,Neutral,0.0593,Neutral,Neutral,0.218,0.641,0.141
+3869486,FIFA World Cup 2022,Morocco,80,Hakim Ziyech,Zakaria Aboukhlal,Neutral,0.0263,Neutral,Neutral,0.088,0.778,0.134
+3879564,Serie A 2015/2016,AS Roma,82,Alessandro Florenzi,Norbert Gyömbér,Positive,0.6398,Positive,Positive,0.156,0.122,0.722
+3754140,Premier League 2015/2016,Everton,59,Aaron Lennon,Gerard Deulofeu Lázaro,Positive,0.2858,Positive,Positive,0.157,0.069,0.774
+3879791,Serie A 2015/2016,Lazio,78,Alessandro Matri,Filip Đorđević,Positive,0.4269,Positive,Positive,0.045,0.09,0.865
+3879644,Serie A 2015/2016,Atalanta,71,Alejandro Darío Gómez,Marco D''Alessandro,Positive,0.1761,Positive,Positive,0.195,0.172,0.633
+3878605,Serie A 2015/2016,Carpi,70,Ryder Matos Santos,Jerry Uche Mbakogu,Positive,0.1908,Positive,Positive,0.334,0.194,0.472
+3857258,FIFA World Cup 2022,Brazil,75,Vinícius José Paixão de Oliveira Júnior,Rodrygo Silva de Goes,Negative,-0.5003,Negative,Negative,0.804,0.036,0.16
+3754288,Premier League 2015/2016,Chelsea,81,Ramires Santos do Nascimento,Radamel Falcao García Zárate,Neutral,0.0672,Neutral,Neutral,0.31,0.363,0.327
+3878545,Serie A 2015/2016,Sampdoria,82,Roberto Soriano,Paweł Wszołek,Negative,-0.8388,Negative,Positive,0.103,0.047,0.85
+3754192,Premier League 2015/2016,West Ham United,65,Diafra Sakho,Emmanuel Emenike,Positive,0.3089,Positive,Positive,0.193,0.24,0.567
+3879748,Serie A 2015/2016,Chievo,66,Giampiero Pinzi,Filippo Costa,Positive,0.7213,Positive,Negative,0.59,0.201,0.209
+3879612,Serie A 2015/2016,Genoa,60,Alberto Facundo Costa,Serge Gakpé,Positive,0.7923,Positive,Positive,0.24,0.286,0.474
+3754088,Premier League 2015/2016,Manchester United,63,Jesse Lingard,Memphis Depay,Negative,-1.2743,Negative,Positive,0.308,0.323,0.369
+3879724,Serie A 2015/2016,Carpi,53,Isaac Cofie,Raffaele Bianco,Positive,0.1982,Positive,Positive,0.244,0.207,0.549
+3754064,Premier League 2015/2016,Southampton,45,Dušan Tadić,Sadio Mané,Positive,0.537,Positive,Positive,0.371,0.112,0.517
+3879752,Serie A 2015/2016,Genoa,78,Alessio Cerci,Giovanni Marchese,Negative,-0.8929,Negative,Negative,0.465,0.225,0.31
+3879772,Serie A 2015/2016,Lazio,39,Danilo Cataldi,Sergej Milinković-Savić,Positive,0.2349,Positive,Positive,0.194,0.103,0.703
+3754073,Premier League 2015/2016,Chelsea,82,Francesc Fàbregas i Soler,Bertrand Isidore Traoré,Positive,0.435,Positive,Positive,0.027,0.016,0.957
+3754064,Premier League 2015/2016,Liverpool,69,Daniel Andre Sturridge,Christian Benteke Liolo,Neutral,0.0273,Neutral,Negative,0.55,0.258,0.192
+3754340,Premier League 2015/2016,West Bromwich Albion,68,Sandro Ranieri Guimarães Cordeiro,Victor Chinedu Anichebe,Neutral,-0.0085,Neutral,Positive,0.197,0.334,0.469
+3879727,Serie A 2015/2016,Lazio,77,Danilo Cataldi,Senad Lulić,Positive,0.2056,Positive,Positive,0.218,0.291,0.491
+3754115,Premier League 2015/2016,Chelsea,45,Ruben Loftus-Cheek,Nemanja Matić,Negative,-0.452,Negative,Negative,0.849,0.04,0.111
+3879611,Serie A 2015/2016,Palermo,80,Robin Quaison,Edoardo Goldaniga,Negative,-0.1511,Negative,Negative,0.736,0.145,0.119
+3753986,Premier League 2015/2016,Liverpool,62,Roberto Firmino Barbosa de Oliveira,Adam David Lallana,Negative,-0.7933,Negative,Negative,0.893,0.026,0.081
+3879782,Serie A 2015/2016,Carpi,57,Lorenzo Lollo,Kevin Lasagna,Negative,-0.6282,Negative,Negative,0.59,0.218,0.192
+3879712,Serie A 2015/2016,AC Milan,78,M''Baye Babacar Niang,Mario Barwuah Balotelli,Positive,0.1736,Positive,Negative,0.596,0.128,0.276
+3879782,Serie A 2015/2016,Carpi,64,Raffaele Bianco,Marco Crimi,Negative,-0.569,Negative,Negative,0.767,0.122,0.111
+3837963,Ligue 1 2022/2023,Lorient,58,Bonke Innocent,Ayman Kari,Negative,-0.1594,Negative,Positive,0.271,0.212,0.517
+3857269,FIFA World Cup 2022,Brazil,85,Alex Sandro Lobo Silva,Alex Nicolao Telles,Positive,0.1342,Positive,Neutral,0.312,0.391,0.297
+3879637,Serie A 2015/2016,Juventus,79,Paulo Bruno Exequiel Dybala,Juan Guillermo Cuadrado Bello,Positive,0.1595,Positive,Positive,0.215,0.126,0.659
+3754266,Premier League 2015/2016,Crystal Palace,61,Bakary Sako,Wilfried Zaha,Positive,0.569,Positive,Negative,0.575,0.206,0.219
+3878600,Serie A 2015/2016,AC Milan,61,Carlos Arturo Bacca Ahumada,Mario Barwuah Balotelli,Positive,0.1016,Positive,Positive,0.13,0.063,0.807
+3879693,Serie A 2015/2016,Juventus,79,Stephan Lichtsteiner,Simone Padoin,Neutral,0.0143,Neutral,Positive,0.235,0.296,0.469
+3754184,Premier League 2015/2016,Arsenal,50,Per Mertesacker,Gabriel Armando de Abreu,Positive,0.3386,Positive,Positive,0.164,0.14,0.696
+3869254,FIFA World Cup 2022,Switzerland,53,Remo Freuler,Denis Lemi Zakaria Lako Lado,Positive,0.7841,Positive,Positive,0.002,0.004,0.994
+3754009,Premier League 2015/2016,Arsenal,83,Mohamed Naser Elsayed Elneny,Theo Walcott,Neutral,-0.0851,Neutral,Negative,0.403,0.295,0.302
+3879841,Serie A 2015/2016,Frosinone,83,Adriano Russo,Samuele Longo,Negative,-0.9375,Negative,Negative,0.816,0.072,0.112
+3754101,Premier League 2015/2016,Southampton,79,Jordy Clasie,Harrison Reed,Positive,0.1505,Positive,Positive,0.088,0.114,0.798
+3753996,Premier League 2015/2016,Norwich City,72,Dieumerci Mbokani Bezua,Cameron Jerome,Positive,0.1072,Positive,Positive,0.019,0.027,0.954
+3754125,Premier League 2015/2016,Chelsea,79,Diego da Silva Costa,Loïc Rémy,Negative,-0.7878,Negative,Negative,0.673,0.192,0.135
+3773593,La Liga 2020/2021,Barcelona,69,Philippe Coutinho Correia,Pedro González López,Positive,0.316,Positive,Positive,0.228,0.108,0.664
+3754216,Premier League 2015/2016,Liverpool,74,Roberto Firmino Barbosa de Oliveira,Divock Okoth Origi,Positive,0.235,Positive,Positive,0.204,0.099,0.697
+3754135,Premier League 2015/2016,Stoke City,84,Ibrahim Afellay,Jonathan Walters,Neutral,0.0159,Neutral,Neutral,0.212,0.412,0.376
+3754008,Premier League 2015/2016,Sunderland,45,Adam Johnson,Steven Fletcher,Negative,-0.9486,Negative,Neutral,0.319,0.428,0.253
+3879758,Serie A 2015/2016,Torino,85,Davide Zappacosta,Josef Alexander Martínez Mencia,Neutral,-0.071,Neutral,Negative,0.452,0.289,0.259
+3754306,Premier League 2015/2016,Norwich City,54,Wes Hoolahan,Patrick Bamford,Positive,0.2365,Positive,Positive,0.155,0.205,0.64
+3879873,Serie A 2015/2016,Empoli,76,Massimo Maccarone,Alessandro Piu,Negative,-0.1517,Negative,Negative,0.439,0.349,0.212
+3754147,Premier League 2015/2016,Tottenham Hotspur,71,Heung-Min Son,Tom Carroll,Positive,0.301,Positive,Positive,0.173,0.161,0.666
+3754012,Premier League 2015/2016,Southampton,68,Shane Long,Graziano Pellè,Neutral,0.0148,Neutral,Positive,0.232,0.18,0.588
+3837987,Ligue 1 2022/2023,Paris Saint-Germain,82,Hugo Ekitike,Carlos Soler Barragán,Neutral,0.0281,Neutral,Neutral,0.134,0.722,0.144
+3879771,Serie A 2015/2016,Sassuolo,62,Simone Missiroli,Davide Biondini,Positive,0.3364,Positive,Neutral,0.309,0.483,0.208
+3754052,Premier League 2015/2016,West Bromwich Albion,85,Stéphane Sessègnon,Rickie Lambert,Neutral,-0.064,Neutral,Negative,0.442,0.25,0.308
+3754229,Premier League 2015/2016,Leicester City,79,Riyad Mahrez,Marc Albrighton,Positive,0.7364,Positive,Positive,0.139,0.064,0.797
+3754122,Premier League 2015/2016,Stoke City,67,Glenn Whelan,Jonathan Walters,Positive,0.5978,Positive,Positive,0.104,0.176,0.72
+3879835,Serie A 2015/2016,Chievo,14,Lucas Nahuel Castro,Giampiero Pinzi,Neutral,0.0799,Neutral,Neutral,0.333,0.34,0.327
+3879689,Serie A 2015/2016,Sampdoria,79,Carlos Joaquín Correa,Alejandro Miguel Rodriguez,Negative,-0.562,Negative,Negative,0.757,0.083,0.16
+3879710,Serie A 2015/2016,Sampdoria,83,José Rodolfo Pires Ribeiro,Andrea Coda,Negative,-1.8958,Negative,Negative,0.891,0.022,0.087
+3857266,FIFA World Cup 2022,Denmark,45,Andreas Evald Cornelius,Martin Braithwaite Christensen,Neutral,0.0453,Neutral,Positive,0.182,0.143,0.675
+3754191,Premier League 2015/2016,Southampton,79,Dušan Tadić,James Ward-Prowse,Negative,-0.3811,Negative,Positive,0.363,0.235,0.402
+3895107,Bundesliga 2023/2024,FC Köln,61,Faride Alidou,Max Finkgräfe,Negative,-0.831,Negative,Negative,0.757,0.104,0.139
+3879717,Serie A 2015/2016,AS Roma,61,Miralem Pjanić,William Vainqueur,Negative,-0.165,Negative,Neutral,0.294,0.415,0.291
+3754297,Premier League 2015/2016,West Bromwich Albion,84,Chris Brunt,Callum McManaman,Negative,-1.0826,Negative,Negative,0.763,0.074,0.163
+3879859,Serie A 2015/2016,Lazio,15,Wesley Hoedt,Maurício dos Santos Nascimento,Positive,1.7989,Positive,Positive,0.038,0.034,0.928
+3879684,Serie A 2015/2016,Juventus,64,Stephan Lichtsteiner,Juan Guillermo Cuadrado Bello,Neutral,-0.0476,Neutral,Negative,0.454,0.243,0.303
+3754271,Premier League 2015/2016,Watford,76,José Manuel Jurado Marín,Almen Abdi,Positive,0.1203,Positive,Negative,0.526,0.313,0.161
+3754156,Premier League 2015/2016,Watford,69,Etienne Capoue,Juan Carlos Paredes Reasco,Positive,1.644,Positive,Positive,0.024,0.014,0.962
+3879572,Serie A 2015/2016,Napoli,78,Dries Mertens,Omar El Kaddouri,Negative,-0.404,Negative,Negative,0.808,0.107,0.085
+3879844,Serie A 2015/2016,Empoli,85,Leandro Daniel Paredes,Massimo Maccarone,Positive,0.3705,Positive,Positive,0.078,0.137,0.785
+3754184,Premier League 2015/2016,Norwich City,76,Robert Brady,Steven Naismith,Positive,0.2466,Positive,Neutral,0.285,0.371,0.344
+3879636,Serie A 2015/2016,Sassuolo,76,Sergio Floccari,Antonio Floro Flores,Negative,-0.1729,Negative,Negative,0.527,0.272,0.201
+3837918,Ligue 1 2022/2023,Paris Saint-Germain,45,Timothee Pembele,Warren Zaire Emery,Negative,-0.4988,Negative,Negative,0.626,0.181,0.193
+3878592,Serie A 2015/2016,Genoa,54,Alberto Facundo Costa,Blerim Džemaili,Negative,-0.4173,Negative,Negative,0.598,0.252,0.15
+3879768,Serie A 2015/2016,Sampdoria,73,Roberto Soriano,Édgar Osvaldo Barreto Cáceres,Negative,-0.3957,Negative,Negative,0.803,0.083,0.114
+3754146,Premier League 2015/2016,Leicester City,85,N''Golo Kanté,Andrew Philip King,Positive,0.1292,Positive,Positive,0.169,0.261,0.57
+3753995,Premier League 2015/2016,Chelsea,63,Willian Borges da Silva,Pedro Eliezer Rodríguez Ledesma,Positive,0.6078,Positive,Positive,0.038,0.045,0.917
+3754172,Premier League 2015/2016,Norwich City,45,Robert Brady,Nathan Redmond,Positive,0.8775,Positive,Positive,0.014,0.08,0.906
+3879583,Serie A 2015/2016,AS Roma,36,Daniele De Rossi,William Vainqueur,Negative,-0.5462,Negative,Negative,0.667,0.113,0.22
+3879587,Serie A 2015/2016,Inter Milan,81,Mauro Emanuel Icardi Rivero,Jonathan Ludovic Biabiany,Negative,-1.2295,Negative,Negative,0.929,0.021,0.05
+3754293,Premier League 2015/2016,Stoke City,81,Xherdan Shaqiri,Mame Biram Diouf,Positive,0.1815,Positive,Positive,0.264,0.172,0.564
+3879609,Serie A 2015/2016,Napoli,82,Gonzalo Gerardo Higuaín,Manolo Gabbiadini,Neutral,-0.0644,Neutral,Neutral,0.297,0.556,0.147
+3754277,Premier League 2015/2016,West Ham United,60,Emmanuel Emenike,Diafra Sakho,Negative,-0.8657,Negative,Negative,0.602,0.118,0.28
+3879562,Serie A 2015/2016,AC Milan,83,Juraj Kucka,Andrea Poli,Negative,-0.3314,Negative,Neutral,0.309,0.437,0.254
+3895266,Bundesliga 2023/2024,Wolfsburg,62,Lovro Majer,Aster Vranckx,Neutral,-0.0223,Neutral,Negative,0.657,0.183,0.16
+3879616,Serie A 2015/2016,Sampdoria,79,Roberto Soriano,Antonio Cassano,Negative,-0.3114,Negative,Negative,0.644,0.199,0.157
+3879650,Serie A 2015/2016,Carpi,51,Lorenzo Pasciuti,Marco Borriello,Positive,0.595,Positive,Positive,0.053,0.041,0.906
+3878551,Serie A 2015/2016,AC Milan,82,Andrea Bertolacci,Andrea Poli,Neutral,-0.052,Neutral,Negative,0.44,0.287,0.273
+3754142,Premier League 2015/2016,Everton,70,Gerard Deulofeu Lázaro,Arouna Koné,Positive,0.2872,Positive,Positive,0.27,0.063,0.667
+3754112,Premier League 2015/2016,Southampton,64,Jay Rodriguez,Shane Long,Positive,0.1875,Positive,Negative,0.392,0.352,0.256
+3879755,Serie A 2015/2016,Lazio,52,Stefano Mauri,Keita Baldé Diao,Neutral,0.0647,Neutral,Neutral,0.091,0.589,0.32
+3754329,Premier League 2015/2016,Newcastle United,59,Vurnon Anita,Siem Stefan de Jong,Positive,0.5786,Positive,Positive,0.011,0.014,0.975
+3879733,Serie A 2015/2016,Juventus,65,Stefano Sturaro,Roberto Maximiliano Pereyra,Positive,0.1937,Positive,Negative,0.649,0.166,0.185
+3879635,Serie A 2015/2016,Napoli,78,Marek Hamšík,David López Silva,Positive,0.2842,Positive,Positive,0.198,0.117,0.685
+3837771,Ligue 1 2022/2023,Paris Saint-Germain,58,Presnel Kimpembe,Marcos Aoás Corrêa,Positive,0.5832,Positive,Positive,0.074,0.071,0.855
+3754146,Premier League 2015/2016,Leicester City,45,Gökhan İnler,Marc Albrighton,Positive,0.4519,Positive,Negative,0.718,0.114,0.168
+3754108,Premier League 2015/2016,Sunderland,54,Lamine Koné,John O''Shea,Positive,0.2984,Positive,Positive,0.245,0.09,0.665
+3879849,Serie A 2015/2016,Bologna,83,Anthony Mounier,Emil Krafth,Positive,0.173,Positive,Neutral,0.39,0.431,0.179
+3879836,Serie A 2015/2016,Carpi,53,Jonathan de Guzmán,Kevin Lasagna,Neutral,0.0381,Neutral,Negative,0.37,0.335,0.295
+3879850,Serie A 2015/2016,Juventus,73,Juan Guillermo Cuadrado Bello,Stephan Lichtsteiner,Positive,0.4674,Positive,Negative,0.39,0.348,0.262
+3879686,Serie A 2015/2016,Sassuolo,67,Matteo Politano,Antonio Floro Flores,Neutral,0.0176,Neutral,Positive,0.257,0.22,0.523
+3895292,Bundesliga 2023/2024,Bayer Leverkusen,78,Nathan Tella,Jeremie Frimpong,Neutral,-0.0444,Neutral,Negative,0.532,0.278,0.19
+3754252,Premier League 2015/2016,Newcastle United,45,Paul Dummett,Rolando Aarons,Negative,-0.1512,Negative,Negative,0.478,0.113,0.409
+3878599,Serie A 2015/2016,Sassuolo,64,Gregoire Defrel,Sergio Floccari,Neutral,-0.0938,Neutral,Negative,0.464,0.235,0.301
+3879862,Serie A 2015/2016,Torino,77,Josef Alexander Martínez Mencia,Ciro Immobile,Neutral,-0.0464,Neutral,Negative,0.509,0.344,0.147
+3879622,Serie A 2015/2016,Carpi,57,Igor Bubnjić,Riccardo Gagliolo,Neutral,0.0434,Neutral,Negative,0.499,0.228,0.273
+3857278,FIFA World Cup 2022,United States,81,Timothy Weah,Walker Zimmerman,Negative,-0.2908,Negative,Negative,0.651,0.22,0.129
+3879667,Serie A 2015/2016,Frosinone,75,Yussif Raman Chibsah,Alessandro Frara,Positive,0.2477,Positive,Positive,0.119,0.072,0.809
+3879830,Serie A 2015/2016,Genoa,71,Jesús Joaquín Fernández Sáez de la Torre,Diego Ángel Capel Trinidad,Positive,0.1904,Positive,Negative,0.609,0.188,0.203
+3773523,La Liga 2020/2021,Real Sociedad,63,Cristian Portugués Manzanera,Alexander Isak,Positive,1.615,Positive,Positive,0.005,0.002,0.993
+3754025,Premier League 2015/2016,Sunderland,78,Duncan Watmore,Danny Graham,Neutral,0.0672,Neutral,Positive,0.089,0.042,0.869
+3754207,Premier League 2015/2016,Watford,45,Allan Romeo Nyom,Nathan Aké,Positive,0.3425,Positive,Positive,0.278,0.251,0.471
+3879726,Serie A 2015/2016,Genoa,57,Jules Olivier Ntcham,Diego Ángel Capel Trinidad,Positive,0.1024,Positive,Positive,0.205,0.233,0.562
+3754192,Premier League 2015/2016,West Bromwich Albion,60,James McClean,Saido Berahino,Positive,0.1955,Positive,Positive,0.149,0.187,0.664
+3754207,Premier League 2015/2016,Norwich City,79,Nathan Redmond,Matt Jarvis,Negative,-0.1552,Negative,Negative,0.582,0.258,0.16
+3754049,Premier League 2015/2016,Leicester City,77,Daniel Amartey,José Leonardo Ulloa,Positive,1.085,Positive,Negative,0.661,0.185,0.154
+3754247,Premier League 2015/2016,Southampton,84,Cédric Ricardo Alves Soares,Juan Miguel Jiménez López,Neutral,-0.0415,Neutral,Positive,0.154,0.139,0.707
+3754167,Premier League 2015/2016,Norwich City,69,Youssouf Chafiq Mulumbu Ngangu,Gary O''Neil,Positive,0.7819,Positive,Positive,0.316,0.292,0.392
+3879571,Serie A 2015/2016,Carpi,54,Matteo Fedele,Kevin Lasagna,Negative,-0.8518,Negative,Negative,0.431,0.231,0.338
+3754064,Premier League 2015/2016,Southampton,68,Oriol Romeu Vidal,James Ward-Prowse,Neutral,-0.0273,Neutral,Positive,0.214,0.19,0.596
+3754309,Premier League 2015/2016,Southampton,66,Jordy Clasie,Oriol Romeu Vidal,Negative,-0.6969,Negative,Negative,0.842,0.073,0.085
+3857293,FIFA World Cup 2022,Uruguay,65,Luis Alberto Suárez Díaz,Edinson Roberto Cavani Gómez,Negative,-0.2477,Negative,Negative,0.854,0.068,0.078
+3879647,Serie A 2015/2016,Genoa,53,Alberto Facundo Costa,Diego Perotti,Positive,0.201,Positive,Negative,0.657,0.224,0.119
+3879542,Serie A 2015/2016,Inter Milan,62,Geoffrey Kondogbia,Jonathan Ludovic Biabiany,Neutral,0.0963,Neutral,Positive,0.199,0.151,0.65
+3754333,Premier League 2015/2016,Tottenham Hotspur,45,Heung-Min Son,Josh Onomah,Positive,0.3497,Positive,Positive,0.111,0.141,0.748
+3754200,Premier League 2015/2016,Southampton,66,Jordy Clasie,Oriol Romeu Vidal,Positive,0.1531,Positive,Positive,0.199,0.121,0.68
+3754062,Premier League 2015/2016,Chelsea,77,Francesc Fàbregas i Soler,Nemanja Matić,Neutral,-0.0286,Neutral,Positive,0.171,0.381,0.448
+3837896,Ligue 1 2022/2023,Nantes,69,Florent Mollet,Mostafa Mohamed Ahmed Abdallah,Positive,0.189,Positive,Positive,0.092,0.08,0.828
+3773386,La Liga 2020/2021,Barcelona,77,Anssumane Fati,Martin Braithwaite Christensen,Neutral,0.0706,Neutral,Negative,0.759,0.076,0.165
+3879867,Serie A 2015/2016,Frosinone,67,Oliver Kragl,Massimiliano Carlini,Positive,0.3913,Positive,Positive,0.132,0.15,0.718
+3773403,La Liga 2020/2021,Athletic Club,66,Óscar de Marcos Arana,Alejandro Berenguer Remiro,Negative,-0.1031,Negative,Negative,0.722,0.107,0.171
+3857294,FIFA World Cup 2022,Netherlands,65,Memphis Depay,Vincent Janssen,Neutral,-0.0245,Neutral,Neutral,0.259,0.496,0.245
+3879823,Serie A 2015/2016,AS Roma,53,Ervin Zukanović,Stephan El Shaarawy,Negative,-0.7223,Negative,Negative,0.471,0.319,0.21
+3773661,La Liga 2020/2021,Getafe,45,Carles Aleña Castillo,Sabit Abdulai,Positive,0.261,Positive,Positive,0.077,0.058,0.865
+3754124,Premier League 2015/2016,Manchester United,61,Faustino Marcos Alberto Rojo,Luis Antonio Valencia Mosquera,Negative,-0.8805,Negative,Negative,0.51,0.331,0.159
+3879580,Serie A 2015/2016,Atalanta,45,Gianpaolo Bellini,Andrea Masiello,Negative,-0.8865,Negative,Neutral,0.305,0.506,0.189
+3879540,Serie A 2015/2016,Chievo,65,Fabrizio Cacciatore,Massimo Gobbi,Negative,-0.1074,Negative,Negative,0.641,0.135,0.224
+3879820,Serie A 2015/2016,Juventus,78,Sami Khedira,Simone Padoin,Negative,-0.4715,Negative,Negative,0.754,0.076,0.17
+3753995,Premier League 2015/2016,Southampton,77,Dušan Tadić,Jay Rodriguez,Negative,-0.4902,Negative,Negative,0.708,0.129,0.163
+3879767,Serie A 2015/2016,AS Roma,75,Stephan El Shaarawy,Francesco Totti,Neutral,-0.0237,Neutral,Negative,0.375,0.256,0.369
+3879567,Serie A 2015/2016,Empoli,60,Rade Krunić,Marko Livaja,Neutral,0.0005,Neutral,Positive,0.251,0.172,0.577
+3879624,Serie A 2015/2016,Lazio,82,Keita Baldé Diao,Ricardo Kishna,Negative,-0.5127,Negative,Negative,0.964,0.014,0.022
+3857283,FIFA World Cup 2022,Morocco,71,Youssef En-Nesyri,Abderrazak Hamdallah,Positive,0.5342,Positive,Positive,0.161,0.17,0.669
+3879541,Serie A 2015/2016,Bologna,75,Saphir Sliti Taïder,Filippo Falco,Positive,0.3766,Positive,Positive,0.064,0.013,0.923
+3857281,FIFA World Cup 2022,Canada,61,Richie Laryea,David Junior Hoilett,Neutral,-0.04,Neutral,Positive,0.243,0.117,0.64
+3878551,Serie A 2015/2016,AC Milan,45,Antonio Nocerino,Juraj Kucka,Neutral,0.0307,Neutral,Positive,0.258,0.147,0.595
+3754183,Premier League 2015/2016,Watford,67,Allan Romeo Nyom,Segundo Víctor Ibarbo Guerrero,Negative,-0.3303,Negative,Positive,0.192,0.251,0.557
+3753979,Premier League 2015/2016,Crystal Palace,45,Jason Puncheon,Bakary Sako,Negative,-0.1224,Negative,Negative,0.466,0.289,0.245
+3879630,Serie A 2015/2016,Palermo,59,Oscar Hiljemark,Robin Quaison,Positive,0.7455,Positive,Positive,0.148,0.054,0.798
+3773565,La Liga 2020/2021,Granada,66,Yangel Clemente Herrera Ravelo,Alberto Soro Álvarez,Negative,-0.2564,Negative,Negative,0.566,0.21,0.224
+3879690,Serie A 2015/2016,AC Milan,78,M''Baye Babacar Niang,Kevin-Prince Boateng,Positive,0.6408,Positive,Neutral,0.373,0.388,0.239
+3754219,Premier League 2015/2016,AFC Bournemouth,75,Glenn Murray,Yann Kermorgant,Positive,0.879,Positive,Negative,0.512,0.245,0.243
+3857283,FIFA World Cup 2022,Belgium,80,Thomas Meunier,Romelu Lukaku Menama,Positive,0.4078,Positive,Positive,0.118,0.103,0.779
+3879814,Serie A 2015/2016,Fiorentina,81,Josip Iličić,Panagiotis Giorgios Kone,Negative,-0.1205,Negative,Negative,0.817,0.083,0.1
+3879651,Serie A 2015/2016,AS Roma,81,Iago Falqué Silva,Norbert Gyömbér,Negative,-0.5732,Negative,Neutral,0.425,0.427,0.148
+3895210,Bundesliga 2023/2024,Borussia Mönchengladbach,61,Robin Hack,Rocco Reitz,Positive,0.5097,Positive,Positive,0.212,0.063,0.725
+3857284,FIFA World Cup 2022,Germany,78,Kai Havertz,Niclas Füllkrug,Positive,0.6201,Positive,Positive,0.029,0.036,0.935
+3879550,Serie A 2015/2016,Inter Milan,60,Ivan Perišić,Jonathan Ludovic Biabiany,Negative,-0.9065,Negative,Negative,0.957,0.011,0.032
+3879813,Serie A 2015/2016,Sampdoria,70,Roberto Soriano,Dávid Ivan,Negative,-0.3174,Negative,Negative,0.657,0.225,0.118
+3879610,Serie A 2015/2016,AS Roma,72,William Vainqueur,Seydou Kéita,Negative,-0.1141,Negative,Negative,0.746,0.088,0.166
+3754212,Premier League 2015/2016,Aston Villa,59,Carlos Alberto Sánchez Moreno,Jordan Veretout,Positive,0.5867,Positive,Positive,0.109,0.054,0.837
+3754076,Premier League 2015/2016,Sunderland,83,Ola Toivonen,Sebastian Larsson,Neutral,-0.0014,Neutral,Positive,0.13,0.402,0.468
+3857280,FIFA World Cup 2022,Brazil,54,Alex Nicolao Telles,Marcos Aoás Corrêa,Neutral,-0.0459,Neutral,Neutral,0.24,0.703,0.057
+3879644,Serie A 2015/2016,Atalanta,75,Jasmin Kurtič,Giulio Migliaccio,Negative,-0.2618,Negative,Negative,0.338,0.333,0.329
+3879724,Serie A 2015/2016,Fiorentina,84,Nikola Kalinić,Khouma El Hadji Babacar,Positive,0.2631,Positive,Positive,0.233,0.133,0.634
+3773552,La Liga 2020/2021,Huesca,71,Sergio Gómez Martín,Shinji Okazaki,Negative,-0.2854,Negative,Negative,0.906,0.036,0.058
+3879804,Serie A 2015/2016,Frosinone,72,Paolo Sammarco,Massimiliano Carlini,Positive,0.7293,Positive,Positive,0.109,0.023,0.868
+3857277,FIFA World Cup 2022,Croatia,78,Mateo Kovačić,Lovro Majer,Neutral,0.0194,Neutral,Neutral,0.234,0.451,0.315
+3837785,Ligue 1 2022/2023,Auxerre,56,Lassine Sinayoko,Gaëtan Perrin,Negative,-0.1572,Negative,Negative,0.455,0.279,0.266
+3753977,Premier League 2015/2016,Watford,54,Valon Behrami,Adlène Guédioura,Neutral,-0.0757,Neutral,Positive,0.248,0.133,0.619
+3754249,Premier League 2015/2016,Aston Villa,73,Jordan Veretout,Leandro Bacuna,Positive,1.5375,Positive,Positive,0.036,0.009,0.955
+3879739,Serie A 2015/2016,Juventus,85,Paulo Bruno Exequiel Dybala,Alex Sandro Lobo Silva,Neutral,0.0276,Neutral,Neutral,0.214,0.57,0.216
+3837752,Ligue 1 2022/2023,Paris Saint-Germain,82,Kylian Mbappé Lottin,Hugo Ekitike,Negative,-1.1973,Negative,Negative,0.957,0.003,0.04
+3879611,Serie A 2015/2016,Chievo,74,Valter Birsa,Simone Pepe,Positive,0.5192,Positive,Positive,0.131,0.05,0.819
+3879781,Serie A 2015/2016,Chievo,61,Antonio Floro Flores,Sergio Pellissier,Neutral,0.0121,Neutral,Positive,0.183,0.261,0.556
+3879814,Serie A 2015/2016,Empoli,69,Daniele Croce,Marcel Büchel,Neutral,0.037,Neutral,Positive,0.108,0.216,0.676
+3869254,FIFA World Cup 2022,Switzerland,65,Ruben Vargas,Noah Okafor,Negative,-0.113,Negative,Positive,0.187,0.233,0.58
+3837839,Ligue 1 2022/2023,Paris Saint-Germain,83,Neymar da Silva Santos Junior,Warren Zaire Emery,Negative,-1.1008,Negative,Negative,0.54,0.246,0.214
+3879580,Serie A 2015/2016,Atalanta,51,Maximiliano Nicol Moralez,Alejandro Darío Gómez,Positive,0.8387,Positive,Positive,0.013,0.013,0.974
+3879833,Serie A 2015/2016,Lazio,76,Lucas Rodrigo Biglia,Danilo Cataldi,Positive,0.3697,Positive,Positive,0.077,0.105,0.818
+3754169,Premier League 2015/2016,Sunderland,71,Fabio Borini,Adam Johnson,Neutral,0.0253,Neutral,Positive,0.217,0.282,0.501
+3837747,Ligue 1 2022/2023,Marseille,78,Alexis Alejandro Sánchez Sánchez,Cheikh Ahmadou Bamba Mbacke Dieng,Positive,0.141,Positive,Positive,0.197,0.188,0.615
+3879578,Serie A 2015/2016,Bologna,40,Emil Krafth,Ibrahima Mbaye,Positive,1.0569,Positive,Neutral,0.292,0.452,0.256
+3879847,Serie A 2015/2016,Udinese,74,Bruno Miguel Borges Fernandes,Iván Rodrigo Piris Leguizamón,Negative,-0.6138,Negative,Negative,0.715,0.105,0.18
+3879542,Serie A 2015/2016,Inter Milan,56,Adem Ljajić,Stevan Jovetić,Positive,0.1518,Positive,Positive,0.297,0.21,0.493
+3754006,Premier League 2015/2016,Leicester City,75,Marc Albrighton,Nathan Dyer,Negative,-1.1222,Negative,Negative,0.798,0.128,0.074
+3878540,Serie A 2015/2016,Lazio,60,Senad Lulić,Sergej Milinković-Savić,Neutral,-0.022,Neutral,Negative,0.622,0.165,0.213
+3879565,Serie A 2015/2016,Sampdoria,55,Carlos Joaquín Correa,Angelo Palombo,Negative,-0.7137,Negative,Negative,0.934,0.02,0.046
+3754001,Premier League 2015/2016,Chelsea,60,Nemanja Matić,Willian Borges da Silva,Neutral,0.0028,Neutral,Neutral,0.157,0.643,0.2
+3754286,Premier League 2015/2016,Watford,73,Ikechi Anya,Juan Carlos Paredes Reasco,Positive,0.4296,Positive,Positive,0.342,0.312,0.346
+3879609,Serie A 2015/2016,Udinese,69,Manuel Rolando Iturra Urrutia,Ali Adnan Kadhim Al Tameemi,Neutral,0.0383,Neutral,Positive,0.18,0.333,0.487
+3895202,Bundesliga 2023/2024,RB Leipzig,73,Benjamin Šeško,Yussuf Yurary Poulsen,Neutral,0.0296,Neutral,Negative,0.478,0.24,0.282
+3754234,Premier League 2015/2016,AFC Bournemouth,74,Marc Pugh,Adam Smith,Positive,0.3587,Positive,Positive,0.112,0.159,0.729
+3754032,Premier League 2015/2016,Norwich City,62,Wes Hoolahan,Matt Jarvis,Positive,0.4336,Positive,Positive,0.079,0.081,0.84
+3879614,Serie A 2015/2016,Inter Milan,66,Mauro Emanuel Icardi Rivero,Ivan Perišić,Neutral,-0.0455,Neutral,Neutral,0.319,0.413,0.268
+3773587,La Liga 2020/2021,Barcelona,61,Ousmane Dembélé,Anssumane Fati,Positive,0.8704,Positive,Positive,0.013,0.028,0.959
+3857271,FIFA World Cup 2022,Iran,76,Ahmad Nourollahi,Sardar Azmoun,Negative,-0.2939,Negative,Positive,0.106,0.126,0.768
+3754051,Premier League 2015/2016,Liverpool,73,Roberto Firmino Barbosa de Oliveira,Christian Benteke Liolo,Positive,0.122,Positive,Positive,0.075,0.037,0.888
